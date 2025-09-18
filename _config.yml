@@ -71,5 +71,5 @@ exclude:
   - tools/
   - examples/
   - templates/
-  - *.json
-  - continuity-report*.json
+  - "*.json"
+  - "continuity-report*.json"
