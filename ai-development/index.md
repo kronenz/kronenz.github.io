@@ -30,7 +30,7 @@ order: 1
 ### 1-1: 에이전틱 AI 시작하기
 **AI 어시스턴트에서 자율적 행위자로의 전환**
 
-[가이드 보기 →](/ai-development/1-1-agentic-ai-start/)
+[가이드 보기 →](/ai-development/1-1-agentic-ai-start.html)
 
 - 에이전틱 AI의 핵심 개념
 - 전통적 AI 사용법과의 차이점
