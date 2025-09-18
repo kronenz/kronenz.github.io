@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-4-factory-floor-construction: 2 4 factory floor construction"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 6
+---
+
 # 공장 플로어 구축
 
 ## CrewAI로 Claude Code 개발자 팀을 오케스트레이션하기

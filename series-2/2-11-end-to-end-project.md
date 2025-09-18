@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-11-end-to-end-project: 2 11 end to end project"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 3
+---
+
 # 엔드-투-엔드 프로젝트
 
 ## 단일 GitHub 이슈로 마이크로 SaaS 앱 전체 구축하기

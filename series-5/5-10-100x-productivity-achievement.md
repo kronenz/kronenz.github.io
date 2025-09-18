@@ -1,3 +1,11 @@
+---
+layout: default
+title: "5-10: 100배 생산성 달성 - 모든 지식 통합 및 최종 목표 달성"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-5"
+order: 2
+---
+
 # 5-10: 100배 생산성 달성 - 모든 지식 통합 및 최종 목표 달성
 
 ## 개요

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-1-github-actions-101: 2 1 github actions 101"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 1
+---
+
 # GitHub Actions 101: 첫 번째 CI/CD 워크플로우 자동화
 
 ## 개요

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-8-test-automation: 2 8 test automation"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 10
+---
+
 # 테스트 자동화
 
 ## Gherkin 시나리오를 Selenium/Playwright 스크립트로 변환하고 실행하기

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-3-front-office-setup: 2 3 front office setup"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 5
+---
+
 # 프런트 오피스 구축
 
 ## 이슈를 분석하여 명세와 계획을 자동 생성하는 제품 전략가 에이전트

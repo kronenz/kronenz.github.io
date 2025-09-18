@@ -1,3 +1,11 @@
+---
+layout: default
+title: "5-6: 자율적 성장 해킹 입문 - A/B 테스트를 넘어선 새로운 UX 최적화 패러다임"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-5"
+order: 7
+---
+
 # 5-6: 자율적 성장 해킹 입문 - A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
 
 ## 개요

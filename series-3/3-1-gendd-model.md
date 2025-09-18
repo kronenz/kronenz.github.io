@@ -1,3 +1,11 @@
+---
+layout: default
+title: "3-1: 생성형 개발 주도(GenDD) 모델 - 새로운 AI 개발팀 철학 이해하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-3"
+order: 1
+---
+
 # 3-1: 생성형 개발 주도(GenDD) 모델 - 새로운 AI 개발팀 철학 이해하기
 
 ## 개요

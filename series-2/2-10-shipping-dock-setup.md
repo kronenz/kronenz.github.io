@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-10-shipping-dock-setup: 2 10 shipping dock setup"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 2
+---
+
 # 출하 부두 구축
 
 ## 테스트 통과 후 자동으로 배포를 관리하는 DevOps 에이전트

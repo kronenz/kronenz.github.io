@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-6-quality-control-setup: 2 6 quality control setup"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 8
+---
+
 # 품질 관리 구축
 
 ## PR을 기반으로 자동 코드 리뷰를 수행하는 검증 에이전트

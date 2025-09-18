@@ -1,3 +1,11 @@
+---
+layout: default
+title: "README: README"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-3"
+order: 10
+---
+
 # 시리즈 3: 디지털 인력 관리 - AI 에이전트 팀 운영의 핵심
 
 ## 개요

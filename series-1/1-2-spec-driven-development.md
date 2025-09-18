@@ -1,3 +1,11 @@
+---
+layout: default
+title: "1-2: 명세 기반 개발(명세 기반 개발) 마스터하기 - Spec Kit으로 첫 프로젝트 시작하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-1"
+order: 4
+---
+
 # 1-2: 명세 기반 개발(명세 기반 개발) 마스터하기 - Spec Kit으로 첫 프로젝트 시작하기
 
 ## 📋 개요

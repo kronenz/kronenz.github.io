@@ -1,3 +1,11 @@
+---
+layout: default
+title: "4-2: Devin의 두뇌 재현 - 장기적 추론 및 계획 알고리즘 구현하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-4"
+order: 2
+---
+
 # 4-2: Devin의 두뇌 재현 - 장기적 추론 및 계획 알고리즘 구현하기
 
 ## 개요

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "README: README"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 12
+---
+
 # 시리즈 2: 자동화된 SaaS 팩토리 - 조립 라인 구축 가이드
 
 이 시리즈는 아이디어 접수부터 배포까지 이어지는 완전 자동화된 개발 파이프라인 구축 방법을 다룹니다.

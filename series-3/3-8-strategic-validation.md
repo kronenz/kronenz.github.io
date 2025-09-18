@@ -1,3 +1,11 @@
+---
+layout: default
+title: "3-8: 전략적 검증의 기술 - AI 결과물을 비즈니스 목표와 정렬하는 방법"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-3"
+order: 8
+---
+
 # 3-8: 전략적 검증의 기술 - AI 결과물을 비즈니스 목표와 정렬하는 방법
 
 ## 개요

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "5-3: FinOps 에이전트 구축 - 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-5"
+order: 4
+---
+
 # 5-3: FinOps 에이전트 구축 - 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기
 
 ## 개요

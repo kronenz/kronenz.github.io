@@ -1,3 +1,11 @@
+---
+layout: default
+title: "1-7: 검증 루프 구현 - GPT-5를 코드 리뷰어로 활용하여 결과물 품질 보장하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-1"
+order: 9
+---
+
 # 1-7: 검증 루프 구현 - GPT-5를 코드 리뷰어로 활용하여 결과물 품질 보장하기
 
 ## 📋 개요

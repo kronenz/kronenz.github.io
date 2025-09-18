@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-5-autonomous-commits-prs: 2 5 autonomous commits prs"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 7
+---
+
 # 자율적 코드 커밋 및 PR 생성
 
 ## AI 에이전트가 Git과 상호작용하는 방법

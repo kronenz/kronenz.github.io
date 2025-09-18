@@ -1,3 +1,11 @@
+---
+layout: default
+title: "3-4: 에이전트 협업 모델 설계 - 계층적 모델과 협력적 모델의 구현"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-3"
+order: 4
+---
+
 # 3-4: 에이전트 협업 모델 설계 - 계층적 모델과 협력적 모델의 구현
 
 ## 📋 개요

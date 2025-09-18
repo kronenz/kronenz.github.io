@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-7-autonomous-qa-team: 2 7 autonomous qa team"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 9
+---
+
 # 자율적 QA 팀 구성
 
 ## 명세서로부터 Gherkin 테스트 케이스를 생성하는 QA 에이전트

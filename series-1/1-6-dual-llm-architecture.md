@@ -1,3 +1,11 @@
+---
+layout: default
+title: "1-6: 이중 LLM 인지 아키텍처 구축 - GPT-5(기획자)와 Claude Code(개발자) 연동하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-1"
+order: 8
+---
+
 # 1-6: 이중 LLM 인지 아키텍처 구축 - GPT-5(기획자)와 Claude Code(개발자) 연동하기
 
 ## 📋 개요

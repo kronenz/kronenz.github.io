@@ -1,3 +1,11 @@
+---
+layout: default
+title: "1-5: `/plan`과 `/tasks` 활용법 - 명세를 실행 가능한 계획과 작업으로 변환하기"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-1"
+order: 7
+---
+
 # 1-5: `/plan`과 `/tasks` 활용법 - 명세를 실행 가능한 계획과 작업으로 변환하기
 
 ## 📋 개요

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "2-9-self-healing-tests: 2 9 self healing tests"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-2"
+order: 11
+---
+
 # 자가 치유 테스트의 구현
 
 ## UI 변경에 자동으로 적응하는 회복탄력성 있는 QA 시스템

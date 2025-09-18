@@ -1,3 +1,11 @@
+---
+layout: default
+title: "1-9: CrewAI로 첫 번째 팀 빌딩 - 역할 기반 에이전트 시스템 구축 실습"
+description: "에이전틱 SaaS 조직 가이드"
+series: "series-1"
+order: 11
+---
+
 # 1-9: CrewAI로 첫 번째 팀 빌딩 - 역할 기반 에이전트 시스템 구축 실습
 
 ## 📋 개요
