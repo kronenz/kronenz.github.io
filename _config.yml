@@ -31,16 +31,18 @@ defaults:
 navigation:
   - title: "홈"
     url: "/"
-  - title: "시리즈 1"
-    url: "/series-1/"
-  - title: "시리즈 2"
-    url: "/series-2/"
-  - title: "시리즈 3"
-    url: "/series-3/"
-  - title: "시리즈 4"
-    url: "/series-4/"
-  - title: "시리즈 5"
-    url: "/series-5/"
+  - title: "AI 기반 개발"
+    url: "/ai-development/"
+  - title: "자동화 팩토리"
+    url: "/automation-factory/"
+  - title: "팀 관리"
+    url: "/team-management/"
+  - title: "고급 아키텍처"
+    url: "/advanced-architecture/"
+  - title: "비즈니스 성장"
+    url: "/business-growth/"
+  - title: "리소스"
+    url: "/resources/"
 
 # SEO
 seo:

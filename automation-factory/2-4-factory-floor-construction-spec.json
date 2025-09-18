@@ -1,0 +1,93 @@
+{
+  "series_number": 2,
+  "guide_number": "2-4",
+  "title": "공장 플로어 구축",
+  "subtitle": "CrewAI로 Claude Code 개발자 팀을 오케스트레이션하기",
+  "overview": "이 가이드는 CrewAI를 사용하여 Claude Code 기반 개발자 에이전트 팀을 구성하고 오케스트레이션하는 방법을 다룹니다. 여러 개발자 에이전트가 협력하여 효율적으로 코드를 개발할 수 있는 시스템을 구축합니다.",
+  "objectives": [
+    "CrewAI를 사용한 다중 에이전트 시스템 구축",
+    "개발자 에이전트 팀 구성 및 역할 분담",
+    "작업 분배 알고리즘 설계 및 구현",
+    "병렬 개발 프로세스 최적화",
+    "코드 통합 및 충돌 해결 전략 수립"
+  ],
+  "prerequisites": [
+    "CrewAI 기본 개념 숙지",
+    "Claude API 사용 경험",
+    "Python 중급 수준",
+    "Git 브랜치 전략 이해"
+  ],
+  "estimated_time": "5시간",
+  "difficulty": "고급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "다중 에이전트 아키텍처",
+        "content": "여러 개발자 에이전트가 각각의 전문 영역을 담당하면서 협력하여 복잡한 프로젝트를 완성하는 아키텍처를 설계합니다."
+      },
+      {
+        "title": "작업 분해 전략",
+        "content": "큰 작업을 작은 단위로 분해하여 각 에이전트가 독립적으로 처리할 수 있도록 하는 전략을 수립합니다."
+      },
+      {
+        "title": "에이전트 간 협업 모델",
+        "content": "에이전트들이 서로의 작업 결과를 공유하고 피드백을 주고받는 협업 모델을 구현합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "개발자 에이전트 팀 구성",
+        "content": "프론트엔드, 백엔드, 데이터베이스 등 전문 영역별로 개발자 에이전트를 구성합니다."
+      },
+      {
+        "title": "작업 분배 시스템 구현",
+        "content": "명세서를 분석하여 적절한 에이전트에게 작업을 할당하는 시스템을 구현합니다."
+      },
+      {
+        "title": "병렬 개발 환경 설정",
+        "content": "여러 에이전트가 동시에 작업할 수 있는 Git 브랜치 전략을 수립합니다."
+      },
+      {
+        "title": "코드 통합 및 검증",
+        "content": "각 에이전트의 작업 결과를 통합하고 품질을 검증하는 프로세스를 구축합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "개발자 에이전트 팀 구성",
+      "language": "python",
+      "code": "from crewai import Agent, Task, Crew\nfrom langchain.llms import Anthropic\n\nclass DeveloperTeam:\n    def __init__(self, anthropic_api_key):\n        self.llm = Anthropic(anthropic_api_key=anthropic_api_key)\n        \n        # 프론트엔드 개발자\n        self.frontend_dev = Agent(\n            role='Frontend Developer',\n            goal='Create responsive and user-friendly frontend interfaces',\n            backstory='''You are an expert frontend developer specializing in \n            React, Vue.js, and modern CSS frameworks. You create beautiful, \n            accessible, and performant user interfaces.''',\n            verbose=True,\n            allow_delegation=False\n        )\n        \n        # 백엔드 개발자\n        self.backend_dev = Agent(\n            role='Backend Developer',\n            goal='Build robust and scalable backend services',\n            backstory='''You are a senior backend developer with expertise in \n            Python, Node.js, and microservices architecture. You focus on \n            performance, security, and maintainability.''',\n            verbose=True,\n            allow_delegation=False\n        )\n        \n        # 데이터베이스 전문가\n        self.database_expert = Agent(\n            role='Database Expert',\n            goal='Design and optimize database schemas and queries',\n            backstory='''You are a database specialist with deep knowledge of \n            SQL, NoSQL, and data modeling. You ensure data integrity and \n            optimal performance.''',\n            verbose=True,\n            allow_delegation=False\n        )\n    \n    def create_development_crew(self, tasks):\n        crew = Crew(\n            agents=[self.frontend_dev, self.backend_dev, self.database_expert],\n            tasks=tasks,\n            verbose=True\n        )\n        return crew"
+    },
+    {
+      "title": "작업 분배 시스템",
+      "language": "python",
+      "code": "class TaskDistributor:\n    def __init__(self, developer_team):\n        self.team = developer_team\n    \n    def distribute_tasks(self, specification):\n        tasks = []\n        \n        # 프론트엔드 작업\n        if 'frontend' in specification.get('components', []):\n            frontend_task = Task(\n                description=f\"Create frontend components: {specification['frontend_requirements']}\",\n                agent=self.team.frontend_dev,\n                expected_output=\"Complete frontend implementation with components and styling\"\n            )\n            tasks.append(frontend_task)\n        \n        # 백엔드 작업\n        if 'backend' in specification.get('components', []):\n            backend_task = Task(\n                description=f\"Implement backend services: {specification['backend_requirements']}\",\n                agent=self.team.backend_dev,\n                expected_output=\"Complete backend API implementation with proper error handling\"\n            )\n            tasks.append(backend_task)\n        \n        # 데이터베이스 작업\n        if 'database' in specification.get('components', []):\n            db_task = Task(\n                description=f\"Design database schema: {specification['database_requirements']}\",\n                agent=self.team.database_expert,\n                expected_output=\"Complete database schema and migration scripts\"\n            )\n            tasks.append(db_task)\n        \n        return tasks"
+    }
+  ],
+  "resources": [
+    {
+      "title": "CrewAI 다중 에이전트 가이드",
+      "url": "https://docs.crewai.com/how-to/Create-a-Crew"
+    },
+    {
+      "title": "Claude API 문서",
+      "url": "https://docs.anthropic.com/claude/reference/getting-started-with-the-api"
+    },
+    {
+      "title": "Git 브랜치 전략",
+      "url": "https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "자율적 코드 커밋 및 PR 생성",
+      "path": "2-5-autonomous-commits-prs.md"
+    },
+    {
+      "title": "품질 관리 구축",
+      "path": "2-6-quality-control-setup.md"
+    }
+  ]
+}

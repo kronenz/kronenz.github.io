@@ -1,0 +1,93 @@
+{
+  "series_number": 2,
+  "guide_number": "2-3",
+  "title": "프런트 오피스 구축",
+  "subtitle": "이슈를 분석하여 명세와 계획을 자동 생성하는 제품 전략가 에이전트",
+  "overview": "이 가이드는 GitHub 이슈를 분석하여 자동으로 명세서와 개발 계획을 생성하는 제품 전략가 AI 에이전트를 구축하는 방법을 다룹니다. 이는 완전 자동화된 개발 파이프라인의 첫 번째 단계입니다.",
+  "objectives": [
+    "제품 전략가 에이전트의 역할과 책임 이해",
+    "이슈 분석 알고리즘 설계 및 구현",
+    "명세서 자동 생성 시스템 구축",
+    "요구사항 우선순위 설정 로직 개발",
+    "AI 에이전트와 GitHub Actions 연동 구현"
+  ],
+  "prerequisites": [
+    "GitHub Actions 기본 개념 숙지",
+    "OpenAI API 또는 Claude API 사용 경험",
+    "Python 중급 수준",
+    "명세 기반 개발(SDD) 개념 이해"
+  ],
+  "estimated_time": "4시간",
+  "difficulty": "고급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "제품 전략가 에이전트의 역할",
+        "content": "제품 전략가 에이전트는 비즈니스 요구사항을 분석하고, 기술적 명세로 변환하며, 개발 우선순위를 설정하는 핵심 역할을 담당합니다."
+      },
+      {
+        "title": "이슈 분석 프로세스",
+        "content": "이슈의 제목, 내용, 라벨, 댓글 등을 종합적으로 분석하여 요구사항을 추출하고 분류하는 프로세스를 설계합니다."
+      },
+      {
+        "title": "명세서 생성 전략",
+        "content": "분석된 요구사항을 바탕으로 명확하고 실행 가능한 명세서를 자동 생성하는 전략을 수립합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "AI 에이전트 기본 구조 설정",
+        "content": "CrewAI를 사용하여 제품 전략가 에이전트의 기본 구조를 설정합니다."
+      },
+      {
+        "title": "이슈 분석 모듈 구현",
+        "content": "GitHub API를 사용하여 이슈 정보를 가져오고 분석하는 모듈을 구현합니다."
+      },
+      {
+        "title": "명세서 생성 로직 개발",
+        "content": "분석된 요구사항을 바탕으로 spec.md 파일을 자동 생성하는 로직을 개발합니다."
+      },
+      {
+        "title": "GitHub Actions 워크플로우 연동",
+        "content": "에이전트를 GitHub Actions 워크플로우에 통합하여 자동 실행되도록 설정합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "제품 전략가 에이전트 클래스",
+      "language": "python",
+      "code": "from crewai import Agent, Task, Crew\nfrom langchain.llms import OpenAI\nimport requests\nimport json\n\nclass ProductStrategistAgent:\n    def __init__(self, github_token, openai_api_key):\n        self.github_token = github_token\n        self.llm = OpenAI(openai_api_key=openai_api_key)\n        \n        self.agent = Agent(\n            role='Product Strategist',\n            goal='Analyze GitHub issues and generate detailed specifications',\n            backstory='''You are an expert product strategist with deep experience in \n            translating business requirements into technical specifications. \n            You excel at understanding user needs and creating actionable plans.''',\n            verbose=True,\n            allow_delegation=False\n        )\n    \n    def analyze_issue(self, issue_number):\n        # GitHub API를 사용하여 이슈 정보 가져오기\n        issue_data = self.fetch_issue(issue_number)\n        \n        # 이슈 분석\n        analysis = self.analyze_issue_content(issue_data)\n        \n        # 명세서 생성\n        spec = self.generate_specification(analysis)\n        \n        return spec\n    \n    def fetch_issue(self, issue_number):\n        headers = {'Authorization': f'token {self.github_token}'}\n        url = f'https://api.github.com/repos/{{owner}}/{{repo}}/issues/{issue_number}'\n        response = requests.get(url, headers=headers)\n        return response.json()\n    \n    def analyze_issue_content(self, issue_data):\n        # 이슈 내용 분석 로직\n        pass\n    \n    def generate_specification(self, analysis):\n        # 명세서 생성 로직\n        pass"
+    },
+    {
+      "title": "GitHub Actions 워크플로우",
+      "language": "yaml",
+      "code": "name: Product Strategist Workflow\n\non:\n  issues:\n    types: [opened, labeled]\n\njobs:\n  product-strategy:\n    if: contains(github.event.issue.labels.*.name, 'needs-spec')\n    runs-on: ubuntu-latest\n    \n    steps:\n    - name: Checkout code\n      uses: actions/checkout@v3\n    \n    - name: Set up Python\n      uses: actions/setup-python@v4\n      with:\n        python-version: '3.9'\n    \n    - name: Install dependencies\n      run: |\n        pip install crewai openai requests\n    \n    - name: Run Product Strategist Agent\n      env:\n        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}\n      run: |\n        python scripts/product_strategist.py \\\n          --issue-number ${{ github.event.issue.number }}\n    \n    - name: Commit generated spec\n      run: |\n        git config --local user.email \"action@github.com\"\n        git config --local user.name \"GitHub Action\"\n        git add .\n        git commit -m \"Auto-generated spec for issue #${{ github.event.issue.number }}\" || exit 0\n        git push"
+    }
+  ],
+  "resources": [
+    {
+      "title": "CrewAI 공식 문서",
+      "url": "https://docs.crewai.com/"
+    },
+    {
+      "title": "GitHub API 문서",
+      "url": "https://docs.github.com/en/rest"
+    },
+    {
+      "title": "OpenAI API 문서",
+      "url": "https://platform.openai.com/docs"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "공장 플로어 구축",
+      "path": "2-4-factory-floor-construction.md"
+    },
+    {
+      "title": "자율적 코드 커밋 및 PR 생성",
+      "path": "2-5-autonomous-commits-prs.md"
+    }
+  ]
+}

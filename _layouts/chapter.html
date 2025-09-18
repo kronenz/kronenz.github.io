@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<article class="chapter">
+  <header class="chapter-header">
+    <div class="container">
+      <h1 class="chapter-title">{{ page.title }}</h1>
+      <p class="chapter-description">{{ page.description }}</p>
+    </div>
+  </header>
+
+  <div class="chapter-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+
+  <nav class="chapter-navigation">
+    <div class="container">
+      <div class="nav-links">
+        {% if page.order > 1 %}
+          {% assign prev_order = page.order | minus: 1 %}
+          {% for nav in site.navigation %}
+            {% if nav.order == prev_order %}
+              <a href="{{ nav.url }}" class="nav-link prev">
+                <span class="nav-arrow">←</span>
+                <span class="nav-text">이전 챕터</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+        
+        {% if page.order < site.navigation.size %}
+          {% assign next_order = page.order | plus: 1 %}
+          {% for nav in site.navigation %}
+            {% if nav.order == next_order %}
+              <a href="{{ nav.url }}" class="nav-link next">
+                <span class="nav-text">다음 챕터</span>
+                <span class="nav-arrow">→</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+</article>

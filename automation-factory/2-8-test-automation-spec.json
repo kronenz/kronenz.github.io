@@ -1,0 +1,93 @@
+{
+  "series_number": 2,
+  "guide_number": "2-8",
+  "title": "테스트 자동화",
+  "subtitle": "Gherkin 시나리오를 Selenium/Playwright 스크립트로 변환하고 실행하기",
+  "overview": "이 가이드는 Gherkin 형식의 테스트 시나리오를 실제 실행 가능한 Selenium/Playwright 스크립트로 변환하고 자동으로 실행하는 방법을 다룹니다. 완전 자동화된 테스트 파이프라인을 구축합니다.",
+  "objectives": [
+    "테스트 자동화 도구 선택 및 설정",
+    "Gherkin to Code 변환 시스템 구축",
+    "테스트 실행 환경 구축 및 최적화",
+    "결과 보고서 자동 생성 시스템 구현",
+    "CI/CD 파이프라인과 테스트 통합"
+  ],
+  "prerequisites": [
+    "Selenium 또는 Playwright 기본 지식",
+    "Python 중급 수준",
+    "CI/CD 개념 이해",
+    "Docker 기본 지식"
+  ],
+  "estimated_time": "3시간",
+  "difficulty": "중급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "테스트 자동화 아키텍처",
+        "content": "Gherkin 시나리오를 실제 테스트 코드로 변환하고 실행하는 전체 아키텍처를 설계합니다."
+      },
+      {
+        "title": "도구 선택 기준",
+        "content": "Selenium과 Playwright의 장단점을 비교하여 프로젝트에 적합한 도구를 선택하는 방법을 학습합니다."
+      },
+      {
+        "title": "테스트 실행 최적화",
+        "content": "병렬 실행, 리소스 관리, 안정성 향상을 위한 테스트 실행 최적화 전략을 수립합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "테스트 환경 구축",
+        "content": "Docker를 사용하여 일관된 테스트 실행 환경을 구축합니다."
+      },
+      {
+        "title": "Gherkin 파서 구현",
+        "content": "Gherkin 문법을 파싱하여 테스트 스텝을 추출하는 시스템을 구현합니다."
+      },
+      {
+        "title": "코드 생성기 개발",
+        "content": "파싱된 테스트 스텝을 실제 테스트 코드로 변환하는 생성기를 개발합니다."
+      },
+      {
+        "title": "테스트 실행 및 리포팅",
+        "content": "생성된 테스트를 실행하고 결과를 수집하여 보고서를 생성하는 시스템을 구축합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "Gherkin 파서 및 코드 생성기",
+      "language": "python",
+      "code": "import re\nfrom typing import List, Dict\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\n\nclass GherkinToSeleniumConverter:\n    def __init__(self):\n        self.step_definitions = {\n            'given': self.convert_given_step,\n            'when': self.convert_when_step,\n            'then': self.convert_then_step\n        }\n    \n    def parse_gherkin(self, gherkin_content: str) -> List[Dict]:\n        \"\"\"Gherkin 내용을 파싱하여 테스트 스텝 추출\"\"\"\n        scenarios = []\n        current_scenario = None\n        \n        for line in gherkin_content.split('\\n'):\n            line = line.strip()\n            \n            if line.startswith('Scenario:'):\n                if current_scenario:\n                    scenarios.append(current_scenario)\n                current_scenario = {\n                    'name': line.replace('Scenario:', '').strip(),\n                    'steps': []\n                }\n            elif line.startswith(('Given', 'When', 'Then', 'And', 'But')):\n                if current_scenario:\n                    step_type = line.split()[0].lower()\n                    step_content = ' '.join(line.split()[1:])\n                    current_scenario['steps'].append({\n                        'type': step_type,\n                        'content': step_content\n                    })\n        \n        if current_scenario:\n            scenarios.append(current_scenario)\n        \n        return scenarios\n    \n    def convert_to_selenium(self, scenarios: List[Dict]) -> str:\n        \"\"\"시나리오를 Selenium 테스트 코드로 변환\"\"\"\n        test_code = '''\nfrom selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nimport unittest\n\nclass GeneratedTest(unittest.TestCase):\n    def setUp(self):\n        self.driver = webdriver.Chrome()\n        self.driver.implicitly_wait(10)\n    \n    def tearDown(self):\n        self.driver.quit()\n'''\n        \n        for i, scenario in enumerate(scenarios):\n            test_method = f'''\n    def test_{scenario['name'].lower().replace(' ', '_')}(self):\n        \"\"\"{scenario['name']}\"\"\"\n'''\n            \n            for step in scenario['steps']:\n                step_code = self.convert_step(step)\n                test_method += f'        {step_code}\\n'\n            \n            test_code += test_method\n        \n        return test_code\n    \n    def convert_step(self, step: Dict) -> str:\n        \"\"\"개별 스텝을 Selenium 코드로 변환\"\"\"\n        step_type = step['type']\n        content = step['content']\n        \n        if step_type in self.step_definitions:\n            return self.step_definitions[step_type](content)\n        else:\n            return f'# TODO: Convert {step_type} step: {content}'\n    \n    def convert_given_step(self, content: str) -> str:\n        \"\"\"Given 스텝 변환\"\"\"\n        if 'user is on' in content.lower():\n            url = re.search(r\"'([^']+)'\", content)\n            if url:\n                return f'self.driver.get(\"{url.group(1)}\")'\n        elif 'user is logged in' in content.lower():\n            return 'self.login_user()'\n        \n        return f'# Given: {content}'\n    \n    def convert_when_step(self, content: str) -> str:\n        \"\"\"When 스텝 변환\"\"\"\n        if 'clicks on' in content.lower():\n            element = re.search(r\"'([^']+)'\", content)\n            if element:\n                return f'self.driver.find_element(By.XPATH, \"//*[text()=\\\"{element.group(1)}\\\"]\").click()'\n        elif 'enters' in content.lower():\n            field = re.search(r\"'([^']+)'\", content)\n            value = re.search(r\"'([^']+)'\", content[content.find(\"enters\") + 7:])\n            if field and value:\n                return f'self.driver.find_element(By.NAME, \"{field.group(1)}\").send_keys(\"{value.group(1)}\")'\n        \n        return f'# When: {content}'\n    \n    def convert_then_step(self, content: str) -> str:\n        \"\"\"Then 스텝 변환\"\"\"\n        if 'should see' in content.lower():\n            text = re.search(r\"'([^']+)'\", content)\n            if text:\n                return f'assert \"{text.group(1)}\" in self.driver.page_source'\n        elif 'should be redirected to' in content.lower():\n            url = re.search(r\"'([^']+)'\", content)\n            if url:\n                return f'assert \"{url.group(1)}\" in self.driver.current_url'\n        \n        return f'# Then: {content}'"
+    },
+    {
+      "title": "테스트 실행 및 리포팅",
+      "language": "python",
+      "code": "import subprocess\nimport json\nimport xml.etree.ElementTree as ET\nfrom datetime import datetime\n\nclass TestRunner:\n    def __init__(self, test_directory):\n        self.test_directory = test_directory\n    \n    def run_tests(self, test_file):\n        \"\"\"테스트 실행\"\"\"\n        try:\n            # pytest로 테스트 실행\n            result = subprocess.run(\n                ['pytest', test_file, '--json-report', '--json-report-file=test_results.json'],\n                capture_output=True,\n                text=True,\n                cwd=self.test_directory\n            )\n            \n            # 결과 파싱\n            with open(f'{self.test_directory}/test_results.json', 'r') as f:\n                results = json.load(f)\n            \n            return self.parse_test_results(results, result.returncode)\n            \n        except Exception as e:\n            return {\n                'status': 'error',\n                'message': str(e),\n                'timestamp': datetime.now().isoformat()\n            }\n    \n    def parse_test_results(self, results, return_code):\n        \"\"\"테스트 결과 파싱\"\"\"\n        summary = results.get('summary', {})\n        \n        return {\n            'status': 'passed' if return_code == 0 else 'failed',\n            'total_tests': summary.get('total', 0),\n            'passed': summary.get('passed', 0),\n            'failed': summary.get('failed', 0),\n            'skipped': summary.get('skipped', 0),\n            'duration': summary.get('duration', 0),\n            'timestamp': datetime.now().isoformat(),\n            'details': results.get('tests', [])\n        }\n    \n    def generate_html_report(self, results):\n        \"\"\"HTML 보고서 생성\"\"\"\n        html_template = f\"\"\"\n        <!DOCTYPE html>\n        <html>\n        <head>\n            <title>Test Report</title>\n            <style>\n                body {{ font-family: Arial, sans-serif; margin: 20px; }}\n                .header {{ background-color: #f0f0f0; padding: 20px; border-radius: 5px; }}\n                .summary {{ margin: 20px 0; }}}\n                .test-case {{ margin: 10px 0; padding: 10px; border: 1px solid #ddd; }}\n                .passed {{ background-color: #d4edda; }}\n                .failed {{ background-color: #f8d7da; }}\n            </style>\n        </head>\n        <body>\n            <div class=\"header\">\n                <h1>Test Execution Report</h1>\n                <p>Generated at: {results['timestamp']}</p>\n            </div>\n            \n            <div class=\"summary\">\n                <h2>Summary</h2>\n                <p>Total Tests: {results['total_tests']}</p>\n                <p>Passed: {results['passed']}</p>\n                <p>Failed: {results['failed']}</p>\n                <p>Duration: {results['duration']:.2f}s</p>\n            </div>\n            \n            <div class=\"test-cases\">\n                <h2>Test Cases</h2>\n                {self.generate_test_case_html(results.get('details', []))}\n            </div>\n        </body>\n        </html>\n        \"\"\"\n        \n        with open(f'{self.test_directory}/test_report.html', 'w') as f:\n            f.write(html_template)\n        \n        return f'{self.test_directory}/test_report.html'"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Selenium Python 문서",
+      "url": "https://selenium-python.readthedocs.io/"
+    },
+    {
+      "title": "Playwright Python",
+      "url": "https://playwright.dev/python/"
+    },
+    {
+      "title": "pytest 문서",
+      "url": "https://docs.pytest.org/"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "자가 치유 테스트의 구현",
+      "path": "2-9-self-healing-tests.md"
+    },
+    {
+      "title": "출하 부두 구축",
+      "path": "2-10-shipping-dock-setup.md"
+    }
+  ]
+}

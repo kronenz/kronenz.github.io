@@ -1,0 +1,89 @@
+{
+  "series_number": 2,
+  "guide_number": "2-11",
+  "title": "엔드-투-엔드 프로젝트",
+  "subtitle": "단일 GitHub 이슈로 마이크로 SaaS 앱 전체 구축하기",
+  "overview": "이 가이드는 앞서 학습한 모든 기술을 통합하여 단일 GitHub 이슈만으로 완전한 마이크로 SaaS 애플리케이션을 자동으로 구축하는 엔드-투-엔드 프로젝트를 수행합니다. 실제 운영 가능한 시스템을 구축하여 전체 자동화 파이프라인의 효과를 검증합니다.",
+  "objectives": [
+    "전체 자동화 파이프라인 통합 및 최적화",
+    "실제 마이크로 SaaS 애플리케이션 구축",
+    "성능 최적화 및 모니터링 설정",
+    "실제 운영 환경에서의 안정성 검증",
+    "자동화 시스템의 효과성 측정 및 개선"
+  ],
+  "prerequisites": [
+    "시리즈 2의 모든 가이드 완료",
+    "Docker 및 컨테이너 기술 숙지",
+    "클라우드 플랫폼 기본 지식",
+    "모니터링 도구 사용 경험"
+  ],
+  "estimated_time": "8시간",
+  "difficulty": "전문가",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "통합 자동화 아키텍처",
+        "content": "이슈 생성부터 배포까지의 전체 프로세스를 하나의 통합된 시스템으로 설계하고 구현합니다."
+      },
+      {
+        "title": "마이크로 SaaS 설계 원칙",
+        "content": "확장 가능하고 유지보수가 용이한 마이크로 SaaS 애플리케이션을 설계하는 원칙을 학습합니다."
+      },
+      {
+        "title": "성능 최적화 전략",
+        "content": "자동화된 시스템의 성능을 최적화하고 병목 지점을 해결하는 전략을 수립합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "프로젝트 요구사항 정의",
+        "content": "실제 마이크로 SaaS 애플리케이션의 요구사항을 정의하고 명세서를 작성합니다."
+      },
+      {
+        "title": "자동화 파이프라인 구축",
+        "content": "모든 자동화 컴포넌트를 통합하여 완전한 파이프라인을 구축합니다."
+      },
+      {
+        "title": "애플리케이션 개발 및 배포",
+        "content": "정의된 요구사항에 따라 애플리케이션을 자동으로 개발하고 배포합니다."
+      },
+      {
+        "title": "모니터링 및 최적화",
+        "content": "배포된 시스템을 모니터링하고 성능을 최적화합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "통합 자동화 오케스트레이터",
+      "language": "python",
+      "code": "from crewai import Agent, Task, Crew\nfrom langchain.llms import OpenAI, Anthropic\nimport requests\nimport json\nimport time\nfrom datetime import datetime\n\nclass EndToEndAutomationOrchestrator:\n    def __init__(self, config):\n        self.config = config\n        self.openai_llm = OpenAI(openai_api_key=config['openai_api_key'])\n        self.anthropic_llm = Anthropic(anthropic_api_key=config['anthropic_api_key'])\n        \n        # 모든 에이전트 초기화\n        self.product_strategist = self.create_product_strategist()\n        self.architect = self.create_architect()\n        self.frontend_dev = self.create_frontend_developer()\n        self.backend_dev = self.create_backend_developer()\n        self.qa_engineer = self.create_qa_engineer()\n        self.devops_engineer = self.create_devops_engineer()\n    \n    def process_github_issue(self, issue_number):\n        \"\"\"GitHub 이슈를 처리하여 완전한 애플리케이션 구축\"\"\"\n        print(f\"🚀 Starting end-to-end automation for issue #{issue_number}\")\n        \n        # 1단계: 이슈 분석 및 명세서 생성\n        print(\"📋 Step 1: Analyzing issue and generating specification\")\n        specification = self.analyze_issue_and_generate_spec(issue_number)\n        \n        # 2단계: 아키텍처 설계\n        print(\"🏗️ Step 2: Designing system architecture\")\n        architecture = self.design_architecture(specification)\n        \n        # 3단계: 개발 작업 분배\n        print(\"👥 Step 3: Distributing development tasks\")\n        tasks = self.distribute_development_tasks(specification, architecture)\n        \n        # 4단계: 병렬 개발 실행\n        print(\"💻 Step 4: Executing parallel development\")\n        development_results = self.execute_parallel_development(tasks)\n        \n        # 5단계: 코드 통합\n        print(\"🔗 Step 5: Integrating code\")\n        integrated_code = self.integrate_code(development_results)\n        \n        # 6단계: 자동 테스트\n        print(\"🧪 Step 6: Running automated tests\")\n        test_results = self.run_automated_tests(integrated_code, specification)\n        \n        # 7단계: 배포\n        print(\"🚀 Step 7: Deploying application\")\n        deployment_result = self.deploy_application(integrated_code, test_results)\n        \n        # 8단계: 모니터링 설정\n        print(\"📊 Step 8: Setting up monitoring\")\n        monitoring_setup = self.setup_monitoring(deployment_result)\n        \n        print(\"✅ End-to-end automation completed successfully!\")\n        \n        return {\n            'specification': specification,\n            'architecture': architecture,\n            'development_results': development_results,\n            'test_results': test_results,\n            'deployment': deployment_result,\n            'monitoring': monitoring_setup\n        }\n    \n    def analyze_issue_and_generate_spec(self, issue_number):\n        \"\"\"이슈 분석 및 명세서 생성\"\"\"\n        # GitHub API로 이슈 정보 가져오기\n        issue_data = self.fetch_github_issue(issue_number)\n        \n        # 제품 전략가 에이전트로 명세서 생성\n        task = Task(\n            description=f\"\"\"\n            다음 GitHub 이슈를 분석하여 상세한 명세서를 생성해주세요:\n            \n            제목: {issue_data['title']}\n            내용: {issue_data['body']}\n            라벨: {', '.join(issue_data['labels'])}\n            \n            다음 항목들을 포함해주세요:\n            1. 기능 요구사항\n            2. 비기능 요구사항\n            3. 기술 스택\n            4. 데이터베이스 설계\n            5. API 설계\n            6. UI/UX 요구사항\n            \"\"\",\n            agent=self.product_strategist,\n            expected_output=\"Complete application specification document\"\n        )\n        \n        crew = Crew(\n            agents=[self.product_strategist],\n            tasks=[task],\n            verbose=True\n        )\n        \n        result = crew.kickoff()\n        return self.parse_specification(result)\n    \n    def design_architecture(self, specification):\n        \"\"\"시스템 아키텍처 설계\"\"\"\n        task = Task(\n            description=f\"\"\"\n            다음 명세서를 바탕으로 확장 가능한 마이크로 SaaS 아키텍처를 설계해주세요:\n            \n            {json.dumps(specification, indent=2)}\n            \n            다음을 포함해주세요:\n            1. 시스템 아키텍처 다이어그램\n            2. 컴포넌트 간 상호작용\n            3. 데이터 플로우\n            4. 보안 고려사항\n            5. 확장성 전략\n            \"\"\",\n            agent=self.architect,\n            expected_output=\"Detailed system architecture design\"\n        )\n        \n        crew = Crew(\n            agents=[self.architect],\n            tasks=[task],\n            verbose=True\n        )\n        \n        result = crew.kickoff()\n        return self.parse_architecture(result)\n    \n    def execute_parallel_development(self, tasks):\n        \"\"\"병렬 개발 실행\"\"\"\n        # 프론트엔드와 백엔드 개발을 병렬로 실행\n        frontend_task = Task(\n            description=tasks['frontend'],\n            agent=self.frontend_dev,\n            expected_output=\"Complete frontend implementation\"\n        )\n        \n        backend_task = Task(\n            description=tasks['backend'],\n            agent=self.backend_dev,\n            expected_output=\"Complete backend implementation\"\n        )\n        \n        # 병렬 실행을 위한 별도 크루 생성\n        frontend_crew = Crew(\n            agents=[self.frontend_dev],\n            tasks=[frontend_task],\n            verbose=True\n        )\n        \n        backend_crew = Crew(\n            agents=[self.backend_dev],\n            tasks=[backend_task],\n            verbose=True\n        )\n        \n        # 병렬 실행\n        import threading\n        \n        frontend_result = None\n        backend_result = None\n        \n        def run_frontend():\n            nonlocal frontend_result\n            frontend_result = frontend_crew.kickoff()\n        \n        def run_backend():\n            nonlocal backend_result\n            backend_result = backend_crew.kickoff()\n        \n        # 스레드 시작\n        frontend_thread = threading.Thread(target=run_frontend)\n        backend_thread = threading.Thread(target=run_backend)\n        \n        frontend_thread.start()\n        backend_thread.start()\n        \n        # 완료 대기\n        frontend_thread.join()\n        backend_thread.join()\n        \n        return {\n            'frontend': frontend_result,\n            'backend': backend_result\n        }"
+    },
+    {
+      "title": "성능 모니터링 시스템",
+      "language": "python",
+      "code": "class PerformanceMonitor:\n    def __init__(self, app_config):\n        self.app_config = app_config\n        self.metrics = {}\n        self.alerts = []\n    \n    def start_monitoring(self):\n        \"\"\"모니터링 시작\"\"\"\n        print(\"📊 Starting performance monitoring\")\n        \n        # 메트릭 수집 시작\n        self.collect_system_metrics()\n        self.collect_application_metrics()\n        self.collect_user_metrics()\n        \n        # 알림 설정\n        self.setup_alerts()\n        \n        print(\"✅ Monitoring started successfully\")\n    \n    def collect_system_metrics(self):\n        \"\"\"시스템 메트릭 수집\"\"\"\n        import psutil\n        \n        self.metrics['system'] = {\n            'cpu_percent': psutil.cpu_percent(),\n            'memory_percent': psutil.virtual_memory().percent,\n            'disk_usage': psutil.disk_usage('/').percent,\n            'timestamp': datetime.now().isoformat()\n        }\n    \n    def collect_application_metrics(self):\n        \"\"\"애플리케이션 메트릭 수집\"\"\"\n        # 실제 구현에서는 Prometheus, DataDog 등을 사용\n        self.metrics['application'] = {\n            'response_time': self.measure_response_time(),\n            'throughput': self.measure_throughput(),\n            'error_rate': self.measure_error_rate(),\n            'active_users': self.count_active_users()\n        }\n    \n    def setup_alerts(self):\n        \"\"\"알림 설정\"\"\"\n        alert_rules = [\n            {\n                'name': 'High CPU Usage',\n                'condition': lambda: self.metrics['system']['cpu_percent'] > 80,\n                'message': 'CPU usage is above 80%'\n            },\n            {\n                'name': 'High Memory Usage',\n                'condition': lambda: self.metrics['system']['memory_percent'] > 85,\n                'message': 'Memory usage is above 85%'\n            },\n            {\n                'name': 'High Error Rate',\n                'condition': lambda: self.metrics['application']['error_rate'] > 5,\n                'message': 'Error rate is above 5%'\n            }\n        ]\n        \n        for rule in alert_rules:\n            if rule['condition']():\n                self.trigger_alert(rule)\n    \n    def trigger_alert(self, rule):\n        \"\"\"알림 트리거\"\"\"\n        alert = {\n            'rule_name': rule['name'],\n            'message': rule['message'],\n            'timestamp': datetime.now().isoformat(),\n            'severity': 'warning'\n        }\n        \n        self.alerts.append(alert)\n        print(f\"🚨 Alert: {alert['message']}\")\n        \n        # 실제 구현에서는 Slack, 이메일 등으로 알림 전송\n        self.send_notification(alert)"
+    }
+  ],
+  "resources": [
+    {
+      "title": "마이크로서비스 아키텍처 패턴",
+      "url": "https://microservices.io/"
+    },
+    {
+      "title": "Prometheus 모니터링",
+      "url": "https://prometheus.io/docs/"
+    },
+    {
+      "title": "Grafana 대시보드",
+      "url": "https://grafana.com/docs/"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "시리즈 3: 디지털 인력 관리",
+      "path": "../series-3/README.md"
+    }
+  ]
+}

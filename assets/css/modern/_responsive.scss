@@ -1,0 +1,140 @@
+// Responsive Design
+
+// Mobile First Approach
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding: 0 $space-sm;
+  }
+  
+  .hero {
+    padding: $space-2xl 0;
+    
+    .hero-title {
+      font-size: 36px;
+    }
+    
+    .hero-description {
+      font-size: 18px;
+    }
+    
+    .hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .main-nav {
+    flex-direction: column;
+    gap: $space-md;
+    
+    .nav-menu {
+      flex-direction: column;
+      gap: $space-sm;
+      text-align: center;
+    }
+  }
+  
+  .chapter-navigation {
+    .nav-links {
+      flex-direction: column;
+      gap: $space-md;
+    }
+  }
+  
+  .grid {
+    &.grid-2,
+    &.grid-3,
+    &.grid-4 {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .card {
+    .card-header,
+    .card-content,
+    .card-footer {
+      padding: $space-md;
+    }
+  }
+  
+  .guide-list {
+    .guide-item {
+      flex-direction: column;
+      text-align: center;
+      
+      .guide-number {
+        align-self: center;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+  .container {
+    padding: 0 $space-md;
+  }
+  
+  .hero {
+    .hero-title {
+      font-size: 42px;
+    }
+  }
+  
+  .grid {
+    &.grid-3,
+    &.grid-4 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// Desktop
+@media (min-width: $breakpoint-md) {
+  .container {
+    padding: 0 $space-lg;
+  }
+  
+  .hero {
+    .hero-title {
+      font-size: $h1-size;
+    }
+  }
+  
+  .main-nav {
+    .nav-menu {
+      gap: $space-xl;
+    }
+  }
+}
+
+// Large Desktop
+@media (min-width: $breakpoint-lg) {
+  .container {
+    padding: 0 $space-xl;
+  }
+}
+
+// Print Styles
+@media print {
+  .main-nav,
+  .chapter-navigation,
+  .hero-actions {
+    display: none;
+  }
+  
+  .hero {
+    background: none;
+    padding: $space-md 0;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid $text-tertiary;
+  }
+  
+  a {
+    color: $text-primary;
+    text-decoration: underline;
+  }
+}
