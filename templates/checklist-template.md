@@ -1,219 +1,140 @@
-# [가이드/시리즈명] 체크리스트
+# {{ spec.title }} 체크리스트
+
+{{ spec.description }}
 
 ## 📋 사전 준비 체크리스트
 
 ### 환경 설정
-- [ ] [필수 도구 1] 설치 완료
-- [ ] [필수 도구 2] 설치 완료
-- [ ] [개발 환경] 설정 완료
-- [ ] [API 키/인증 정보] 설정 완료
-- [ ] [네트워크 연결] 확인 완료
+{% for item in spec.prerequisites.environment %}
+- [ ] {{ item }}
+{% endfor %}
 
-### 지식 준비
-- [ ] [이전 가이드/시리즈] 완료
-- [ ] [기본 개념] 숙지 완료
-- [ ] [관련 문서] 읽기 완료
-- [ ] [예제 코드] 이해 완료
+### 도구 설치
+{% for item in spec.prerequisites.tools %}
+- [ ] {{ item }}
+{% endfor %}
 
-### 프로젝트 준비
-- [ ] [프로젝트 디렉토리] 생성 완료
-- [ ] [필요한 파일] 준비 완료
-- [ ] [백업] 생성 완료
-- [ ] [버전 관리] 설정 완료
+### 계정 설정
+{% for item in spec.prerequisites.accounts %}
+- [ ] {{ item }}
+{% endfor %}
 
 ## 🎯 학습 목표 체크리스트
 
-### [목표 1]: [목표 설명]
-- [ ] [세부 목표 1-1] 달성
-- [ ] [세부 목표 1-2] 달성
-- [ ] [세부 목표 1-3] 달성
-- [ ] [실습 과제 1] 완료
-
-### [목표 2]: [목표 설명]
-- [ ] [세부 목표 2-1] 달성
-- [ ] [세부 목표 2-2] 달성
-- [ ] [세부 목표 2-3] 달성
-- [ ] [실습 과제 2] 완료
-
-### [목표 3]: [목표 설명]
-- [ ] [세부 목표 3-1] 달성
-- [ ] [세부 목표 3-2] 달성
-- [ ] [세부 목표 3-3] 달성
-- [ ] [실습 과제 3] 완료
+{% for objective in spec.objectives %}
+- [ ] {{ objective }}
+{% endfor %}
 
 ## 🛠️ 실습 체크리스트
 
-### 1단계: [단계명]
-- [ ] [작업 1-1] 완료
-- [ ] [작업 1-2] 완료
-- [ ] [작업 1-3] 완료
-- [ ] [검증 1] 통과
-- [ ] [테스트 1] 통과
+{% if spec.practical_steps %}
+{% for step in spec.practical_steps %}
+### {{ step.title }}
 
-### 2단계: [단계명]
-- [ ] [작업 2-1] 완료
-- [ ] [작업 2-2] 완료
-- [ ] [작업 2-3] 완료
-- [ ] [검증 2] 통과
-- [ ] [테스트 2] 통과
+{% for item in step.items %}
+- [ ] {{ item }}
+{% endfor %}
 
-### 3단계: [단계명]
-- [ ] [작업 3-1] 완료
-- [ ] [작업 3-2] 완료
-- [ ] [작업 3-3] 완료
-- [ ] [검증 3] 통과
-- [ ] [테스트 3] 통과
+{% endfor %}
+{% endif %}
 
-## 🔧 기술적 구현 체크리스트
+## ✅ 완료 확인 체크리스트
 
-### 코드 품질
-- [ ] [코딩 표준] 준수
-- [ ] [주석] 작성 완료
-- [ ] [문서화] 완료
-- [ ] [에러 처리] 구현
-- [ ] [로깅] 구현
+### 기본 기능
+{% if spec.completion and spec.completion.basic %}
+{% for item in spec.completion.basic %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
+
+### 고급 기능
+{% if spec.completion and spec.completion.advanced %}
+{% for item in spec.completion.advanced %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
 ### 테스트
-- [ ] [단위 테스트] 작성
-- [ ] [통합 테스트] 작성
-- [ ] [테스트 실행] 통과
-- [ ] [코드 커버리지] 확인
-- [ ] [성능 테스트] 완료
+{% if spec.completion and spec.completion.testing %}
+{% for item in spec.completion.testing %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
+
+## 🔍 품질 검증 체크리스트
+
+### 코드 품질
+{% if spec.quality and spec.quality.code %}
+{% for item in spec.quality.code %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
+
+### 문서화
+{% if spec.quality and spec.quality.documentation %}
+{% for item in spec.quality.documentation %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
 ### 보안
-- [ ] [입력 검증] 구현
-- [ ] [인증/인가] 구현
-- [ ] [데이터 암호화] 구현
-- [ ] [보안 취약점] 검사
-- [ ] [권한 관리] 구현
-
-## 📊 검증 체크리스트
-
-### 기능 검증
-- [ ] [핵심 기능 1] 정상 작동
-- [ ] [핵심 기능 2] 정상 작동
-- [ ] [핵심 기능 3] 정상 작동
-- [ ] [에지 케이스] 처리 확인
-- [ ] [예외 상황] 처리 확인
-
-### 성능 검증
-- [ ] [응답 시간] 기준 충족
-- [ ] [메모리 사용량] 기준 충족
-- [ ] [처리량] 기준 충족
-- [ ] [확장성] 확인
-- [ ] [안정성] 확인
-
-### 사용성 검증
-- [ ] [사용자 인터페이스] 직관적
-- [ ] [에러 메시지] 명확함
-- [ ] [문서화] 충분함
-- [ ] [학습 곡선] 적절함
-- [ ] [피드백] 수집 완료
+{% if spec.quality and spec.quality.security %}
+{% for item in spec.quality.security %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
 ## 🚀 배포 준비 체크리스트
 
-### 배포 전 검사
-- [ ] [최종 테스트] 통과
-- [ ] [문서 업데이트] 완료
-- [ ] [버전 태그] 생성
-- [ ] [릴리즈 노트] 작성
-- [ ] [백업] 생성
+### 배포 전 검증
+{% if spec.deployment and spec.deployment.pre_deployment %}
+{% for item in spec.deployment.pre_deployment %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
 ### 배포 실행
-- [ ] [스테이징 환경] 배포
-- [ ] [스테이징 테스트] 통과
-- [ ] [프로덕션 환경] 배포
-- [ ] [배포 모니터링] 설정
-- [ ] [롤백 계획] 준비
+{% if spec.deployment and spec.deployment.deployment %}
+{% for item in spec.deployment.deployment %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
 ### 배포 후 검증
-- [ ] [기능 동작] 확인
-- [ ] [성능 모니터링] 설정
-- [ ] [에러 로그] 확인
-- [ ] [사용자 피드백] 수집
-- [ ] [문서 업데이트] 완료
+{% if spec.deployment and spec.deployment.post_deployment %}
+{% for item in spec.deployment.post_deployment %}
+- [ ] {{ item }}
+{% endfor %}
+{% endif %}
 
-## 📚 학습 완료 체크리스트
-
-### 지식 습득
-- [ ] [핵심 개념] 이해 완료
-- [ ] [기술 원리] 파악 완료
-- [ ] [모범 사례] 학습 완료
-- [ ] [주의사항] 숙지 완료
-- [ ] [고급 기능] 이해 완료
-
-### 실무 적용
-- [ ] [실제 프로젝트] 적용
-- [ ] [문제 해결] 경험
-- [ ] [최적화] 수행
-- [ ] [개선 사항] 도출
-- [ ] [지식 공유] 완료
-
-### 지속적 학습
-- [ ] [추가 자료] 학습
-- [ ] [커뮤니티] 참여
-- [ ] [최신 동향] 파악
-- [ ] [기술 업데이트] 적용
-- [ ] [다음 단계] 계획
-
-## 🔍 문제 해결 체크리스트
-
-### 일반적인 문제
-- [ ] [문제 1] 해결 방법 확인
-- [ ] [문제 2] 해결 방법 확인
-- [ ] [문제 3] 해결 방법 확인
-- [ ] [문제 4] 해결 방법 확인
-- [ ] [문제 5] 해결 방법 확인
-
-### 디버깅 과정
-- [ ] [로그 분석] 완료
-- [ ] [에러 추적] 완료
-- [ ] [원인 파악] 완료
-- [ ] [해결책 적용] 완료
-- [ ] [재발 방지] 조치
-
-### 지원 요청
-- [ ] [문서 검색] 완료
-- [ ] [커뮤니티 질문] 완료
-- [ ] [전문가 상담] 완료
-- [ ] [이슈 리포트] 작성
-- [ ] [해결책 공유] 완료
-
-## 📈 성과 측정 체크리스트
+## 📊 성과 측정
 
 ### 정량적 지표
-- [ ] [처리 시간] 측정
-- [ ] [에러율] 측정
-- [ ] [사용자 만족도] 측정
-- [ ] [코드 품질] 측정
-- [ ] [학습 효과] 측정
+{% if spec.metrics and spec.metrics.quantitative %}
+{% for metric in spec.metrics.quantitative %}
+- [ ] {{ metric.name }}: {{ metric.target }}
+{% endfor %}
+{% endif %}
 
 ### 정성적 지표
-- [ ] [기술 이해도] 평가
-- [ ] [문제 해결 능력] 평가
-- [ ] [창의적 사고] 평가
-- [ ] [협업 능력] 평가
-- [ ] [지속적 학습] 평가
+{% if spec.metrics and spec.metrics.qualitative %}
+{% for metric in spec.metrics.qualitative %}
+- [ ] {{ metric.name }}: {{ metric.description }}
+{% endfor %}
+{% endif %}
 
-## 🎉 완료 확인
+## 🎉 완료!
 
-### 최종 검증
-- [ ] [모든 체크리스트] 완료
-- [ ] [최종 테스트] 통과
-- [ ] [문서 검토] 완료
-- [ ] [피드백 반영] 완료
-- [ ] [다음 단계] 준비
+모든 체크리스트를 완료했다면 다음 단계로 진행하세요:
 
-### 성과 정리
-- [ ] [학습 내용] 정리
-- [ ] [경험 사례] 기록
-- [ ] [개선 사항] 도출
-- [ ] [지식 공유] 계획
-- [ ] [지속적 발전] 계획
+{% if spec.next_steps %}
+{% for next_step in spec.next_steps %}
+- [{{ next_step.title }}]({{ next_step.path }})
+{% endfor %}
+{% endif %}
 
 ---
 
-**체크리스트 완료율**: [완료된 항목 수] / [전체 항목 수] ([완료율]%)
+**체크리스트 완료율: [ ]%**
 
-**마지막 업데이트**: [날짜]
-**다음 검토 예정**: [날짜]
+*이 체크리스트를 통해 {{ spec.title }}의 모든 단계를 체계적으로 완료할 수 있습니다.*

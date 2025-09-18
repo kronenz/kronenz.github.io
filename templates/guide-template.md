@@ -1,182 +1,123 @@
-# [시리즈 번호]: [가이드 제목] - [부제목]
+# {{ spec.title }}
 
-## 📋 개요
+{% if spec.subtitle %}
+## {{ spec.subtitle }}
+{% endif %}
 
-이 가이드는 [가이드의 목적과 범위를 간단히 설명]을 다룹니다. [핵심 개념이나 기술에 대한 간단한 소개].
+## 📖 개요
+
+{{ spec.overview }}
 
 ## 🎯 학습 목표
 
 이 가이드를 완료하면 다음을 달성할 수 있습니다:
 
-1. **[목표 1]**: [구체적인 달성 내용]
-2. **[목표 2]**: [구체적인 달성 내용]
-3. **[목표 3]**: [구체적인 달성 내용]
-4. **[목표 4]**: [구체적인 달성 내용]
+{% for objective in spec.objectives %}
+- {{ objective }}
+{% endfor %}
 
-## 🔍 사전 요구사항
+## 📋 사전 요구사항
 
-이 가이드를 시작하기 전에 다음을 완료해야 합니다:
+{% for prerequisite in spec.prerequisites %}
+- {{ prerequisite }}
+{% endfor %}
 
-- [이전 가이드 링크] 완료
-- [필요한 도구나 환경] 설치
-- [기본 지식 요구사항] 숙지
+## ⏱️ 예상 소요 시간
+
+**{{ spec.estimated_time }}** (난이도: {{ spec.difficulty }})
+
+## 🔧 필요한 도구
+
+- Python 3.8+
+- Git
+- 텍스트 에디터 (VS Code 권장)
+- 터미널/명령 프롬프트
 
 ## 📚 핵심 개념
 
-### [개념 1]: [개념 설명]
+{% if spec.sections.core_concepts %}
+{% for concept in spec.sections.core_concepts %}
+### {{ concept.title }}
 
-[개념에 대한 상세한 설명과 이론적 배경]
+{{ concept.content }}
 
-```python
-# 코드 예제 (필요한 경우)
-class ExampleConcept:
-    def __init__(self):
-        self.property = "value"
-    
-    def method(self):
-        return "example"
+{% endfor %}
+{% endif %}
+
+## 🛠️ 실습 단계
+
+{% if spec.sections.practical_steps %}
+{% for step in spec.sections.practical_steps %}
+### {{ step.title }}
+
+{{ step.content }}
+
+{% endfor %}
+{% endif %}
+
+## 💻 코드 예제
+
+{% if spec.code_examples %}
+{% for example in spec.code_examples %}
+### {{ example.title }}
+
+```{{ example.language }}
+{{ example.code }}
 ```
 
-### [개념 2]: [개념 설명]
+{% endfor %}
+{% endif %}
 
-[개념에 대한 상세한 설명과 이론적 배경]
+## 🔍 고급 기능
 
-## 🛠️ 실습: [실습 제목]
+{% if spec.sections.advanced_features %}
+{% for feature in spec.sections.advanced_features %}
+### {{ feature.title }}
 
-### 1단계: [단계 제목]
+{{ feature.content }}
 
-[단계별 상세한 설명]
+{% endfor %}
+{% endif %}
 
-```bash
-# 명령어 예제
-command --option value
-```
+## 🚨 문제 해결
 
-```python
-# Python 코드 예제
-def step_one():
-    print("1단계 실행")
-    return "success"
-```
+{% if spec.sections.troubleshooting %}
+{% for issue in spec.sections.troubleshooting %}
+### {{ issue.title }}
 
-### 2단계: [단계 제목]
+{{ issue.content }}
 
-[단계별 상세한 설명]
+{% endfor %}
+{% endif %}
 
-### 3단계: [단계 제목]
+## 📖 추가 리소스
 
-[단계별 상세한 설명]
-
-## 🔧 고급 기능
-
-### [고급 기능 1]: [기능 설명]
-
-[고급 기능에 대한 상세한 설명]
-
-```python
-# 고급 코드 예제
-class AdvancedFeature:
-    def __init__(self):
-        self.complex_property = ComplexObject()
-    
-    def advanced_method(self):
-        # 복잡한 로직
-        return self.process_complex_operation()
-```
-
-### [고급 기능 2]: [기능 설명]
-
-[고급 기능에 대한 상세한 설명]
-
-## 📊 모범 사례
-
-### ✅ 권장사항
-
-- [권장사항 1]: [설명]
-- [권장사항 2]: [설명]
-- [권장사항 3]: [설명]
-
-### ❌ 주의사항
-
-- [주의사항 1]: [설명]
-- [주의사항 2]: [설명]
-- [주의사항 3]: [설명]
-
-## 🔍 문제 해결
-
-### 일반적인 문제
-
-**문제**: [문제 설명]
-**해결책**: [해결 방법]
-
-**문제**: [문제 설명]
-**해결책**: [해결 방법]
-
-### 디버깅 팁
-
-- [디버깅 팁 1]
-- [디버깅 팁 2]
-- [디버깅 팁 3]
-
-## 📈 성능 최적화
-
-### [최적화 기법 1]
-
-[최적화 기법에 대한 설명]
-
-### [최적화 기법 2]
-
-[최적화 기법에 대한 설명]
-
-## 🧪 테스트 전략
-
-### 단위 테스트
-
-```python
-import unittest
-
-class TestExample(unittest.TestCase):
-    def test_basic_functionality(self):
-        # 테스트 코드
-        self.assertEqual(expected, actual)
-```
-
-### 통합 테스트
-
-[통합 테스트 전략 설명]
-
-## 📋 체크리스트
-
-이 가이드를 완료했는지 확인하세요:
-
-- [ ] [체크리스트 항목 1]
-- [ ] [체크리스트 항목 2]
-- [ ] [체크리스트 항목 3]
-- [ ] [체크리스트 항목 4]
-- [ ] [체크리스트 항목 5]
+{% if spec.resources %}
+{% for resource in spec.resources %}
+- [{{ resource.title }}]({{ resource.url }})
+{% endfor %}
+{% endif %}
 
 ## 🚀 다음 단계
 
-이 가이드를 완료한 후에는 다음 단계로 진행하세요:
+{% if spec.next_steps %}
+이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-1. **[다음 가이드 1 링크]**: [다음 가이드 설명]
-2. **[다음 가이드 2 링크]**: [다음 가이드 설명]
+{% for next_step in spec.next_steps %}
+- [{{ next_step.title }}]({{ next_step.path }})
+{% endfor %}
+{% endif %}
 
-## 📚 추가 리소스
+## 📝 요약
 
-- [공식 문서 링크]: [설명]
-- [튜토리얼 링크]: [설명]
-- [GitHub 저장소 링크]: [설명]
-- [커뮤니티 포럼 링크]: [설명]
+이 가이드에서는 {{ spec.title }}에 대해 학습했습니다. 주요 내용은 다음과 같습니다:
 
-## 🤝 기여하기
+{% for objective in spec.objectives %}
+- {{ objective }}
+{% endfor %}
 
-이 가이드를 개선하는 데 도움을 주세요:
-
-- [이슈 리포트 링크]
-- [풀 리퀘스트 가이드 링크]
-- [기여 가이드라인 링크]
+다음 가이드에서는 더 고급 주제를 다룰 예정입니다.
 
 ---
 
-**"[가이드의 핵심 메시지]"** - [시리즈명]의 [가이드 번호]번째 단계
+**"{{ spec.title }}"** - 에이전틱 SaaS 조직 구축을 위한 핵심 가이드

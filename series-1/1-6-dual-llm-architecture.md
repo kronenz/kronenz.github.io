@@ -41,7 +41,7 @@ graph TD
     G -->|통과| H[최종 결과]
     G -->|실패| I[피드백]
     I --> D
-```
+```markdown
 
 ## 🎯 GPT-5: 창의적 기획자
 
@@ -103,7 +103,7 @@ class GPT5Planner:
         )
         
         return response.choices[0].message.content
-```
+```markdown
 
 #### 2. 전략적 계획 수립
 ```python
@@ -128,7 +128,7 @@ class GPT5Planner:
         )
         
         return response.choices[0].message.content
-```
+```markdown
 
 ## 🔧 Claude Code: 정밀한 개발자
 
@@ -191,7 +191,7 @@ class ClaudeCodeDeveloper:
         )
         
         return response.content[0].text
-```
+```markdown
 
 #### 2. 코드 검증 및 테스트
 ```python
@@ -216,7 +216,7 @@ class ClaudeCodeDeveloper:
         )
         
         return response.content[0].text
-```
+```markdown
 
 ## 🔄 이중 LLM 연동 시스템
 
@@ -263,7 +263,7 @@ class DualLLMOrchestrator:
             return self.process_refinement(
                 spec, architecture, improved_implementation, feedback
             )
-```
+```markdown
 
 ### 검증 루프 구현
 
@@ -325,7 +325,7 @@ class VerificationLoop:
             "results": results,
             "feedback": feedback
         }
-```
+```markdown
 
 ## 🛠️ 실습: 이중 LLM 시스템 구축
 
@@ -342,7 +342,7 @@ source venv/bin/activate
 
 # 의존성 설치
 pip install openai anthropic python-dotenv
-```
+```markdown
 
 ### 환경 변수 설정
 
@@ -350,7 +350,7 @@ pip install openai anthropic python-dotenv
 # .env 파일 생성
 echo "OPENAI_API_KEY=your_openai_api_key" >> .env
 echo "ANTHROPIC_API_KEY=your_anthropic_api_key" >> .env
-```
+```markdown
 
 ### 메인 시스템 구현
 
@@ -392,7 +392,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+```markdown
 
 ### 고급 기능 구현
 
@@ -434,7 +434,7 @@ class ContinuousLearningSystem:
             "타입 안정성" in result["implementation"]
         ]
         return sum(quality_indicators) / len(quality_indicators)
-```
+```markdown
 
 #### 2. 적응형 프롬프트 시스템
 ```python
@@ -462,7 +462,7 @@ class AdaptivePromptSystem:
             # 성공한 프롬프트의 패턴을 학습
             success_pattern = self.extract_success_pattern(prompt, result)
             self.success_patterns[task_type].append(success_pattern)
-```
+```markdown
 
 ## 📊 성능 모니터링
 

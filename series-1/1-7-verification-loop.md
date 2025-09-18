@@ -41,7 +41,7 @@ graph TD
     F --> B
     G[품질 지표] --> B
     H[학습 데이터] --> B
-```
+```markdown
 
 ## 🛠️ GPT-5 기반 검증 시스템 구현
 
@@ -73,7 +73,7 @@ class GPT5CodeReviewer:
         ## 코드
         ```typescript
         {code}
-        ```
+        ```python
         
         ## 요구사항
         {requirements}
@@ -140,7 +140,7 @@ class GPT5CodeReviewer:
             "feedback": feedback,
             "overall_score": sum(scores.values()) / len(scores) if scores else 0
         }
-```
+```markdown
 
 ### 고급 검증 기능
 
@@ -203,7 +203,7 @@ class MultiDimensionalReviewer(GPT5CodeReviewer):
         )
         
         return self.parse_dimension_result(response.choices[0].message.content)
-```
+```markdown
 
 #### 2. 적응형 검증 기준
 
@@ -259,7 +259,7 @@ class AdaptiveReviewer(MultiDimensionalReviewer):
         
         # 학습 데이터를 바탕으로 검증 기준 업데이트
         self.update_adaptive_criteria()
-```
+```markdown
 
 ### 피드백 생성 및 개선 시스템
 
@@ -278,7 +278,7 @@ class FeedbackGenerator:
         ## 원본 코드
         ```typescript
         {code}
-        ```
+        ```python
         
         ## 검토 결과
         {review_result}
@@ -307,7 +307,7 @@ class FeedbackGenerator:
         )
         
         return response.choices[0].message.content
-```
+```markdown
 
 #### 2. 자동 개선 제안
 
@@ -345,12 +345,12 @@ class AutoImprovementSystem:
         ## 원본 코드
         ```typescript
         {original_code}
-        ```
+        ```python
         
         ## 개선된 코드
         ```typescript
         {improved_code}
-        ```
+        ```python
         
         ## 원본 검토 결과
         {original_review}
@@ -371,7 +371,7 @@ class AutoImprovementSystem:
         )
         
         return self.parse_verification_result(response.choices[0].message.content)
-```
+```markdown
 
 ## 📊 품질 지표 및 모니터링
 
@@ -414,7 +414,7 @@ class QualityMetrics:
         )
         
         return self.metrics
-```
+```markdown
 
 #### 2. 개선 추적 지표
 ```python
@@ -448,7 +448,7 @@ class ImprovementTracker:
             "max_improvement": max(improvements),
             "min_improvement": min(improvements)
         }
-```
+```markdown
 
 ### 실시간 모니터링 대시보드
 
@@ -484,7 +484,7 @@ class QualityDashboard:
             "improvement_trend": self.tracker.get_improvement_trend(),
             "issue_frequency": self.tracker.get_issue_frequency()
         }
-```
+```markdown
 
 ## 🛠️ 실습: 검증 루프 시스템 구축
 
@@ -501,7 +501,7 @@ source venv/bin/activate
 
 # 의존성 설치
 pip install openai python-dotenv matplotlib seaborn
-```
+```markdown
 
 ### 메인 시스템 구현
 

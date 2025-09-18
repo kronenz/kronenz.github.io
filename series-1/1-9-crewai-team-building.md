@@ -32,7 +32,7 @@ graph TD
     J[Description] --> B
     K[Expected Output] --> B
     L[Dependencies] --> B
-```
+```markdown
 
 ### 핵심 구성 요소
 
@@ -69,7 +69,7 @@ source venv/bin/activate
 
 # CrewAI 설치
 pip install crewai crewai-tools
-```
+```markdown
 
 ### 1단계: 에이전트 정의
 
@@ -133,7 +133,7 @@ devops_engineer = Agent(
     verbose=True,
     allow_delegation=False
 )
-```
+```markdown
 
 ### 2단계: 작업 정의
 
@@ -322,7 +322,7 @@ deployment_strategy_task = Task(
     agent=devops_engineer,
     dependencies=[quality_assurance_task]
 )
-```
+```markdown
 
 ### 3단계: 크루 구성 및 실행
 
@@ -377,7 +377,7 @@ if __name__ == "__main__":
     result = run_shopping_cart_project()
     if result:
         print(f"\n📋 최종 결과:\n{result}")
-```
+```markdown
 
 ### 4단계: 고급 기능 구현
 
@@ -421,7 +421,7 @@ class AdvancedCrew:
             enhanced_description = task_description
         
         return self.crew.kickoff(inputs={"task": enhanced_description})
-```
+```markdown
 
 #### 에이전트 간 협업 최적화
 
@@ -466,7 +466,7 @@ class CollaborationOptimizer:
         }
         
         return metrics
-```
+```markdown
 
 ### 5단계: 모니터링 및 개선
 

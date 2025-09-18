@@ -1,0 +1,70 @@
+{
+  "series_number": 1,
+  "guide_number": "1-1",
+  "title": "에이전틱 AI 시작하기",
+  "subtitle": "AI 어시스턴트에서 자율적 행위자로의 전환",
+  "overview": "이 가이드는 AI 어시스턴트의 한계를 넘어서 진정한 자율적 행위자로 전환하는 방법을 다룹니다.",
+  "objectives": [
+    "AI 어시스턴트와 AI 에이전트의 차이점 이해",
+    "자율성의 정의와 구현 방법 파악",
+    "에이전트 기반 아키텍처의 핵심 개념 습득",
+    "첫 번째 자율 에이전트 구축 실습"
+  ],
+  "prerequisites": [
+    "Python 기본 문법 이해",
+    "객체지향 프로그래밍 개념 숙지",
+    "API 사용 경험"
+  ],
+  "estimated_time": "2시간",
+  "difficulty": "중급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "AI 어시스턴트 vs AI 에이전트",
+        "content": "현재 대부분의 AI 도구들은 반응형 어시스턴트입니다."
+      },
+      {
+        "title": "자율성의 핵심 구성 요소",
+        "content": "에이전트는 명확한 목표를 가지고 행동합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "프로젝트 설정",
+        "content": "가상환경 설정 및 필요한 패키지 설치"
+      },
+      {
+        "title": "기본 에이전트 구현",
+        "content": "간단한 자율 에이전트 클래스 구현"
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "기본 에이전트 클래스",
+      "language": "python",
+      "code": "class SimpleAutonomousAgent:\n    def __init__(self, name, role):\n        self.name = name\n        self.role = role"
+    }
+  ],
+  "resources": [
+    {
+      "title": "OpenAI API Documentation",
+      "url": "https://platform.openai.com/docs"
+    },
+    {
+      "title": "CrewAI Framework",
+      "url": "https://docs.crewai.com/"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "명세 기반 개발(SDD) 마스터하기",
+      "path": "1-2-spec-driven-development.md"
+    },
+    {
+      "title": "원칙 기반 엔지니어링으로의 전환",
+      "path": "1-3-principle-based-engineering.md"
+    }
+  ]
+}

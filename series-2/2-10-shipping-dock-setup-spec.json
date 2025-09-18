@@ -1,0 +1,89 @@
+{
+  "series_number": 2,
+  "guide_number": "2-10",
+  "title": "출하 부두 구축",
+  "subtitle": "테스트 통과 후 자동으로 배포를 관리하는 DevOps 에이전트",
+  "overview": "이 가이드는 모든 테스트가 통과한 후 자동으로 배포를 관리하는 DevOps 에이전트를 구축하는 방법을 다룹니다. 완전 자동화된 배포 파이프라인을 통해 안정적이고 효율적인 배포 프로세스를 구현합니다.",
+  "objectives": [
+    "DevOps 에이전트 설계 및 구현",
+    "배포 전략 수립 및 자동화",
+    "환경 관리 자동화 시스템 구축",
+    "롤백 메커니즘 구현",
+    "모니터링 및 알림 시스템 구축"
+  ],
+  "prerequisites": [
+    "Docker 및 컨테이너 기술 이해",
+    "CI/CD 파이프라인 개념 숙지",
+    "Python 중급 수준",
+    "클라우드 플랫폼 기본 지식"
+  ],
+  "estimated_time": "4시간",
+  "difficulty": "고급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "자동 배포 아키텍처",
+        "content": "테스트 통과부터 프로덕션 배포까지의 전체 프로세스를 자동화하는 아키텍처를 설계합니다."
+      },
+      {
+        "title": "환경 관리 전략",
+        "content": "개발, 스테이징, 프로덕션 환경을 일관되게 관리하고 배포하는 전략을 수립합니다."
+      },
+      {
+        "title": "배포 안전성 보장",
+        "content": "블루-그린 배포, 카나리 배포 등을 활용하여 안전한 배포를 보장하는 방법을 학습합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "DevOps 에이전트 구축",
+        "content": "배포 작업을 자동으로 수행하는 DevOps 에이전트를 CrewAI로 구축합니다."
+      },
+      {
+        "title": "Docker 컨테이너화",
+        "content": "애플리케이션을 Docker 컨테이너로 패키징하고 배포하는 시스템을 구축합니다."
+      },
+      {
+        "title": "배포 파이프라인 구현",
+        "content": "GitHub Actions를 사용하여 자동 배포 파이프라인을 구현합니다."
+      },
+      {
+        "title": "모니터링 및 알림 설정",
+        "content": "배포 상태를 모니터링하고 문제 발생 시 알림을 보내는 시스템을 구축합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "DevOps 에이전트",
+      "language": "python",
+      "code": "from crewai import Agent, Task, Crew\nfrom langchain.llms import OpenAI\nimport docker\nimport requests\nimport json\nfrom datetime import datetime\n\nclass DevOpsAgent:\n    def __init__(self, openai_api_key, docker_client):\n        self.llm = OpenAI(openai_api_key=openai_api_key)\n        self.docker_client = docker_client\n        \n        self.deployment_agent = Agent(\n            role='DevOps Engineer',\n            goal='Automate deployment processes and ensure system reliability',\n            backstory='''You are an expert DevOps engineer with extensive experience \n            in containerization, CI/CD, and cloud deployment. You excel at \n            automating complex deployment processes and ensuring system stability.''',\n            verbose=True,\n            allow_delegation=False\n        )\n    \n    def deploy_application(self, app_config):\n        \"\"\"애플리케이션 배포\"\"\"\n        deployment_plan = self.create_deployment_plan(app_config)\n        \n        # 배포 단계별 실행\n        for step in deployment_plan:\n            try:\n                self.execute_deployment_step(step)\n            except Exception as e:\n                self.handle_deployment_error(step, e)\n                raise\n        \n        return self.verify_deployment(app_config)\n    \n    def create_deployment_plan(self, app_config):\n        \"\"\"배포 계획 생성\"\"\"\n        task = Task(\n            description=f\"\"\"\n            다음 애플리케이션 설정을 바탕으로 배포 계획을 생성해주세요:\n            \n            {json.dumps(app_config, indent=2)}\n            \n            다음 단계들을 포함해주세요:\n            1. 컨테이너 빌드\n            2. 이미지 태깅\n            3. 레지스트리 푸시\n            4. 환경별 배포\n            5. 헬스 체크\n            6. 트래픽 전환\n            \"\"\",\n            agent=self.deployment_agent,\n            expected_output=\"Detailed deployment plan with step-by-step instructions\"\n        )\n        \n        crew = Crew(\n            agents=[self.deployment_agent],\n            tasks=[task],\n            verbose=True\n        )\n        \n        result = crew.kickoff()\n        return self.parse_deployment_plan(result)\n    \n    def execute_deployment_step(self, step):\n        \"\"\"배포 단계 실행\"\"\"\n        step_type = step['type']\n        \n        if step_type == 'build_container':\n            self.build_docker_image(step['config'])\n        elif step_type == 'push_image':\n            self.push_to_registry(step['config'])\n        elif step_type == 'deploy_to_environment':\n            self.deploy_to_environment(step['config'])\n        elif step_type == 'health_check':\n            self.perform_health_check(step['config'])\n        elif step_type == 'traffic_switch':\n            self.switch_traffic(step['config'])\n    \n    def build_docker_image(self, config):\n        \"\"\"Docker 이미지 빌드\"\"\"\n        image_name = config['image_name']\n        tag = config['tag']\n        dockerfile_path = config['dockerfile_path']\n        \n        try:\n            image, build_logs = self.docker_client.images.build(\n                path=dockerfile_path,\n                tag=f\"{image_name}:{tag}\",\n                rm=True\n            )\n            \n            self.logger.info(f\"Successfully built image: {image_name}:{tag}\")\n            return image\n            \n        except Exception as e:\n            self.logger.error(f\"Failed to build image: {e}\")\n            raise\n    \n    def deploy_to_environment(self, config):\n        \"\"\"환경에 배포\"\"\"\n        environment = config['environment']\n        image_name = config['image_name']\n        tag = config['tag']\n        \n        # 환경별 배포 로직\n        if environment == 'staging':\n            self.deploy_to_staging(image_name, tag)\n        elif environment == 'production':\n            self.deploy_to_production(image_name, tag)\n    \n    def perform_health_check(self, config):\n        \"\"\"헬스 체크 수행\"\"\"\n        url = config['health_check_url']\n        timeout = config.get('timeout', 30)\n        \n        try:\n            response = requests.get(url, timeout=timeout)\n            response.raise_for_status()\n            \n            self.logger.info(f\"Health check passed: {url}\")\n            return True\n            \n        except Exception as e:\n            self.logger.error(f\"Health check failed: {e}\")\n            return False"
+    },
+    {
+      "title": "배포 모니터링 시스템",
+      "language": "python",
+      "code": "class DeploymentMonitor:\n    def __init__(self, notification_config):\n        self.notification_config = notification_config\n        self.deployment_history = []\n    \n    def monitor_deployment(self, deployment_id, app_config):\n        \"\"\"배포 모니터링\"\"\"\n        monitoring_data = {\n            'deployment_id': deployment_id,\n            'start_time': datetime.now(),\n            'app_config': app_config,\n            'status': 'in_progress'\n        }\n        \n        try:\n            # 배포 상태 확인\n            status = self.check_deployment_status(deployment_id)\n            monitoring_data['status'] = status\n            \n            # 메트릭 수집\n            metrics = self.collect_metrics(app_config)\n            monitoring_data['metrics'] = metrics\n            \n            # 알림 전송\n            if status == 'failed':\n                self.send_alert(monitoring_data)\n            elif status == 'completed':\n                self.send_success_notification(monitoring_data)\n            \n        except Exception as e:\n            monitoring_data['status'] = 'error'\n            monitoring_data['error'] = str(e)\n            self.send_alert(monitoring_data)\n        \n        finally:\n            monitoring_data['end_time'] = datetime.now()\n            self.deployment_history.append(monitoring_data)\n    \n    def check_deployment_status(self, deployment_id):\n        \"\"\"배포 상태 확인\"\"\"\n        # 실제 구현에서는 Kubernetes API나 클라우드 API를 사용\n        # 여기서는 시뮬레이션\n        import random\n        \n        statuses = ['in_progress', 'completed', 'failed']\n        return random.choice(statuses)\n    \n    def collect_metrics(self, app_config):\n        \"\"\"메트릭 수집\"\"\"\n        metrics = {\n            'cpu_usage': self.get_cpu_usage(),\n            'memory_usage': self.get_memory_usage(),\n            'response_time': self.get_response_time(),\n            'error_rate': self.get_error_rate()\n        }\n        \n        return metrics\n    \n    def send_alert(self, monitoring_data):\n        \"\"\"알림 전송\"\"\"\n        alert_message = f\"\"\"\n        🚨 Deployment Alert\n        \n        Deployment ID: {monitoring_data['deployment_id']}\n        Status: {monitoring_data['status']}\n        Time: {monitoring_data['start_time']}\n        \n        Application: {monitoring_data['app_config']['name']}\n        Environment: {monitoring_data['app_config']['environment']}\n        \n        Please check the deployment logs for more details.\n        \"\"\"\n        \n        # Slack, 이메일, SMS 등으로 알림 전송\n        self.send_to_slack(alert_message)\n        self.send_email_alert(alert_message)\n    \n    def send_to_slack(self, message):\n        \"\"\"Slack 알림 전송\"\"\"\n        webhook_url = self.notification_config.get('slack_webhook')\n        if webhook_url:\n            payload = {'text': message}\n            requests.post(webhook_url, json=payload)"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Docker 공식 문서",
+      "url": "https://docs.docker.com/"
+    },
+    {
+      "title": "Kubernetes 문서",
+      "url": "https://kubernetes.io/docs/"
+    },
+    {
+      "title": "GitHub Actions 배포 가이드",
+      "url": "https://docs.github.com/en/actions/deployment"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "엔드-투-엔드 프로젝트",
+      "path": "2-11-end-to-end-project.md"
+    }
+  ]
+}

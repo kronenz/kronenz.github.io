@@ -1,8 +1,8 @@
-# 1-2: 명세 기반 개발(SDD) 마스터하기 - Spec Kit으로 첫 프로젝트 시작하기
+# 1-2: 명세 기반 개발(명세 기반 개발) 마스터하기 - Spec Kit으로 첫 프로젝트 시작하기
 
 ## 📋 개요
 
-명세 기반 개발(Spec-Driven Development, SDD)은 "감성 코딩"의 한계를 극복하고 체계적이고 신뢰할 수 있는 소프트웨어 개발을 가능하게 하는 혁신적인 방법론입니다. 이 가이드에서는 Spec Kit을 활용하여 SDD 워크플로우를 완전히 마스터하는 방법을 학습합니다.
+명세 기반 개발(Spec-Driven Development, 명세 기반 개발)은 "감성 코딩"의 한계를 극복하고 체계적이고 신뢰할 수 있는 소프트웨어 개발을 가능하게 하는 혁신적인 방법론입니다. 이 가이드에서는 Spec Kit을 활용하여 명세 기반 개발 워크플로우를 완전히 마스터하는 방법을 학습합니다.
 
 ## 🎯 학습 목표
 
@@ -11,7 +11,7 @@
 1. **SDD의 핵심 원리와 4단계 프로세스 이해**
 2. **Spec Kit 도구 활용법 완전 마스터**
 3. **명확하고 실행 가능한 명세서 작성 능력**
-4. **실제 프로젝트에 SDD 적용 실습**
+4. **실제 프로젝트에 명세 기반 개발 적용 실습**
 
 ## 🔄 SDD의 4단계 워크플로우
 
@@ -44,7 +44,7 @@ SDD의 첫 번째 단계는 기술적 구현이 아닌 **사용자 여정과 성
 - **보안**: 인증, 인가, 데이터 보호
 - **확장성**: 사용자 증가에 대한 대응
 - **호환성**: 지원할 플랫폼과 브라우저
-```
+```markdown
 
 #### Spec Kit을 사용한 명세 생성
 
@@ -58,7 +58,7 @@ cd my-project
 
 # 명세 생성 시작
 spec specify "온라인 쇼핑몰의 장바구니 기능을 구현해주세요"
-```
+```markdown
 
 ### 2단계: 계획(Plan) - "어떻게" 설계하기
 
@@ -78,13 +78,13 @@ spec specify "온라인 쇼핑몰의 장바구니 기능을 구현해주세요"
 ## 📊 데이터베이스 설계
 - **엔티티 관계도**: 주요 테이블과 관계
 - **인덱스 전략**: 성능 최적화를 위한 인덱스
-- **마이그레이션 계획**: 데이터베이스 변경 관리
+- **마이그레이션 계획**: 데이터베이스 변경 오케스트레이션
 
 ## 🔌 통합 계획
 - **외부 서비스**: 결제, 배송, 알림 서비스
 - **기존 시스템**: 레거시 시스템과의 연동
-- **보안 통합**: 인증 및 권한 관리
-```
+- **보안 통합**: 인증 및 권한 오케스트레이션
+```markdown
 
 #### Spec Kit으로 계획 생성
 
@@ -94,7 +94,7 @@ spec plan
 
 # 생성된 계획 검토 및 수정
 spec edit plan.md
-```
+```markdown
 
 ### 3단계: 작업(Tasks) - "단계별" 분해하기
 
@@ -118,7 +118,7 @@ spec edit plan.md
 | T002 | API 엔드포인트 구현 | 장바구니 CRUD API | 4h | High | T001 |
 | T003 | 프론트엔드 컴포넌트 | 장바구니 UI 컴포넌트 | 3h | High | T002 |
 | T004 | 테스트 작성 | 단위 및 통합 테스트 | 2h | Medium | T003 |
-```
+```markdown
 
 #### Spec Kit으로 작업 분해
 
@@ -128,7 +128,7 @@ spec tasks
 
 # 작업 우선순위 조정
 spec prioritize tasks.md
-```
+```markdown
 
 ### 4단계: 구현(Implement) - "실행"하기
 
@@ -145,7 +145,7 @@ spec status
 
 # 특정 작업 재실행
 spec retry T003
-```
+```markdown
 
 ## 🛠️ Spec Kit 완전 활용 가이드
 
@@ -160,7 +160,7 @@ spec --version
 
 # 도움말 확인
 spec --help
-```
+```markdown
 
 ### 프로젝트 초기화
 
@@ -184,7 +184,7 @@ my-sdd-project/
 ├── src/                 # 소스 코드
 ├── tests/               # 테스트 파일
 └── docs/                # 문서
-```
+```markdown
 
 ### 명세 작성 명령어
 
@@ -200,7 +200,7 @@ spec validate spec.md
 
 # 명세 템플릿 사용
 spec template spec.md --type web-app
-```
+```markdown
 
 ### 계획 생성 명령어
 
@@ -216,7 +216,7 @@ spec validate plan.md
 
 # 계획 템플릿 사용
 spec template plan.md --type microservice
-```
+```markdown
 
 ### 작업 분해 명령어
 
@@ -232,7 +232,7 @@ spec analyze-dependencies
 
 # 작업 템플릿 사용
 spec template tasks.md --type frontend
-```
+```markdown
 
 ### 구현 실행 명령어
 
@@ -251,7 +251,7 @@ spec status
 
 # 로그 확인
 spec logs
-```
+```markdown
 
 ## 📝 실습: 온라인 쇼핑몰 장바구니 기능
 
@@ -278,7 +278,7 @@ spec specify
 - 반응형 디자인으로 모바일에서도 사용 가능해야 함
 
 기술 스택: React, TypeScript, CSS Modules
-```
+```markdown
 
 ### 2단계: 계획 생성
 
@@ -293,12 +293,12 @@ spec plan
 
 ## 🏗️ 아키텍처 설계
 - **프론트엔드**: React 18 + TypeScript
-- **상태 관리**: Context API + useReducer
+- **상태 오케스트레이션**: Context API + useReducer
 - **스타일링**: CSS Modules
 - **데이터 저장**: localStorage
 
 ## 📊 컴포넌트 구조
-- CartProvider: 장바구니 상태 관리
+- CartProvider: 장바구니 상태 오케스트레이션
 - CartItem: 개별 상품 컴포넌트
 - CartSummary: 총 금액 및 요약
 - AddToCartButton: 상품 추가 버튼
@@ -309,7 +309,7 @@ spec plan
 - updateQuantity(productId, quantity)
 - clearCart()
 - getCartItems()
-```
+```markdown
 
 ### 3단계: 작업 분해
 
@@ -327,14 +327,14 @@ spec tasks
 |----|--------|------|----------|----------|
 | T001 | 프로젝트 설정 | React + TypeScript 프로젝트 초기화 | 1h | High |
 | T002 | 타입 정의 | 장바구니 관련 TypeScript 타입 정의 | 1h | High |
-| T003 | Context 구현 | 장바구니 상태 관리 Context | 2h | High |
+| T003 | Context 구현 | 장바구니 상태 오케스트레이션 Context | 2h | High |
 | T004 | CartItem 컴포넌트 | 개별 상품 표시 컴포넌트 | 2h | High |
 | T005 | CartSummary 컴포넌트 | 총 금액 계산 컴포넌트 | 1h | High |
 | T006 | AddToCartButton 컴포넌트 | 상품 추가 버튼 컴포넌트 | 1h | High |
 | T007 | localStorage 연동 | 장바구니 데이터 영속화 | 1h | Medium |
 | T008 | 반응형 스타일링 | 모바일 대응 CSS | 2h | Medium |
 | T009 | 테스트 작성 | 단위 테스트 작성 | 2h | Low |
-```
+```markdown
 
 ### 4단계: 구현 실행
 
@@ -347,7 +347,7 @@ spec implement T001 T002
 
 # 실행 상태 확인
 spec status
-```
+```markdown
 
 ## 🔍 명세 품질 검증
 
@@ -362,7 +362,7 @@ spec validate plan.md
 
 # 작업 분해 적절성 검사
 spec validate tasks.md
-```
+```markdown
 
 ### 수동 검증 체크리스트
 
@@ -384,7 +384,7 @@ spec validate tasks.md
 - [ ] 우선순위가 합리적인가?
 - [ ] 완료 기준이 명확한가?
 
-## 🚀 고급 SDD 기법
+## 🚀 고급 명세 기반 개발 기법
 
 ### 템플릿 활용
 
@@ -397,7 +397,7 @@ spec template spec.md --type microservice
 
 # 모바일 앱 템플릿 사용
 spec template spec.md --type mobile-app
-```
+```markdown
 
 ### 커스텀 템플릿 생성
 
@@ -410,7 +410,7 @@ spec edit-template my-template
 
 # 템플릿 사용
 spec template spec.md --template my-template
-```
+```markdown
 
 ### 협업 워크플로우
 
@@ -421,11 +421,11 @@ spec share spec.md
 # 피드백 수집
 spec feedback spec.md
 
-# 버전 관리
+# 버전 오케스트레이션
 spec version spec.md
-```
+```markdown
 
-## 📊 SDD 성과 측정
+## 📊 명세 기반 개발 성과 측정
 
 ### 품질 지표
 - **명세 완성도**: 명세서의 완전성 점수
@@ -448,7 +448,7 @@ spec clarify spec.md
 
 # 질문 기반 명세 보완
 spec enhance spec.md --interactive
-```
+```markdown
 
 #### 2. 계획이 현실적이지 않은 경우
 ```bash
@@ -457,7 +457,7 @@ spec validate plan.md --fix
 
 # 기술적 제약사항 재검토
 spec review-constraints plan.md
-```
+```markdown
 
 #### 3. 작업 분해가 부적절한 경우
 ```bash
@@ -478,7 +478,7 @@ spec analyze-dependencies tasks.md --fix
 ## 📚 추가 리소스
 
 - [Spec Kit 공식 문서](https://spec-kit.dev/)
-- [SDD 방법론 가이드](https://spec-driven.dev/)
+- [명세 기반 개발 방법론 가이드](https://spec-driven.dev/)
 - [명세서 작성 모범 사례](https://spec-best-practices.dev/)
 
 ---

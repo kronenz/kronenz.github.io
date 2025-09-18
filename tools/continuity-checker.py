@@ -8,7 +8,7 @@ import os
 import re
 import json
 from pathlib import Path
-from typing import Dict, List, Any, Set, Tuple
+from typing import Dict, List, Any, Set, Tuple, Optional
 from dataclasses import dataclass
 from datetime import datetime
 import argparse
@@ -323,8 +323,21 @@ class ConsistencyChecker:
         
         # 필수 섹션 검사
         required_sections = self.style_rules["sections"]["required_sections"]
+        section_patterns = {
+            "개요": [r"## 📋 개요", r"## 📖 개요", r"## 개요"],
+            "학습 목표": [r"## 🎯 학습 목표", r"## 학습 목표"],
+            "다음 단계": [r"## 🚀 다음 단계", r"## 다음 단계"]
+        }
+        
         for section in required_sections:
-            if f"## {section}" not in content:
+            patterns = section_patterns.get(section, [f"## {section}"])
+            found = False
+            for pattern in patterns:
+                if re.search(pattern, content):
+                    found = True
+                    break
+            
+            if not found:
                 issues.append(ConsistencyIssue(
                     file_path=str(file_path),
                     line_number=0,

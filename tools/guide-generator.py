@@ -317,7 +317,7 @@ def create_sample_spec() -> Dict[str, Any]:
 def main():
     """메인 함수"""
     parser = argparse.ArgumentParser(description="가이드 생성 도구")
-    parser.add_argument("--spec", required=True, help="명세 파일 경로")
+    parser.add_argument("--spec", help="명세 파일 경로")
     parser.add_argument("--output", help="출력 파일 경로")
     parser.add_argument("--template-dir", default="templates", help="템플릿 디렉토리")
     parser.add_argument("--create-sample", action="store_true", help="샘플 명세 파일 생성")

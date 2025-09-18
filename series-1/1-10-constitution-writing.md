@@ -11,7 +11,7 @@
 1. **AI 팀 헌법의 중요성과 역할 이해**
 2. **효과적인 원칙과 가드레일 작성 방법 습득**
 3. **실제 프로젝트에 적용 가능한 헌법 작성 능력**
-4. **지속적인 헌법 개선 및 관리 방법 파악**
+4. **지속적인 헌법 개선 및 오케스트레이션 방법 파악**
 
 ## 📜 AI 팀 헌법의 중요성
 
@@ -43,7 +43,7 @@ graph TD
     A --> F[품질 기준]
     A --> G[갈등 해결]
     A --> H[지속적 개선]
-```
+```markdown
 
 ## 🏗️ 헌법 작성 프레임워크
 
@@ -77,7 +77,7 @@ graph TD
 - 새로운 기술과 방법론을 적극 수용
 - 실험과 실패를 학습 기회로 활용
 - 지속적인 개선과 혁신 추구
-```
+```markdown
 
 ### 2단계: 행동 원칙 수립
 
@@ -108,7 +108,7 @@ graph TD
 - TDD (Test-Driven Development) 방식 적용
 - 자동화된 테스트 파이프라인 구축
 - 지속적인 테스트 개선
-```
+```markdown
 
 #### 협업 원칙
 ```markdown
@@ -131,7 +131,7 @@ graph TD
 - 팀원 모두의 의견 수렴
 - 명확한 의사결정 기준 적용
 - 결정사항의 투명한 공유
-```
+```markdown
 
 ### 3단계: 기술 표준 정의
 
@@ -152,10 +152,10 @@ graph TD
 - 의존성 주입 패턴 사용
 - 이벤트 기반 통신
 
-## 데이터 관리
+## 데이터 오케스트레이션
 - 정규화된 데이터베이스 설계
 - API 우선 설계
-- 버전 관리 필수
+- 버전 오케스트레이션 필수
 - 마이그레이션 스크립트 작성
 
 ## 에러 처리
@@ -163,7 +163,7 @@ graph TD
 - 사용자 친화적 에러 메시지
 - 로깅 시스템 구축
 - 모니터링 및 알림 설정
-```
+```markdown
 
 #### 품질 표준
 ```markdown
@@ -192,7 +192,7 @@ graph TD
 - 스테이징 환경 테스트 필수
 - 롤백 계획 수립
 - 모니터링 설정
-```
+```markdown
 
 ### 4단계: 보안 가이드라인
 
@@ -223,7 +223,7 @@ graph TD
 - 침입 탐지 시스템 (IDS)
 - 정기적인 보안 스캔
 - 보안 사고 대응 절차
-```
+```markdown
 
 #### 윤리적 가이드라인
 ```markdown
@@ -252,7 +252,7 @@ graph TD
 - 오류 수정 및 개선
 - 지속적인 모니터링
 - 사용자 피드백 적극 수렴
-```
+```markdown
 
 ### 5단계: 갈등 해결 메커니즘
 
@@ -283,7 +283,7 @@ graph TD
 - 대안 방안 모색
 - 단계적 구현 계획
 - 외부 리소스 활용 검토
-```
+```markdown
 
 #### 에스컬레이션 절차
 ```markdown
@@ -308,7 +308,7 @@ graph TD
 - 도메인 전문가 자문
 - 외부 컨설팅 활용
 - 벤치마킹 및 모범 사례 적용
-```
+```markdown
 
 ## 🛠️ 실습: 헌법 작성 및 적용
 
@@ -344,7 +344,7 @@ graph TD
 ### 프론트엔드 개발
 - React 18 + TypeScript 사용
 - 컴포넌트 기반 아키텍처
-- Context API + useReducer 상태 관리
+- Context API + useReducer 상태 오케스트레이션
 - CSS Modules 스타일링
 
 ### 백엔드 개발
@@ -371,7 +371,7 @@ graph TD
 - JWT 토큰 기반 인증
 - 토큰 만료 시간 설정
 - 비밀번호 해싱 (bcrypt)
-- 세션 관리
+- 세션 오케스트레이션
 
 ## 📊 품질 기준
 
@@ -420,7 +420,7 @@ graph TD
 ---
 
 **이 헌법은 AI 에이전트 팀이 온라인 쇼핑몰 프로젝트를 성공적으로 완료하기 위한 가이드라인입니다.**
-```
+```markdown
 
 ### 2단계: 헌법 검증 및 테스트
 
@@ -481,7 +481,7 @@ class ConstitutionValidator:
         # 구체적인 절차 명시 여부
         # 책임자와 역할 명시 여부
         pass
-```
+```markdown
 
 ### 3단계: 헌법 적용 및 모니터링
 
@@ -531,7 +531,7 @@ class ConstitutionMonitor:
             "violation_summary": self.summarize_violations(),
             "improvement_recommendations": self.generate_recommendations()
         }
-```
+```markdown
 
 ## 📊 헌법 효과성 측정
 
@@ -608,7 +608,7 @@ class ConstitutionImprovement:
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
 1. **[2-1: GitHub Actions 101](../series-2/2-1-github-actions-101.md)**
-2. **[2-2: 자동화의 시작](../series-2/2-2-automation-start.md)**
+2. **[2-2: 자동화의 시작](../series-2/2-2-automation-triggers.md)**
 
 ## 📚 추가 리소스
 

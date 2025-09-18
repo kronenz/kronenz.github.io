@@ -40,7 +40,7 @@ response = openai.ChatCompletion.create(
     messages=[{"role": "user", "content": "이 코드를 리팩토링해줘"}]
 )
 # 사용자가 매번 새로운 요청을 해야 함
-```
+```markdown
 
 AI 에이전트는 **능동적 행위자**입니다:
 
@@ -63,7 +63,7 @@ class AutonomousAgent:
             result = self.execute_action(action)
             self.update_memory(action, result)
             self.learn_from_result(result)
-```
+```markdown
 
 ### 자율성의 핵심 구성 요소
 
@@ -85,7 +85,7 @@ class GoalOrientedAgent:
         elif self.current_state == "planning":
             return ["gather_resources", "implement_solution"]
         # ... 더 많은 상태와 행동
-```
+```markdown
 
 #### 2. 환경 인식 및 상호작용 (Environment Perception & Interaction)
 
@@ -110,7 +110,7 @@ class EnvironmentAwareAgent:
             return self.optimize_performance()
         else:
             return self.continue_normal_operation()
-```
+```markdown
 
 #### 3. 학습 및 적응 (Learning & Adaptation)
 
@@ -143,7 +143,7 @@ class LearningAgent:
         if len(self.failure_patterns) > 3:
             return self.adopt_alternative_approach()
         return self.continue_current_strategy()
-```
+```markdown
 
 ## 🛠️ 실습: 첫 번째 자율 에이전트 구축
 
@@ -160,7 +160,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # 필요한 패키지 설치
 pip install openai anthropic langchain crewai
-```
+```markdown
 
 ### 2단계: 기본 에이전트 구현
 
@@ -237,7 +237,7 @@ class SimpleAutonomousAgent:
         else:
             print(f"❌ {self.name}: 작업 실행 중 문제가 발생했습니다.")
             # 실패 원인 분석 및 학습 로직 추가
-```
+```markdown
 
 ### 3단계: 고급 기능 추가
 
@@ -292,7 +292,7 @@ class AdvancedAutonomousAgent(SimpleAutonomousAgent):
             progress["completion_rate"] = progress["completed_goals"] / progress["total_goals"]
         
         return progress
-```
+```markdown
 
 ## 🔧 고급 기능
 
@@ -322,9 +322,9 @@ class AgentMemory:
                 if self.is_relevant(key, context):
                     relevant.append(value)
         return relevant
-```
+```markdown
 
-### 에이전트 생명주기 관리
+### 에이전트 생명주기 오케스트레이션
 
 ```python
 class AgentLifecycle:
@@ -351,7 +351,7 @@ class AgentLifecycle:
             "evolution": ["analyze", "improve", "expand"]
         }
         return phase_actions.get(self.current_phase, [])
-```
+```markdown
 
 ## 📊 모범 사례
 
@@ -406,7 +406,7 @@ class MemoryOptimizer:
         
         # 중요도가 낮은 단기 기억 정리
         self.cleanup_short_term_memory(agent_memory)
-```
+```markdown
 
 ### 실행 속도 최적화
 
@@ -427,7 +427,7 @@ class PerformanceOptimizer:
         # 의존성 그래프 최적화
         optimized_plan = self.optimize_dependency_graph(plan)
         return optimized_plan
-```
+```markdown
 
 ## 🧪 테스트 전략
 
@@ -454,7 +454,7 @@ class TestAutonomousAgent(unittest.TestCase):
         experience = {"type": "test", "data": "test_data"}
         self.agent.memory.append(experience)
         self.assertEqual(len(self.agent.memory), 1)
-```
+```markdown
 
 ### 통합 테스트
 
@@ -486,7 +486,7 @@ class TestAgentIntegration(unittest.TestCase):
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-2: 명세 기반 개발(SDD) 마스터하기](1-2-spec-driven-development.md)**: Spec Kit으로 첫 프로젝트 시작하기
+1. **[1-2: 명세 기반 개발(명세 기반 개발) 마스터하기](1-2-spec-driven-development.md)**: Spec Kit으로 첫 프로젝트 시작하기
 2. **[1-3: 원칙 기반 엔지니어링으로의 전환](1-3-principle-based-engineering.md)**: 감성 코딩을 넘어서 원칙 기반 엔지니어링으로
 
 ## 📚 추가 리소스
@@ -501,8 +501,8 @@ class TestAgentIntegration(unittest.TestCase):
 이 가이드를 개선하는 데 도움을 주세요:
 
 - [이슈 리포트](https://github.com/your-repo/issues)
-- [풀 리퀘스트 가이드](CONTRIBUTING.md)
-- [기여 가이드라인](CONTRIBUTING.md)
+- [풀 리퀘스트 가이드](../CONTRIBUTING.md)
+- [기여 가이드라인](../CONTRIBUTING.md)
 
 ---
 

@@ -1,0 +1,93 @@
+{
+  "series_number": 2,
+  "guide_number": "2-9",
+  "title": "자가 치유 테스트의 구현",
+  "subtitle": "UI 변경에 자동으로 적응하는 회복탄력성 있는 QA 시스템",
+  "overview": "이 가이드는 UI 변경이나 요소 식별자 변경에 자동으로 적응하여 테스트가 계속 작동하도록 하는 자가 치유 테스트 시스템을 구축하는 방법을 다룹니다. 테스트의 안정성과 유지보수성을 크게 향상시킵니다.",
+  "objectives": [
+    "자가 치유 테스트 개념 이해 및 설계",
+    "동적 요소 선택자 시스템 구현",
+    "테스트 안정성 향상 메커니즘 구축",
+    "실패 시 자동 수정 시스템 개발",
+    "AI 기반 요소 식별 및 매칭 시스템 구현"
+  ],
+  "prerequisites": [
+    "Selenium/Playwright 기본 지식",
+    "Python 중급 수준",
+    "머신러닝 기본 개념",
+    "웹 개발 기본 지식"
+  ],
+  "estimated_time": "4시간",
+  "difficulty": "고급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "자가 치유 테스트의 원리",
+        "content": "테스트가 실패했을 때 자동으로 원인을 분석하고 수정하여 다시 실행하는 메커니즘을 이해합니다."
+      },
+      {
+        "title": "동적 요소 선택 전략",
+        "content": "고정된 선택자 대신 여러 속성을 조합하여 요소를 식별하는 동적 선택 전략을 수립합니다."
+      },
+      {
+        "title": "AI 기반 요소 매칭",
+        "content": "컴퓨터 비전과 자연어 처리를 활용하여 UI 요소를 지능적으로 식별하는 방법을 학습합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "요소 식별자 다중화",
+        "content": "하나의 요소를 여러 방법으로 식별할 수 있는 시스템을 구축합니다."
+      },
+      {
+        "title": "실패 분석 시스템 구현",
+        "content": "테스트 실패 원인을 자동으로 분석하고 분류하는 시스템을 개발합니다."
+      },
+      {
+        "title": "자동 수정 메커니즘 구축",
+        "content": "분석된 실패 원인에 따라 자동으로 테스트를 수정하는 시스템을 구현합니다."
+      },
+      {
+        "title": "학습 및 개선 시스템",
+        "content": "수정 경험을 학습하여 향후 유사한 문제를 더 빠르게 해결하는 시스템을 구축합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "자가 치유 요소 찾기",
+      "language": "python",
+      "code": "from selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nimport time\nimport logging\n\nclass SelfHealingElementFinder:\n    def __init__(self, driver):\n        self.driver = driver\n        self.wait = WebDriverWait(driver, 10)\n        self.logger = logging.getLogger(__name__)\n    \n    def find_element_with_healing(self, element_info):\n        \"\"\"자가 치유 기능이 있는 요소 찾기\"\"\"\n        strategies = [\n            self.find_by_multiple_selectors,\n            self.find_by_text_similarity,\n            self.find_by_position,\n            self.find_by_visual_similarity\n        ]\n        \n        for strategy in strategies:\n            try:\n                element = strategy(element_info)\n                if element:\n                    self.logger.info(f\"Element found using {strategy.__name__}\")\n                    return element\n            except Exception as e:\n                self.logger.warning(f\"Strategy {strategy.__name__} failed: {e}\")\n                continue\n        \n        raise Exception(f\"Could not find element: {element_info}\")\n    \n    def find_by_multiple_selectors(self, element_info):\n        \"\"\"여러 선택자로 요소 찾기\"\"\"\n        selectors = element_info.get('selectors', [])\n        \n        for selector in selectors:\n            try:\n                if selector['type'] == 'id':\n                    return self.driver.find_element(By.ID, selector['value'])\n                elif selector['type'] == 'class':\n                    return self.driver.find_element(By.CLASS_NAME, selector['value'])\n                elif selector['type'] == 'xpath':\n                    return self.driver.find_element(By.XPATH, selector['value'])\n                elif selector['type'] == 'css':\n                    return self.driver.find_element(By.CSS_SELECTOR, selector['value'])\n            except:\n                continue\n        \n        return None\n    \n    def find_by_text_similarity(self, element_info):\n        \"\"\"텍스트 유사도로 요소 찾기\"\"\"\n        target_text = element_info.get('text', '')\n        if not target_text:\n            return None\n        \n        # 모든 텍스트 요소 찾기\n        text_elements = self.driver.find_elements(By.XPATH, \"//*[text()]\")\n        \n        best_match = None\n        best_similarity = 0\n        \n        for element in text_elements:\n            element_text = element.text\n            similarity = self.calculate_text_similarity(target_text, element_text)\n            \n            if similarity > best_similarity and similarity > 0.8:\n                best_similarity = similarity\n                best_match = element\n        \n        return best_match\n    \n    def calculate_text_similarity(self, text1, text2):\n        \"\"\"텍스트 유사도 계산\"\"\"\n        from difflib import SequenceMatcher\n        return SequenceMatcher(None, text1.lower(), text2.lower()).ratio()\n    \n    def find_by_position(self, element_info):\n        \"\"\"위치 기반 요소 찾기\"\"\"\n        position = element_info.get('position')\n        if not position:\n            return None\n        \n        # 위치 근처의 요소들 찾기\n        x, y = position['x'], position['y']\n        tolerance = 50  # 픽셀 허용 오차\n        \n        elements = self.driver.find_elements(By.XPATH, \"//*\")\n        \n        for element in elements:\n            try:\n                location = element.location\n                size = element.size\n                \n                if (abs(location['x'] - x) < tolerance and \n                    abs(location['y'] - y) < tolerance):\n                    return element\n            except:\n                continue\n        \n        return None"
+    },
+    {
+      "title": "테스트 자동 수정 시스템",
+      "language": "python",
+      "code": "class TestSelfHealer:\n    def __init__(self, driver):\n        self.driver = driver\n        self.element_finder = SelfHealingElementFinder(driver)\n        self.healing_history = []\n    \n    def execute_test_with_healing(self, test_steps):\n        \"\"\"자가 치유 기능이 있는 테스트 실행\"\"\"\n        for step in test_steps:\n            try:\n                self.execute_step(step)\n            except Exception as e:\n                self.logger.warning(f\"Step failed: {e}\")\n                \n                # 자가 치유 시도\n                if self.attempt_healing(step, e):\n                    self.logger.info(\"Healing successful, retrying step\")\n                    self.execute_step(step)\n                else:\n                    self.logger.error(\"Healing failed, test cannot continue\")\n                    raise\n    \n    def execute_step(self, step):\n        \"\"\"테스트 스텝 실행\"\"\"\n        action = step['action']\n        element_info = step['element']\n        \n        element = self.element_finder.find_element_with_healing(element_info)\n        \n        if action == 'click':\n            element.click()\n        elif action == 'type':\n            element.clear()\n            element.send_keys(step['value'])\n        elif action == 'verify':\n            expected = step['expected']\n            actual = element.text\n            assert expected in actual, f\"Expected '{expected}' but got '{actual}'\"\n    \n    def attempt_healing(self, step, error):\n        \"\"\"테스트 스텝 자가 치유 시도\"\"\"\n        healing_strategies = [\n            self.update_element_selectors,\n            self.wait_for_element_load,\n            self.refresh_page_and_retry,\n            self.use_alternative_element\n        ]\n        \n        for strategy in healing_strategies:\n            try:\n                if strategy(step, error):\n                    self.healing_history.append({\n                        'step': step,\n                        'error': str(error),\n                        'strategy': strategy.__name__,\n                        'success': True\n                    })\n                    return True\n            except Exception as healing_error:\n                self.logger.warning(f\"Healing strategy {strategy.__name__} failed: {healing_error}\")\n                continue\n        \n        return False\n    \n    def update_element_selectors(self, step, error):\n        \"\"\"요소 선택자 업데이트\"\"\"\n        element_info = step['element']\n        \n        # 현재 페이지에서 요소 다시 찾기\n        new_element = self.element_finder.find_element_with_healing(element_info)\n        \n        if new_element:\n            # 새로운 선택자 정보 업데이트\n            element_info['selectors'] = self.extract_element_selectors(new_element)\n            return True\n        \n        return False\n    \n    def wait_for_element_load(self, step, error):\n        \"\"\"요소 로딩 대기\"\"\"\n        time.sleep(2)  # 추가 대기 시간\n        \n        element_info = step['element']\n        element = self.element_finder.find_element_with_healing(element_info)\n        \n        return element is not None\n    \n    def refresh_page_and_retry(self, step, error):\n        \"\"\"페이지 새로고침 후 재시도\"\"\"\n        self.driver.refresh()\n        time.sleep(3)\n        \n        element_info = step['element']\n        element = self.element_finder.find_element_with_healing(element_info)\n        \n        return element is not None"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Selenium WebDriver 문서",
+      "url": "https://selenium-python.readthedocs.io/"
+    },
+    {
+      "title": "OpenCV Python",
+      "url": "https://opencv-python-tutroals.readthedocs.io/"
+    },
+    {
+      "title": "scikit-learn",
+      "url": "https://scikit-learn.org/"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "출하 부두 구축",
+      "path": "2-10-shipping-dock-setup.md"
+    },
+    {
+      "title": "엔드-투-엔드 프로젝트",
+      "path": "2-11-end-to-end-project.md"
+    }
+  ]
+}

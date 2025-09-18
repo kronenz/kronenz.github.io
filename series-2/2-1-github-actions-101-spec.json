@@ -1,0 +1,93 @@
+{
+  "series_number": 2,
+  "guide_number": "2-1",
+  "title": "GitHub Actions 101",
+  "subtitle": "첫 번째 CI/CD 워크플로우 자동화",
+  "overview": "이 가이드는 GitHub Actions를 사용하여 첫 번째 CI/CD 워크플로우를 구축하는 방법을 다룹니다. 자동화된 빌드, 테스트, 배포 파이프라인을 설정하여 개발 생산성을 크게 향상시킬 수 있습니다.",
+  "objectives": [
+    "GitHub Actions의 기본 개념과 작동 원리 이해",
+    "워크플로우 파일 작성법과 구조 파악",
+    "트리거 설정과 조건부 실행 방법 학습",
+    "보안과 권한 관리 모범 사례 습득",
+    "실제 프로젝트에 CI/CD 파이프라인 적용"
+  ],
+  "prerequisites": [
+    "Git과 GitHub 기본 사용법 숙지",
+    "YAML 문법 이해",
+    "터미널/명령 프롬프트 사용 경험",
+    "Docker 기본 개념 (선택사항)"
+  ],
+  "estimated_time": "3시간",
+  "difficulty": "초급",
+  "template_type": "guide",
+  "sections": {
+    "core_concepts": [
+      {
+        "title": "GitHub Actions란?",
+        "content": "GitHub Actions는 GitHub에서 제공하는 CI/CD 플랫폼으로, 코드 저장소에서 발생하는 이벤트(푸시, PR 생성 등)를 기반으로 자동화된 워크플로우를 실행할 수 있습니다."
+      },
+      {
+        "title": "워크플로우의 핵심 구성 요소",
+        "content": "워크플로우는 이벤트, 작업(Job), 단계(Step), 액션(Action)으로 구성됩니다. 각 구성 요소의 역할과 상호작용을 이해하는 것이 중요합니다."
+      },
+      {
+        "title": "트리거와 조건부 실행",
+        "content": "워크플로우는 다양한 이벤트에 의해 트리거될 수 있으며, 조건부 실행을 통해 효율적인 자원 사용이 가능합니다."
+      }
+    ],
+    "practical_steps": [
+      {
+        "title": "첫 번째 워크플로우 생성",
+        "content": ".github/workflows 디렉토리를 생성하고 기본 워크플로우 파일을 작성합니다."
+      },
+      {
+        "title": "간단한 Hello World 워크플로우",
+        "content": "기본적인 워크플로우를 작성하고 GitHub에서 실행 결과를 확인합니다."
+      },
+      {
+        "title": "Python 프로젝트용 CI 설정",
+        "content": "Python 프로젝트에 적합한 린팅, 테스트, 빌드 워크플로우를 구성합니다."
+      },
+      {
+        "title": "보안 설정 및 시크릿 관리",
+        "content": "GitHub Secrets를 사용하여 민감한 정보를 안전하게 관리하는 방법을 학습합니다."
+      }
+    ]
+  },
+  "code_examples": [
+    {
+      "title": "기본 워크플로우 파일",
+      "language": "yaml",
+      "code": "name: CI\n\non:\n  push:\n    branches: [ main ]\n  pull_request:\n    branches: [ main ]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    \n    steps:\n    - uses: actions/checkout@v3\n    \n    - name: Set up Python\n      uses: actions/setup-python@v4\n      with:\n        python-version: '3.9'\n    \n    - name: Install dependencies\n      run: |\n        pip install -r requirements.txt\n    \n    - name: Run tests\n      run: |\n        pytest tests/"
+    },
+    {
+      "title": "조건부 실행 예제",
+      "language": "yaml",
+      "code": "name: Conditional Deploy\n\non:\n  push:\n    branches: [ main ]\n\njobs:\n  deploy:\n    if: github.ref == 'refs/heads/main'\n    runs-on: ubuntu-latest\n    \n    steps:\n    - name: Deploy to production\n      run: echo \"Deploying to production...\""
+    }
+  ],
+  "resources": [
+    {
+      "title": "GitHub Actions 공식 문서",
+      "url": "https://docs.github.com/en/actions"
+    },
+    {
+      "title": "GitHub Actions 마켓플레이스",
+      "url": "https://github.com/marketplace?type=actions"
+    },
+    {
+      "title": "YAML 문법 가이드",
+      "url": "https://yaml.org/spec/1.2/spec.html"
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "자동화의 시작",
+      "path": "2-2-automation-triggers.md"
+    },
+    {
+      "title": "프런트 오피스 구축",
+      "path": "2-3-front-office-setup.md"
+    }
+  ]
+}

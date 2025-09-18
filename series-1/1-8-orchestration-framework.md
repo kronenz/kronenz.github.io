@@ -18,10 +18,10 @@
 ### 오케스트레이션의 핵심 개념
 
 #### 에이전트 오케스트레이션이란?
-- **에이전트 관리**: 여러 AI 에이전트의 생명주기 관리
+- **에이전트 오케스트레이션**: 여러 AI 에이전트의 생명주기 오케스트레이션
 - **작업 분배**: 복잡한 작업을 적절한 에이전트에 할당
-- **통신 관리**: 에이전트 간 메시지 전달 및 동기화
-- **상태 관리**: 전체 시스템의 상태 추적 및 관리
+- **통신 오케스트레이션**: 에이전트 간 메시지 전달 및 동기화
+- **상태 오케스트레이션**: 전체 시스템의 상태 추적 및 오케스트레이션
 
 #### 프레임워크 선택 기준
 - **복잡도**: 프로젝트의 복잡성 수준
@@ -78,12 +78,12 @@ crew = Crew(
 )
 
 result = crew.kickoff()
-```
+```markdown
 
 #### 단점
 - **제한적 병렬성**: 순차적 실행에 최적화
 - **복잡한 워크플로우**: 동적 분기 처리 어려움
-- **상태 관리**: 복잡한 상태 추적 제한적
+- **상태 오케스트레이션**: 복잡한 상태 추적 제한적
 
 #### 적합한 프로젝트
 - **문서 생성**: 연구 → 작성 → 검토 파이프라인
@@ -143,7 +143,7 @@ user_proxy.initiate_chat(
     reviewer,
     message="Review the fibonacci function for efficiency"
 )
-```
+```markdown
 
 #### 단점
 - **구조화 부족**: 명확한 워크플로우 정의 어려움
@@ -158,7 +158,7 @@ user_proxy.initiate_chat(
 ### 3. LangGraph: 상태 기반 워크플로우
 
 #### 핵심 특징
-- **상태 관리**: 명확한 상태 전환과 추적
+- **상태 오케스트레이션**: 명확한 상태 전환과 추적
 - **결정론적**: 예측 가능한 실행 흐름
 - **그래프 기반**: 복잡한 워크플로우를 그래프로 표현
 - **조건부 분기**: 상황에 따른 동적 경로 선택
@@ -212,12 +212,12 @@ workflow.add_edge("error_handler", END)
 # 워크플로우 컴파일 및 실행
 app = workflow.compile()
 result = app.invoke({"input_data": "test data"})
-```
+```markdown
 
 #### 단점
 - **학습 곡선**: 그래프 개념 이해 필요
 - **복잡성**: 간단한 작업에 과도할 수 있음
-- **상태 관리**: 상태 설계가 복잡할 수 있음
+- **상태 오케스트레이션**: 상태 설계가 복잡할 수 있음
 
 #### 적합한 프로젝트
 - **복잡한 워크플로우**: 다단계 처리 파이프라인
@@ -262,7 +262,7 @@ results = [
     {"framework": "AutoGen", "execution_time": 3.1, "success": True, "quality_score": 78},
     {"framework": "LangGraph", "execution_time": 1.8, "success": True, "quality_score": 92}
 ]
-```
+```markdown
 
 #### 메모리 사용량
 - **CrewAI**: 중간 (순차적 실행으로 메모리 효율적)
@@ -312,7 +312,7 @@ class ProjectAnalyzer:
             return "LangGraph"
         else:
             return "CrewAI"  # 기본값
-```
+```markdown
 
 ### 프레임워크별 구현 예시
 
@@ -356,7 +356,7 @@ def create_crewai_workflow():
     )
     
     return crew
-```
+```markdown
 
 #### 2. AutoGen 구현
 ```python
@@ -399,7 +399,7 @@ def create_autogen_workflow():
     )
     
     return user_proxy, manager
-```
+```markdown
 
 #### 3. LangGraph 구현
 ```python
@@ -446,7 +446,7 @@ def create_langgraph_workflow():
     workflow.add_edge("report", END)
     
     return workflow.compile()
-```
+```markdown
 
 ## 🚀 마이그레이션 전략
 
@@ -471,7 +471,7 @@ class CrewAIToLangGraphMigrator:
                 edges.append(("start", task.agent.role))
         
         return self.build_langgraph_workflow(nodes, edges)
-```
+```markdown
 
 #### 2. AutoGen → CrewAI
 ```python
@@ -489,7 +489,7 @@ class AutoGenToCrewAIMigrator:
             crewai_agents.append(crewai_agent)
         
         return crewai_agents
-```
+```markdown
 
 ## 📊 성능 모니터링
 

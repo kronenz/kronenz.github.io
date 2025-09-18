@@ -31,7 +31,7 @@ response = openai.ChatCompletion.create(
     messages=[{"role": "user", "content": "이 코드를 리팩토링해줘"}]
 )
 # 사용자가 매번 새로운 요청을 해야 함
-```
+```markdown
 
 ### AI 에이전트의 혁신
 
@@ -56,7 +56,7 @@ class AutonomousAgent:
             result = self.execute_action(action)
             self.update_memory(action, result)
             self.learn_from_result(result)
-```
+```markdown
 
 ## 🧠 자율성의 핵심 구성 요소
 
@@ -78,7 +78,7 @@ class GoalOrientedAgent:
         elif self.current_state == "planning":
             return ["gather_resources", "implement_solution"]
         # ... 더 많은 상태와 행동
-```
+```markdown
 
 ### 2. 환경 인식 및 상호작용 (Environment Perception & Interaction)
 
@@ -103,7 +103,7 @@ class EnvironmentAwareAgent:
             return self.optimize_performance()
         else:
             return self.continue_normal_operation()
-```
+```markdown
 
 ### 3. 학습 및 적응 (Learning & Adaptation)
 
@@ -136,7 +136,7 @@ class LearningAgent:
         if len(self.failure_patterns) > 3:
             return self.adopt_alternative_approach()
         return self.continue_current_strategy()
-```
+```markdown
 
 ## 🏗️ 에이전트 아키텍처 설계
 
@@ -173,7 +173,7 @@ class AutonomousAgent:
                 self.handle_failure(action, result, validation)
         
         return self.synthesize_results(results)
-```
+```markdown
 
 ### 메모리 시스템
 
@@ -201,7 +201,7 @@ class AgentMemory:
                 if self.is_relevant(key, context):
                     relevant.append(value)
         return relevant
-```
+```markdown
 
 ## 🛠️ 실습: 첫 번째 자율 에이전트 구축
 
@@ -218,7 +218,7 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # 필요한 패키지 설치
 pip install openai anthropic langchain crewai
-```
+```markdown
 
 ### 기본 에이전트 구현
 
@@ -329,7 +329,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+```markdown
 
 ### 고급 에이전트 기능
 
@@ -424,7 +424,7 @@ class AdvancedAutonomousAgent(SimpleAutonomousAgent):
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-2: 명세 기반 개발(SDD) 마스터하기](1-2-spec-driven-development.md)**
+1. **[1-2: 명세 기반 개발(명세 기반 개발) 마스터하기](1-2-spec-driven-development.md)**
 2. **[1-3: "감성 코딩"을 넘어서](1-3-principle-based-engineering.md)**
 
 ## 📚 추가 리소스

@@ -1,147 +1,174 @@
-# 기여 가이드 (Contributing Guide)
+# 기여 가이드라인
 
-AI 에이전트 조직 구축 및 SaaS 자동화 가이드 프로젝트에 기여해주셔서 감사합니다! 이 문서는 프로젝트에 기여하는 방법을 안내합니다.
+이 프로젝트에 기여해주셔서 감사합니다! 이 문서는 에이전틱 SaaS 조직 가이드 시리즈에 기여하는 방법을 안내합니다.
 
 ## 🤝 기여 방법
 
-### 1. 이슈 보고
-- 버그 발견 시 [Issues](https://github.com/your-org/spec-driven-repo/issues)에서 버그 리포트를 작성해주세요
-- 새로운 기능 제안도 Issues를 통해 해주세요
-- 이슈 작성 시 명확한 제목과 상세한 설명을 포함해주세요
+### 1. 이슈 생성
+- 버그 리포트, 기능 요청, 문서 개선 제안 등을 이슈로 생성해주세요
+- 이슈 생성 시 명확한 제목과 상세한 설명을 포함해주세요
 
-### 2. 코드 기여
-- Fork 후 Pull Request를 통해 기여해주세요
-- 모든 코드는 기존 스타일을 따라주세요
-- 테스트를 작성하고 모든 테스트가 통과하는지 확인해주세요
-
-### 3. 문서 기여
-- 오타 수정, 내용 개선, 번역 등 문서 기여를 환영합니다
-- 새로운 가이드나 예제 추가도 가능합니다
-
-## 📋 기여 프로세스
-
-### 1. 저장소 포크
+### 2. 포크 및 브랜치 생성
 ```bash
-git clone https://github.com/your-username/spec-driven-repo.git
-cd spec-driven-repo
-```
+# 저장소 포크 후 클론
+git clone https://github.com/your-username/agentic-saas-organization.git
+cd agentic-saas-organization
 
-### 2. 브랜치 생성
-```bash
+# 새로운 브랜치 생성
 git checkout -b feature/your-feature-name
-# 또는
-git checkout -b fix/your-bug-fix
 ```
 
-### 3. 변경사항 커밋
+### 3. 개발 환경 설정
 ```bash
-git add .
-git commit -m "feat: Add your feature description"
-# 또는
-git commit -m "fix: Fix your bug description"
+# 가상환경 설정 (선택사항)
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 필요한 패키지 설치
+pip install -r requirements.txt
 ```
 
-### 4. Pull Request 생성
-- GitHub에서 Pull Request를 생성해주세요
-- 변경사항에 대한 명확한 설명을 포함해주세요
-- 관련 이슈가 있다면 링크해주세요
+## 📝 가이드 작성 가이드라인
 
-## 📝 코딩 스타일
+### 문서 구조
+모든 가이드는 다음 구조를 따라야 합니다:
 
-### 1. 문서 작성
-- 마크다운 파일은 명확하고 읽기 쉽게 작성해주세요
-- 제목은 계층적으로 구성해주세요
-- 코드 블록에는 적절한 언어 태그를 사용해주세요
+1. **개요 (Overview)**: 가이드의 목적과 범위
+2. **학습 목표 (Learning Objectives)**: 달성할 수 있는 구체적 목표
+3. **핵심 개념 (Core Concepts)**: 이론적 배경
+4. **실습 (Hands-on Practice)**: 단계별 실습 가이드
+5. **고급 기능 (Advanced Features)**: 심화 내용
+6. **다음 단계 (Next Steps)**: 연관 가이드 연결
+7. **추가 리소스 (Additional Resources)**: 참고 자료
 
-### 2. 코드 작성
-- Python: PEP 8 스타일 가이드 준수
-- JavaScript: ESLint 설정 준수
-- 기타 언어: 해당 언어의 표준 스타일 가이드 준수
+### 코드 예제 표준
+- 모든 코드는 실행 가능해야 함
+- 주석과 설명을 충분히 포함
+- 에러 처리 및 예외 상황 고려
+- 실제 프로덕션 환경을 고려한 구조
 
-### 3. 커밋 메시지
-- [Conventional Commits](https://www.conventionalcommits.org/) 형식 사용
-- 예시:
-  - `feat: Add new AI agent workflow`
-  - `fix: Resolve template parsing issue`
-  - `docs: Update series-1 README`
-  - `refactor: Simplify task decomposition logic`
+### 링크 및 참조 표준
+- 상대 경로 사용 (`../series-1/1-2-spec-driven-development.md`)
+- 절대 URL은 최소화
+- 깨진 링크 자동 검증
+- 크로스 레퍼런스 일관성 유지
 
-## 🧪 테스트
+## 🔧 도구 사용법
 
-### 1. 코드 테스트
-- 새로운 기능 추가 시 테스트 코드를 작성해주세요
-- 기존 테스트가 깨지지 않는지 확인해주세요
+### 가이드 생성
+```bash
+# 샘플 명세 파일 생성
+python tools/guide-generator.py --create-sample
 
-### 2. 문서 테스트
-- 링크가 올바르게 작동하는지 확인해주세요
-- 마크다운 문법이 올바른지 확인해주세요
+# 가이드 생성
+python tools/guide-generator.py --spec examples/sample_guide_spec.json --output my-guide.md
+```
 
-## 📚 가이드라인
+### 연속성 검사
+```bash
+# 특정 시리즈 검사
+python tools/continuity-checker.py --series-path series-1 --output continuity-report.json
 
-### 1. AI 에이전트 관련
-- AI 에이전트의 역할과 책임을 명확히 정의해주세요
-- 프롬프트와 명세는 구체적이고 실행 가능하게 작성해주세요
-- 윤리적 고려사항을 포함해주세요
+# 전체 프로젝트 검사
+python tools/continuity-checker.py --series-path . --output full-continuity-report.json
+```
 
-### 2. 기술 문서
-- 단계별 가이드는 명확하고 따라하기 쉽게 작성해주세요
-- 코드 예제는 실행 가능하고 주석을 포함해주세요
-- 트러블슈팅 섹션을 포함해주세요
+### 코드 블록 수정
+```bash
+# 코드 블록 언어 지정 자동 수정
+python tools/fix-code-blocks.py --series-path series-1
+```
 
-### 3. 비즈니스 문서
-- ROI와 비용 절감 효과를 구체적으로 제시해주세요
-- 성과 측정 지표를 명확히 정의해주세요
-- 위험 요소와 대응 방안을 포함해주세요
+## 📋 품질 기준
 
-## 🔍 리뷰 프로세스
+### 필수 검사 항목
+- [ ] 모든 필수 섹션이 포함되어 있는가?
+- [ ] 코드 블록에 언어가 지정되어 있는가?
+- [ ] 링크가 유효한가?
+- [ ] 용어 일관성이 유지되는가?
+- [ ] 가이드 간 연결이 적절한가?
 
-### 1. 자동 검사
-- 모든 Pull Request는 자동으로 다음 검사를 거칩니다:
-  - 코드 스타일 검사
-  - 링크 유효성 검사
-  - 마크다운 문법 검사
+### 자동 검증
+모든 변경사항은 다음 자동 검증을 통과해야 합니다:
+- 연속성 검사 도구 실행
+- 링크 유효성 검사
+- 문서 구조 일관성 검증
 
-### 2. 수동 리뷰
-- 최소 1명의 리뷰어가 코드를 검토합니다
-- 리뷰어는 다음 사항을 확인합니다:
-  - 코드 품질
-  - 문서 완성도
-  - 가이드라인 준수
+## 🚀 풀 리퀘스트 프로세스
 
-### 3. 승인 기준
-- 모든 자동 검사 통과
-- 리뷰어 승인
-- 충돌 해결 완료
+1. **변경사항 준비**
+   - 명확한 커밋 메시지 작성
+   - 관련 이슈 번호 포함
+   - 변경사항에 대한 설명 추가
 
-## 🚀 릴리스 프로세스
+2. **PR 생성**
+   - PR 제목에 변경사항 요약
+   - 상세한 설명과 변경 이유 포함
+   - 관련 이슈 링크 추가
 
-### 1. 버전 관리
-- [Semantic Versioning](https://semver.org/) 사용
-- 주요 변경사항은 CHANGELOG.md에 기록
+3. **리뷰 프로세스**
+   - 자동 검증 통과 확인
+   - 코드 리뷰 요청
+   - 피드백 반영 및 수정
 
-### 2. 릴리스 노트
-- 새로운 기능
-- 버그 수정
-- 주요 변경사항
-- 마이그레이션 가이드 (필요시)
+## 📚 시리즈별 기여 가이드
 
-## 📞 지원
+### 시리즈 1: 에이전틱 조직의 기초
+- AI 에이전트 기초 개념과 실습 중심
+- 명세 기반 개발(SDD) 원칙 적용
+- 실제 코드 예제와 실행 가능한 데모 포함
 
-### 1. 질문
-- GitHub Discussions를 사용해주세요
-- 이메일: team@example.com
+### 시리즈 2: 자동화된 SaaS 팩토리
+- GitHub Actions, CI/CD 자동화 중심
+- 실제 배포 가능한 프로젝트 예제
+- 단계별 자동화 구현 가이드
 
-### 2. 실시간 소통
-- Slack: #spec-driven-repo
-- Discord: AI Agent Community
+### 시리즈 3: 디지털 인력 관리
+- AI 팀 구성 및 관리 방법론
+- 에이전트 협업 모델 설계
+- 실제 팀 빌딩 사례와 모범 사례
 
-## 🙏 감사
+### 시리즈 4: Devin 아키텍처 분석
+- 자율 개발 에이전트 아키텍처 분석
+- 실제 구현 가능한 기술 스택
+- 성능 최적화 및 확장성 고려
 
-모든 기여자에게 감사드립니다. 여러분의 기여가 이 프로젝트를 더욱 발전시킵니다!
+### 시리즈 5: 자율성의 경제학
+- 비용 최적화 및 ROI 측정
+- 실제 비즈니스 메트릭과 KPI
+- 경제적 관점에서의 AI 도입 전략
 
-### 기여자 목록
-- [기여자 이름들]
+## 🐛 버그 리포트
+
+버그를 발견하셨다면 다음 정보를 포함해주세요:
+
+- **환경 정보**: OS, Python 버전, 브라우저 등
+- **재현 단계**: 문제를 재현하는 정확한 단계
+- **예상 결과**: 기대했던 결과
+- **실제 결과**: 실제로 발생한 결과
+- **로그**: 관련 에러 메시지나 로그
+
+## 💡 기능 요청
+
+새로운 기능이나 개선 사항을 제안하실 때:
+
+- **문제 설명**: 해결하고자 하는 문제
+- **제안 솔루션**: 구체적인 해결 방안
+- **대안 고려**: 다른 가능한 해결책들
+- **추가 컨텍스트**: 관련 정보나 제약사항
+
+## 📞 문의
+
+기여 과정에서 궁금한 점이 있으시면:
+
+- 이슈를 생성해주세요
+- 이메일로 연락해주세요: contact@your-website.com
+- 커뮤니티 포럼에서 질문해주세요
+
+## 📄 라이선스
+
+이 프로젝트에 기여하시면 [MIT 라이선스](LICENSE) 하에 기여하시는 것으로 간주됩니다.
 
 ---
 
-**함께 AI 에이전트 조직의 미래를 만들어가요!** 🤖✨
+**"AI 어시스턴트에서 자율적 파트너로"** - 에이전틱 SaaS 조직의 미래를 함께 만들어가세요!

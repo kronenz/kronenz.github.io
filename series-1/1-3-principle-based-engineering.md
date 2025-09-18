@@ -27,7 +27,7 @@ response = openai.ChatCompletion.create(
     messages=[{"role": "user", "content": prompt}]
 )
 # 결과: 예측 불가능하고 일관성 없는 코드
-```
+```markdown
 
 ### 감성 코딩의 주요 문제점
 
@@ -61,7 +61,7 @@ def process_payment(amount, card_number):
 # 3. 로깅 없음
 # 4. 보안 검증 없음
 # 5. 테스트 불가능
-```
+```markdown
 
 ## ✅ 원칙 기반 엔지니어링의 장점
 
@@ -101,7 +101,7 @@ class PaymentProcessor:
             # 원칙 5: 에러 처리
             self.logger.log_payment_failure(e)
             raise PaymentProcessingError(f"Payment failed: {str(e)}")
-```
+```markdown
 
 ### 핵심 장점
 
@@ -160,7 +160,7 @@ class PayPalPayment(PaymentMethod):
     def process(self, amount):
         # PayPal 결제 로직
         pass
-```
+```markdown
 
 #### DRY (Don't Repeat Yourself)
 ```python
@@ -184,7 +184,7 @@ class TaxCalculator:
     
     def calculate_tax(self, amount, country):
         return amount * self.TAX_RATES[country]
-```
+```markdown
 
 ### 2. 코딩 원칙 (Coding Principles)
 
@@ -199,7 +199,7 @@ def calculate_total_price(base_price, quantity, tax_rate=0.1):
     subtotal = base_price * quantity
     tax_amount = subtotal * tax_rate
     return subtotal + tax_amount
-```
+```markdown
 
 #### 테스트 가능성 (Testability)
 ```python
@@ -225,7 +225,7 @@ class OrderProcessor:
         order = self.order_repository.get_order(order_id)
         result = self.payment_service.process_payment(order.amount)
         return result
-```
+```markdown
 
 ### 3. 아키텍처 원칙 (Architecture Principles)
 
@@ -246,7 +246,7 @@ class DataLayer:
     def save_data(self, data):
         # 데이터 저장만 처리
         pass
-```
+```markdown
 
 #### 의존성 역전 (Dependency Inversion)
 ```python
@@ -287,7 +287,7 @@ class NotificationService:
     
     def notify(self, user, message):
         self.provider.send_notification(user, message)
-```
+```markdown
 
 ## 📋 원칙 수립 방법론
 
@@ -316,7 +316,7 @@ class NotificationService:
 - 원칙 적용 방법 정의
 - 교육 및 훈련 계획
 - 지속적 개선 프로세스
-```
+```markdown
 
 #### 원칙 문서 템플릿
 ```markdown
@@ -350,7 +350,7 @@ class NotificationService:
 2. **자동화 테스트**: 테스트 커버리지 80% 이상
 3. **성능 모니터링**: 지속적인 성능 측정
 4. **문서화**: 중요한 결정사항은 문서화
-```
+```markdown
 
 ### 2. 개인 원칙 수립
 
@@ -375,7 +375,7 @@ class NotificationService:
 - [ ] 팀원들과의 협업이 원활했는가?
 - [ ] 프로젝트 목표 달성에 기여했는가?
 - [ ] 다음 달 개선 계획이 있는가?
-```
+```markdown
 
 ## 🛠️ 실습: 원칙 기반 프로젝트 구축
 
@@ -390,7 +390,7 @@ cd principle-based-project
 touch constitution.md
 touch coding-standards.md
 touch architecture-guidelines.md
-```
+```markdown
 
 ### 1단계: 원칙 정의
 
@@ -410,9 +410,9 @@ touch architecture-guidelines.md
 ## 🔧 기술 원칙
 1. **TypeScript 필수**: 모든 코드는 TypeScript로 작성
 2. **컴포넌트 기반**: 재사용 가능한 컴포넌트 중심
-3. **상태 관리**: Context API + useReducer 패턴
+3. **상태 오케스트레이션**: Context API + useReducer 패턴
 4. **테스트 우선**: TDD 방식으로 개발
-```
+```markdown
 
 ### 2단계: 코딩 표준 정의
 
@@ -449,7 +449,7 @@ const CART_CONSTANTS = {
   MIN_QUANTITY: 1,
   MAX_QUANTITY: 99
 } as const;
-```
+```markdown
 
 ### 3단계: 아키텍처 가이드라인
 
@@ -493,7 +493,7 @@ class CartProvider {
     return result;
   }
 }
-```
+```markdown
 
 ### 4단계: 원칙 적용 검증
 
@@ -524,7 +524,7 @@ class PrincipleValidator {
     };
   }
 }
-```
+```markdown
 
 ## 📊 원칙 기반 개발의 성과 측정
 

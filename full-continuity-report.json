@@ -1,0 +1,3048 @@
+{
+  "timestamp": "2025-09-18T16:07:47.351828",
+  "series_path": ".",
+  "total_issues": 425,
+  "link_issues": {
+    "count": 54,
+    "issues": [
+      {
+        "file_path": "README.md",
+        "line_number": 45,
+        "link_text": "에이전트 협업 모델 설계",
+        "link_url": "series-3/3-4-agent-collaboration-models.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-4-agent-collaboration-models.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 46,
+        "link_text": "AI 에이전트 간의 갈등 해결",
+        "link_url": "series-3/3-5-conflict-resolution.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-5-conflict-resolution.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 47,
+        "link_text": "코더에서 지휘자로",
+        "link_url": "series-3/3-6-coder-to-conductor.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-6-coder-to-conductor.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 48,
+        "link_text": "미래의 핵심 역량",
+        "link_url": "series-3/3-7-future-core-skills.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-7-future-core-skills.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 49,
+        "link_text": "전략적 검증의 기술",
+        "link_url": "series-3/3-8-strategic-validation.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-8-strategic-validation.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 50,
+        "link_text": "첫 디지털 직원 온보딩",
+        "link_url": "series-3/3-9-digital-employee-onboarding.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-9-digital-employee-onboarding.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 53,
+        "link_text": "Devin 아키텍처 해부",
+        "link_url": "series-4/4-1-devin-architecture-analysis.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-1-devin-architecture-analysis.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 54,
+        "link_text": "Devin의 두뇌 재현",
+        "link_url": "series-4/4-2-devin-brain-replication.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-2-devin-brain-replication.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 55,
+        "link_text": "자가 수정 메커니즘",
+        "link_url": "series-4/4-3-self-correction-mechanisms.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-3-self-correction-mechanisms.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 56,
+        "link_text": "MultiDevin 모델의 이해",
+        "link_url": "series-4/4-4-multidevin-model.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-4-multidevin-model.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 57,
+        "link_text": "Devin 플레이북 적용",
+        "link_url": "series-4/4-5-devin-playbook-application.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-5-devin-playbook-application.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 58,
+        "link_text": "알려진 한계와 현실",
+        "link_url": "series-4/4-6-known-limitations-reality.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-6-known-limitations-reality.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 61,
+        "link_text": "100배 생산성 정량화",
+        "link_url": "series-5/5-1-100x-productivity-quantification.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-1-100x-productivity-quantification.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 62,
+        "link_text": "AI 기반 FinOps 소개",
+        "link_url": "series-5/5-2-ai-finops-introduction.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-2-ai-finops-introduction.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 63,
+        "link_text": "FinOps 에이전트 구축",
+        "link_url": "series-5/5-3-finops-agent-construction.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-3-finops-agent-construction.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 64,
+        "link_text": "자동화된 리소스 관리",
+        "link_url": "series-5/5-4-automated-resource-management.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-4-automated-resource-management.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 65,
+        "link_text": "스팟 인스턴스 마스터",
+        "link_url": "series-5/5-5-spot-instance-mastery.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-5-spot-instance-mastery.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 66,
+        "link_text": "자율적 성장 해킹 입문",
+        "link_url": "series-5/5-6-autonomous-growth-hacking.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-6-autonomous-growth-hacking.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 67,
+        "link_text": "강화 학습(RL)을 이용한 UI/UX 최적화",
+        "link_url": "series-5/5-7-rl-ui-ux-optimization.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-7-rl-ui-ux-optimization.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 68,
+        "link_text": "보상 함수 설계",
+        "link_url": "series-5/5-8-reward-function-design.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-8-reward-function-design.md"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 69,
+        "link_text": "실시간 UX 최적화 에이전트 배포",
+        "link_url": "series-5/5-9-real-time-ux-optimization.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-9-real-time-ux-optimization.md"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 84,
+        "link_text": "명세 기반 개발(SDD) 마스터하기",
+        "link_url": "1-2-spec-driven-development.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 1-2-spec-driven-development.md"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 85,
+        "link_text": "원칙 기반 엔지니어링으로의 전환",
+        "link_url": "1-3-principle-based-engineering.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 1-3-principle-based-engineering.md"
+      },
+      {
+        "file_path": "test_series.md",
+        "line_number": 50,
+        "link_text": "자동화된 SaaS 팩토리",
+        "link_url": "../series-2/README.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: ../series-2/README.md"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 111,
+        "link_text": "명세 기반 개발(SDD) 마스터하기",
+        "link_url": "1-2-spec-driven-development.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 1-2-spec-driven-development.md"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 112,
+        "link_text": "원칙 기반 엔지니어링으로의 전환",
+        "link_url": "1-3-principle-based-engineering.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 1-3-principle-based-engineering.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 157,
+        "link_text": "에이전트 협업 모델 설계",
+        "link_url": "series-3/3-4-agent-collaboration-models.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-4-agent-collaboration-models.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 163,
+        "link_text": "AI 에이전트 간의 갈등 해결",
+        "link_url": "series-3/3-5-conflict-resolution.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-5-conflict-resolution.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 169,
+        "link_text": "코더에서 지휘자로",
+        "link_url": "series-3/3-6-coder-to-conductor.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-6-coder-to-conductor.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 175,
+        "link_text": "미래의 핵심 역량",
+        "link_url": "series-3/3-7-future-core-skills.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-7-future-core-skills.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 181,
+        "link_text": "전략적 검증의 기술",
+        "link_url": "series-3/3-8-strategic-validation.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-8-strategic-validation.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 187,
+        "link_text": "첫 디지털 직원 온보딩",
+        "link_url": "series-3/3-9-digital-employee-onboarding.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-3/3-9-digital-employee-onboarding.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 195,
+        "link_text": "Devin 아키텍처 해부",
+        "link_url": "series-4/4-1-devin-architecture-analysis.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-1-devin-architecture-analysis.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 201,
+        "link_text": "Devin의 두뇌 재현",
+        "link_url": "series-4/4-2-devin-brain-replication.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-2-devin-brain-replication.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 207,
+        "link_text": "자가 수정 메커니즘",
+        "link_url": "series-4/4-3-self-correction-mechanisms.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-3-self-correction-mechanisms.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 213,
+        "link_text": "MultiDevin 모델의 이해",
+        "link_url": "series-4/4-4-multidevin-model.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-4-multidevin-model.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 219,
+        "link_text": "Devin 플레이북 적용",
+        "link_url": "series-4/4-5-devin-playbook-application.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-5-devin-playbook-application.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 225,
+        "link_text": "알려진 한계와 현실",
+        "link_url": "series-4/4-6-known-limitations-reality.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-4/4-6-known-limitations-reality.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 233,
+        "link_text": "100배 생산성 정량화",
+        "link_url": "series-5/5-1-100x-productivity-quantification.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-1-100x-productivity-quantification.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 239,
+        "link_text": "AI 기반 FinOps 소개",
+        "link_url": "series-5/5-2-ai-finops-introduction.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-2-ai-finops-introduction.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 245,
+        "link_text": "FinOps 에이전트 구축",
+        "link_url": "series-5/5-3-finops-agent-construction.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-3-finops-agent-construction.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 251,
+        "link_text": "자동화된 리소스 관리",
+        "link_url": "series-5/5-4-automated-resource-management.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-4-automated-resource-management.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 257,
+        "link_text": "스팟 인스턴스 마스터",
+        "link_url": "series-5/5-5-spot-instance-mastery.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-5-spot-instance-mastery.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 263,
+        "link_text": "자율적 성장 해킹 입문",
+        "link_url": "series-5/5-6-autonomous-growth-hacking.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-6-autonomous-growth-hacking.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 269,
+        "link_text": "강화 학습(RL)을 이용한 UI/UX 최적화",
+        "link_url": "series-5/5-7-rl-ui-ux-optimization.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-7-rl-ui-ux-optimization.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 275,
+        "link_text": "보상 함수 설계",
+        "link_url": "series-5/5-8-reward-function-design.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-8-reward-function-design.md"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 281,
+        "link_text": "실시간 UX 최적화 에이전트 배포",
+        "link_url": "series-5/5-9-real-time-ux-optimization.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: series-5/5-9-real-time-ux-optimization.md"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 504,
+        "link_text": "풀 리퀘스트 가이드",
+        "link_url": "CONTRIBUTING.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: CONTRIBUTING.md"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 505,
+        "link_text": "기여 가이드라인",
+        "link_url": "CONTRIBUTING.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: CONTRIBUTING.md"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 618,
+        "link_text": "3-4: 에이전트 협업 모델 설계",
+        "link_url": "3-4-agent-collaboration-models.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 3-4-agent-collaboration-models.md"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 619,
+        "link_text": "3-5: AI 에이전트 간 갈등 해결",
+        "link_url": "3-5-conflict-resolution.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 3-5-conflict-resolution.md"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 695,
+        "link_text": "3-4: 에이전트 협업 모델 설계",
+        "link_url": "3-4-agent-collaboration-models.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 3-4-agent-collaboration-models.md"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 696,
+        "link_text": "3-5: AI 에이전트 간 갈등 해결",
+        "link_url": "3-5-conflict-resolution.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 3-5-conflict-resolution.md"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 697,
+        "link_text": "3-6: 코더에서 지휘자로",
+        "link_url": "3-6-coder-to-conductor.md",
+        "issue_type": "broken_internal_link",
+        "message": "파일을 찾을 수 없습니다: 3-6-coder-to-conductor.md"
+      }
+    ]
+  },
+  "consistency_issues": {
+    "count": 371,
+    "issues": [
+      {
+        "file_path": "README.md",
+        "line_number": 99,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 114,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 118,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 153,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 46,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 48,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 51,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 53,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 56,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 58,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "constitution.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 39,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 48,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 92,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "CONTRIBUTING.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "contents.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "contents.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "contents.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": " list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": " list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": " list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'SDD' 대신 '명세 기반 개발' 사용 권장",
+        "suggested_fix": "'SDD'를 '명세 기반 개발'로 변경"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'orchestration' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'orchestration'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 5,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 98,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "spec-driven-development-structure.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 66,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_guide.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_series.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_series.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_series.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "test_checklist.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "list.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start.md",
+        "line_number": 387,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 173,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 176,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 267,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 270,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 288,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 319,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 469,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-2-spec-driven-development.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-3-principle-based-engineering.md",
+        "line_number": 581,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-3-principle-based-engineering.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-3-principle-based-engineering.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-3-principle-based-engineering.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 275,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 276,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 655,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-4-spec-writing-techniques.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'SDD' 대신 '명세 기반 개발' 사용 권장",
+        "suggested_fix": "'SDD'를 '명세 기반 개발'로 변경"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 60,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 65,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 133,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 147,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 177,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 412,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 422,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 640,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-5-plan-tasks-utilization.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-6-dual-llm-architecture.md",
+        "line_number": 517,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-6-dual-llm-architecture.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-6-dual-llm-architecture.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-6-dual-llm-architecture.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 74,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 76,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 279,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 281,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 346,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 348,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 351,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 353,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 374,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 550,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-7-verification-loop.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-8-orchestration-framework.md",
+        "line_number": 522,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-8-orchestration-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-8-orchestration-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-8-orchestration-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-9-crewai-team-building.md",
+        "line_number": 597,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-9-crewai-team-building.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-9-crewai-team-building.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-9-crewai-team-building.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-10-constitution-writing.md",
+        "line_number": 604,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-10-constitution-writing.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-10-constitution-writing.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-10-constitution-writing.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 471,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-1/1-1-agentic-ai-start-enhanced.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '자율적' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'자율적'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 116,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 122,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 44,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 92,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 243,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 344,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 359,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 377,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 396,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 426,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 440,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-1-github-actions-101.md",
+        "line_number": 456,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 40,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 101,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 248,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 299,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 319,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 351,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 384,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 414,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 429,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-2-automation-triggers.md",
+        "line_number": 441,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'autonomous' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'autonomous'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 121,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 165,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-3-front-office-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'autonomous' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'autonomous'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 123,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 163,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-4-factory-floor-construction.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'autonomous' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'autonomous'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 133,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 191,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-5-autonomous-commits-prs.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'autonomous' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'autonomous'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 142,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 202,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-6-quality-control-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '자율적' 대신 '자율성' 사용 권장",
+        "suggested_fix": "'자율적'를 '자율성'로 변경"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 146,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 212,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-7-autonomous-qa-team.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 199,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 294,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-8-test-automation.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-9-self-healing-tests.md",
+        "line_number": 180,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-9-self-healing-tests.md",
+        "line_number": 281,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-9-self-healing-tests.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-9-self-healing-tests.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-9-self-healing-tests.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 203,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 291,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-10-shipping-dock-setup.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 264,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 348,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-2/2-11-end-to-end-project.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-3/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 58,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 126,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 161,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 227,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 259,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 297,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 328,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 352,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 385,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 420,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-1-gendd-model.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: 'orchestration' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'orchestration'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 57,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 106,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 154,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 203,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 252,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 280,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 326,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 360,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 414,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 438,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 521,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 562,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 611,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-2-ai-team-roles.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 40,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 64,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 90,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 124,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 170,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 297,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 359,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 423,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 473,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 521,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 565,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 589,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 640,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 689,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-3/3-3-agent-persona-creation.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 76,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 95,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 98,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 117,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 120,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 139,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-4/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 103,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 107,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 110,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 115,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 123,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 127,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 130,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 134,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 141,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 145,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 148,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 152,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 199,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 214,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "series-5/README.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/spec-template.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "templates/spec-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/spec-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/spec-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 18,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 30,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 33,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 43,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 46,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 56,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 61,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 65,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 94,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 96,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/plan-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 18,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 23,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 26,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 38,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 41,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 53,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 148,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 155,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 158,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 160,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/tasks-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/guide-template.md",
+        "line_number": 64,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/guide-template.md",
+        "line_number": 66,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "templates/guide-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/guide-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/guide-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/series-overview-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/series-overview-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/series-overview-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template-simple.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template-simple.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "templates/checklist-template-simple.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/spec.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "examples/simple-todo-app/spec.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/spec.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/spec.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 18,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 31,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 34,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 45,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 48,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 58,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 63,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 67,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 111,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 113,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/plan.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 18,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 24,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 27,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 56,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 225,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 229,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 232,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 234,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "examples/simple-todo-app/tasks.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 0,
+        "issue_type": "terminology_inconsistency",
+        "message": "용어 일관성 문제: '관리' 대신 '오케스트레이션' 사용 권장",
+        "suggested_fix": "'관리'를 '오케스트레이션'로 변경"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 46,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 60,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 77,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 96,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 117,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 144,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 167,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 195,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 219,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 238,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 273,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 301,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 328,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 365,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 386,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 400,
+        "issue_type": "code_block_missing_language",
+        "message": "코드 블록에 언어가 지정되지 않았습니다.",
+        "suggested_fix": "코드 블록에 언어를 지정하세요 (예: ```python)"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 개요",
+        "suggested_fix": "## 개요 섹션을 추가하세요"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 학습 목표",
+        "suggested_fix": "## 학습 목표 섹션을 추가하세요"
+      },
+      {
+        "file_path": "tools/continuity-framework.md",
+        "line_number": 0,
+        "issue_type": "missing_required_section",
+        "message": "필수 섹션이 누락되었습니다: 다음 단계",
+        "suggested_fix": "## 다음 단계 섹션을 추가하세요"
+      },
+      {
+        "file_path": ".",
+        "line_number": 0,
+        "issue_type": "series_number_inconsistency",
+        "message": "시리즈 번호가 일관되지 않습니다: [1, 2, 3]",
+        "suggested_fix": "모든 파일의 시리즈 번호를 통일하세요"
+      }
+    ]
+  },
+  "dependency_issues": {
+    "count": 0,
+    "issues": []
+  }
+}
