@@ -40,6 +40,8 @@ order: 1
 ### 1-2: 명세 기반 개발(SDD) 마스터하기
 **Spec Kit으로 첫 프로젝트 시작하기**
 
+[가이드 보기 →](/ai-development/1-2-spec-driven-development.html)
+
 - SDD의 4단계 프로세스
 - Spec Kit 도구 활용법
 - 명세서 작성 기법
@@ -47,6 +49,8 @@ order: 1
 
 ### 1-3: 원칙 기반 엔지니어링으로의 전환
 **감성 코딩을 넘어서**
+
+[가이드 보기 →](/ai-development/1-3-principle-based-engineering.html)
 
 - 감성 코딩의 한계와 문제점
 - 원칙 기반 엔지니어링의 장점
@@ -56,21 +60,17 @@ order: 1
 ### 1-4: spec.md 작성의 기술
 **AI가 이해하는 명확한 명세서 작성법**
 
+[가이드 보기 →](/ai-development/1-4-spec-writing-techniques.html)
+
 - 명세서 작성 원칙
 - AI 친화적 문서 구조
 - 명확성과 구체성 확보
 - 검증 가능한 명세서 작성
 
-### 1-5: /pla
-
-[가이드 보기 →](/ai-developme
-
-[가이드 보기 →](/ai-developme
-
-[가이드 보기 →](/ai-developme
-
-[가이드 보기 →](/ai-development/1-5-plan-tasks-utilization/)nt/1-4-spec-writing-techniques/)nt/1-3-principle-based-engineering/)nt/1-2-spec-driven-development/)n과 /tasks 활용법
+### 1-5: /plan과 /tasks 활용법
 **명세를 실행 가능한 계획과 작업으로 변환하기**
+
+[가이드 보기 →](/ai-development/1-5-plan-tasks-utilization.html)
 
 - 계획 생성 프로세스
 - 작업 분해 기법
@@ -80,95 +80,75 @@ order: 1
 ### 1-6: 이중 LLM 인지 아키텍처 구축
 **GPT-5(기획자)와 Claude Code(개발자) 연동하기**
 
-- 이중 LLM 구조의 장점
-- 역할 분담 전략
-- 연동 방법과 도구
-- 시너지 효과 극대화
+[가이드 보기 →](/ai-development/1-6-dual-llm-architecture.html)
+
+- 이중 LLM 아키텍처 설계
+- GPT-5와 Claude Code 역할 분담
+- 효과적인 연동 방법
+- 실제 구현 사례
 
 ### 1-7: 검증 루프 구현
 **GPT-5를 코드 리뷰어로 활용하여 결과물 품질 보장하기**
 
-- 검증 루프의 중요성
-- 자동화된 코드 리뷰
-- 품질 기준 설정
-- 지속적 개선 메커니즘
+[가이드 보기 →](/ai-development/1-7-verification-loop.html)
+
+- 검증 루프 설계 원칙
+- GPT-5 기반 코드 리뷰 시스템
+- 품질 보장 메커니즘
+- 지속적 개선 프로세스
 
 ### 1-8: 오케스트레이션 프레임워크 선택
-**CrewAI vs AutoGe
+**CrewAI vs AutoGen vs LangGraph 비교 분석**
 
-[가이드 보기 →](/ai-developme
+[가이드 보기 →](/ai-development/1-8-orchestration-framework.html)
 
-[가이드 보기 →](/ai-developme
-
-[가이드 보기 →](/ai-development/1-8-orchestration-framework/)nt/1-7-verification-loop/)nt/1-6-dual-llm-architecture/)n vs LangGraph 비교 분석**
-
-- 프레임워크 비교 분석
-- 프로젝트 요구사항에 맞는 선택
-- 구현 방법과 모범 사례
-- 성능과 확장성 고려사항
+- 주요 프레임워크 비교
+- 선택 기준과 고려사항
+- 각 프레임워크의 장단점
+- 프로젝트별 권장사항
 
 ### 1-9: CrewAI로 첫 번째 팀 빌딩
 **역할 기반 에이전트 시스템 구축 실습**
 
+[가이드 보기 →](/ai-development/1-9-crewai-team-building.html)
+
 - CrewAI 기본 개념
 - 에이전트 역할 정의
-- 팀 구성 및 설정
-- 실제 프로젝트 적용
+- 팀 구조 설계
+- 실제 구현 실습
 
-### 1-10: co
-
-[가이드 보기 →](/ai-developme
-
-[가이드 보기 →](/ai-development/1-9-crewai-team-building/)nt/1-10-constitution-writing/)nstitution.md 작성
+### 1-10: constitution.md 작성
 **AI 에이전트 팀을 위한 핵심 원칙과 가드레일 설정하기**
 
-- 헌법의 중요성
+[가이드 보기 →](/ai-development/1-10-constitution-writing.html)
+
+- 헌법 문서의 중요성
 - 핵심 원칙 정의
 - 가드레일 설정
-- 팀 문화 구축
-
-## 🛠️ 필요한 도구
-
-- **AI 플랫폼**: OpenAI GPT, Anthropic Claude
-- **개발 도구**: Spec Kit, GitHub Copilot
-- **프레임워크**: CrewAI, AutoGen, LangGraph
-- **협업 도구**: GitHub, Slack, Discord
-
-## 📖 학습 순서
-
-각 가이드는 순차적으로 학습하는 것을 권장하지만, 특정 주제에 관심이 있다면 개별적으로도 학습 가능합니다.
-
-1. **기초 개념** (1-1 ~ 1-3): 에이전틱 AI와 SDD 이해
-2. **실무 기법** (1-4 ~ 1-5): 명세서 작성과 계획 수립
-3. **고급 아키텍처** (1-6 ~ 1-7): 이중 LLM과 검증 시스템
-4. **팀 구축** (1-8 ~ 1-10): 프레임워크 선택과 팀 구성
-
-## 🎯 실습 프로젝트
-
-시리즈 1의 각 가이드에는 실제 적용 가능한 실습 프로젝트가 포함되어 있습니다:
-
-- **프로젝트 1**: 에이전틱 AI를 활용한 간단한 웹 애플리케이션 개발
-- **프로젝트 2**: SDD 방법론을 적용한 API 서버 구축
-- **프로젝트 3**: 이중 LLM 아키텍처를 활용한 복잡한 시스템 개발
-- **프로젝트 4**: CrewAI를 사용한 에이전트 팀 구성
-
-## 📊 성과 측정
-
-시리즈 1의 학습 성과는 다음 지표로 측정할 수 있습니다:
-
-- **개발 속도**: 프로젝트 완료 시간 단축
-- **코드 품질**: 버그 발생률 감소
-- **협업 효율성**: AI와의 협업 만족도
-- **학습 속도**: 새로운 기술 습득 시간
+- 실제 헌법 작성 실습
 
 ## 🚀 다음 단계
 
-시리즈 1을 완료한 후에는 다음 단계로 진행할 수 있습니다:
+이 시리즈를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[시리즈 2: 자동화된 SaaS 팩토리](../series-2/)**: 완전 자동화된 개발 파이프라인 구축
-2. **[시리즈 3: 디지털 인력 관리](../series-3/)**: AI 에이전트 팀 운영 방법
-3. **실전 프로젝트**: 학습한 내용을 실제 프로젝트에 적용
+1. **[시리즈 2: 자동화된 SaaS 팩토리](../automation-factory/)**: 완전 자동화된 개발 파이프라인 구축
+2. **[시리즈 3: 디지털 인력 관리](../team-management/)**: AI 에이전트 팀 운영 방법
+
+## 📋 학습 체크리스트
+
+- [ ] 1-1: 에이전틱 AI 개념 이해
+- [ ] 1-2: SDD 프로세스 마스터
+- [ ] 1-3: 원칙 기반 접근법 적용
+- [ ] 1-4: 효과적인 명세서 작성
+- [ ] 1-5: 계획과 작업 분해
+- [ ] 1-6: 이중 LLM 아키텍처 구현
+- [ ] 1-7: 검증 루프 설정
+- [ ] 1-8: 적절한 프레임워크 선택
+- [ ] 1-9: CrewAI 팀 구축
+- [ ] 1-10: 헌법 문서 작성
 
 ---
 
-**"AI와 함께하는 새로운 개발의 시작"** - 에이전틱 조직의 기초를 다져 미래를 준비하세요!
+**"AI와의 협업을 넘어 진정한 파트너십으로"** - AI 기반 개발의 새로운 패러다임
+
+© 2025 에이전틱 SaaS 조직. All rights reserved.
