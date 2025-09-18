@@ -1,0 +1,142 @@
+// Typography System
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 $space-md 0;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: $h1-size;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: $space-lg;
+}
+
+h2 {
+  font-size: $h2-size;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: $space-md;
+}
+
+h3 {
+  font-size: $h3-size;
+  font-weight: 500;
+  margin-bottom: $space-sm;
+}
+
+h4 {
+  font-size: $h4-size;
+  font-weight: 500;
+  margin-bottom: $space-sm;
+}
+
+h5 {
+  font-size: $h5-size;
+  font-weight: 500;
+  margin-bottom: $space-xs;
+}
+
+h6 {
+  font-size: $h6-size;
+  font-weight: 500;
+  margin-bottom: $space-xs;
+}
+
+// Body Text
+p {
+  margin: 0 0 $space-md 0;
+  color: $text-primary;
+}
+
+// Links
+a {
+  color: $primary-blue;
+  text-decoration: none;
+  transition: color $transition-fast;
+  
+  &:hover {
+    color: darken($primary-blue, 10%);
+    text-decoration: underline;
+  }
+}
+
+// Lists
+ul, ol {
+  margin: 0 0 $space-md 0;
+  padding-left: $space-lg;
+  
+  li {
+    margin-bottom: $space-xs;
+    color: $text-primary;
+  }
+}
+
+// Code
+code {
+  font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  font-size: 0.9em;
+  background-color: $secondary-light;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: $text-primary;
+}
+
+pre {
+  background-color: $secondary-light;
+  padding: $space-md;
+  border-radius: $border-radius-sm;
+  overflow-x: auto;
+  margin: $space-md 0;
+  
+  code {
+    background: none;
+    padding: 0;
+    color: $text-primary;
+  }
+}
+
+// Blockquotes
+blockquote {
+  margin: $space-lg 0;
+  padding: $space-md $space-lg;
+  border-left: 4px solid $primary-blue;
+  background-color: $secondary-light;
+  font-style: italic;
+  color: $text-secondary;
+}
+
+// Small Text
+small {
+  font-size: 15px;
+  line-height: 1.33;
+  color: $text-secondary;
+}
+
+// Text Utilities
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.text-primary { color: $text-primary; }
+.text-secondary { color: $text-secondary; }
+.text-tertiary { color: $text-tertiary; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }

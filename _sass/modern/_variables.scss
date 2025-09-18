@@ -1,0 +1,63 @@
+// Color Palette
+$primary-blue: #007AFF;
+$primary-dark: #1D1D1F;
+$primary-light: #F5F5F7;
+
+$secondary-gray: #8E8E93;
+$secondary-light: #F2F2F7;
+$accent-green: #30D158;
+$accent-orange: #FF9500;
+
+$text-primary: #1D1D1F;
+$text-secondary: #8E8E93;
+$text-tertiary: #C7C7CC;
+
+$white: #FFFFFF;
+$black: #000000;
+
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+$font-size-base: 17px;
+$line-height-base: 1.47;
+
+// Heading Sizes
+$h1-size: 48px;
+$h2-size: 32px;
+$h3-size: 24px;
+$h4-size: 20px;
+$h5-size: 17px;
+$h6-size: 15px;
+
+// Spacing Scale
+$space-xs: 8px;
+$space-sm: 16px;
+$space-md: 24px;
+$space-lg: 32px;
+$space-xl: 48px;
+$space-2xl: 64px;
+$space-3xl: 96px;
+
+// Container
+$container-max-width: 1200px;
+$container-padding: 20px;
+
+// Breakpoints
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1440px;
+
+// Border Radius
+$border-radius-sm: 8px;
+$border-radius-md: 12px;
+$border-radius-lg: 16px;
+
+// Shadows
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+// Transitions
+$transition-fast: 0.15s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;

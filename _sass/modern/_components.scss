@@ -1,0 +1,306 @@
+// Buttons
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $space-sm $space-lg;
+  border: none;
+  border-radius: $border-radius-sm;
+  font-family: $font-family;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all $transition-fast;
+  
+  &:hover {
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  
+  &.btn-primary {
+    background-color: $primary-blue;
+    color: $white;
+    
+    &:hover {
+      background-color: darken($primary-blue, 10%);
+      box-shadow: $shadow-md;
+    }
+  }
+  
+  &.btn-secondary {
+    background-color: transparent;
+    color: $primary-blue;
+    border: 2px solid $primary-blue;
+    
+    &:hover {
+      background-color: $primary-blue;
+      color: $white;
+    }
+  }
+  
+  &.btn-ghost {
+    background-color: transparent;
+    color: $text-primary;
+    
+    &:hover {
+      background-color: $secondary-light;
+    }
+  }
+}
+
+// Cards
+.card {
+  background-color: $white;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  transition: all $transition-normal;
+  
+  &:hover {
+    box-shadow: $shadow-md;
+    transform: translateY(-2px);
+  }
+  
+  .card-header {
+    padding: $space-lg;
+    border-bottom: 1px solid $secondary-light;
+    
+    .card-title {
+      font-size: $h3-size;
+      font-weight: 600;
+      margin: 0 0 $space-xs 0;
+      color: $text-primary;
+    }
+    
+    .card-badge {
+      display: inline-block;
+      padding: 4px $space-sm;
+      background-color: $primary-blue;
+      color: $white;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+  }
+  
+  .card-content {
+    padding: $space-lg;
+    
+    .card-description {
+      color: $text-secondary;
+      margin-bottom: $space-md;
+    }
+    
+    .card-features {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+      li {
+        position: relative;
+        padding-left: $space-lg;
+        margin-bottom: $space-xs;
+        color: $text-primary;
+        
+        &::before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: $accent-green;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  .card-footer {
+    padding: $space-lg;
+    border-top: 1px solid $secondary-light;
+    background-color: $primary-light;
+    
+    .card-link {
+      color: $primary-blue;
+      font-weight: 500;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Navigation
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $space-md 0;
+  border-bottom: 1px solid $secondary-light;
+  
+  .nav-brand {
+    font-size: 20px;
+    font-weight: 600;
+    color: $text-primary;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: $primary-blue;
+      }
+    }
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: $space-lg;
+    
+    li {
+      margin: 0;
+    }
+    
+    a {
+      color: $text-primary;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color $transition-fast;
+      
+      &:hover {
+        color: $primary-blue;
+      }
+    }
+  }
+}
+
+// Chapter Navigation
+.chapter-navigation {
+  padding: $space-2xl 0;
+  background-color: $primary-light;
+  border-top: 1px solid $secondary-light;
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: $space-sm;
+    padding: $space-md $space-lg;
+    background-color: $white;
+    border-radius: $border-radius-sm;
+    text-decoration: none;
+    color: $text-primary;
+    font-weight: 500;
+    transition: all $transition-fast;
+    box-shadow: $shadow-sm;
+    
+    &:hover {
+      box-shadow: $shadow-md;
+      transform: translateY(-1px);
+      text-decoration: none;
+    }
+    
+    .nav-arrow {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    
+    .nav-text {
+      font-size: 15px;
+    }
+  }
+}
+
+// Chapter Header
+.chapter-header {
+  padding: $space-3xl 0;
+  background: linear-gradient(135deg, $primary-light 0%, $white 100%);
+  text-align: center;
+  
+  .chapter-title {
+    font-size: $h1-size;
+    font-weight: 600;
+    margin-bottom: $space-md;
+    color: $text-primary;
+  }
+  
+  .chapter-description {
+    font-size: 20px;
+    color: $text-secondary;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Chapter Content
+.chapter-content {
+  padding: $space-3xl 0;
+  
+  .container {
+    max-width: 800px;
+  }
+}
+
+// Guide List
+.guide-list {
+  display: grid;
+  gap: $space-lg;
+  margin: $space-2xl 0;
+  
+  .guide-item {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-md;
+    padding: $space-lg;
+    background-color: $white;
+    border-radius: $border-radius-md;
+    box-shadow: $shadow-sm;
+    transition: all $transition-normal;
+    
+    &:hover {
+      box-shadow: $shadow-md;
+      transform: translateY(-2px);
+    }
+    
+    .guide-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background-color: $primary-blue;
+      color: $white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .guide-content {
+      flex: 1;
+      
+      .guide-title {
+        font-size: $h4-size;
+        font-weight: 600;
+        margin: 0 0 $space-xs 0;
+        color: $text-primary;
+      }
+      
+      .guide-description {
+        color: $text-secondary;
+        margin: 0;
+      }
+    }
+  }
+}
