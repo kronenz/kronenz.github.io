@@ -24,7 +24,7 @@ description: "AI 에이전트 기반의 자율적 소프트웨어 개발 조직 
 
 AI 에이전트와 협업하는 기본 원리와 방법을 학습합니다.
 
-- **1-1**: [에이전틱 AI 시작하기](/ai-development/1-1-agentic-ai-start-enhanced/) - AI 어시스턴트에서 자율적 행위자로의 전환
+- **1-1**: [에이전틱 AI 시작하기](/ai-development/agentic-ai-start/) - AI 어시스턴트에서 자율적 행위자로의 전환
 - **1-2**: [명세 기반 개발(SDD) 마스터하기](/ai-development/1-2-spec-driven-development/) - Spec Kit으로 첫 프로젝트 시작하기
 - **1-3**: [원칙 기반 엔지니어링으로의 전환](/ai-development/1-3-principle-based-engineering/) - 감성 코딩을 넘어서
 - **1-4**: [spec.md 작성의 기술](/ai-development/1-4-spec-writing-techniques/) - AI가 이해하는 명확한 명세서 작성법
@@ -91,8 +91,8 @@ AI 에이전트를 효과적으로 관리하고 운영하는 방법을 학습합
 - **5-5**: [스팟 인스턴스 마스터](/business-growth/5-5-spot-instance-mastery/) - AI 에이전트를 활용한 비용 절감 극대화 전략
 - **5-6**: [자율적 성장 해킹 입문](/business-growth/5-6-autonomous-growth-hacking/) - A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
 - **5-7**: [강화 학습(RL)을 이용한 UI/UX 최적화](/business-growth/5-7-rl-ui-ux-optimization/) - 기본 개념과 작동 원리
-- **5-8**: [RL 에이전트 구축](/business-growth/5-8-rl-agent-construction/) - 사용자 행동 학습 및 UI 실시간 최적화
-- **5-9**: [자율적 성장 해킹 마스터](/business-growth/5-9-autonomous-growth-hacking-master/) - 지속적으로 학습하고 개선하는 제품 만들기
+- **5-8**: [보상 함수 설계](/business-growth/5-8-rl-agent-construction/) - UI 변경을 비즈니스 KPI와 연결하는 방법
+- **5-9**: [실시간 UX 최적화 에이전트 배포](/business-growth/5-9-autonomous-growth-hacking-master/) - 지속적으로 학습하고 개선하는 제품 만들기
 
 ## Spec Driven Development 프레임워크
 

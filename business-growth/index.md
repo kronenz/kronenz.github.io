@@ -35,7 +35,11 @@ order: 5
 - 성과 측정 시스템 구축
 - 지속적 개선 프로세스
 
-### 5-2: AI 기반 FinOps 소개
+### 5-2: AI 기반 Fi
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/business-growth/5-2-ai-finops-introduction/)ness-growth/5-1-100x-productivity-quantification/)nOps 소개
 **자율적인 클라우드 비용 관리의 필요성**
 
 - FinOps의 핵심 개념
@@ -43,7 +47,9 @@ order: 5
 - 클라우드 비용 최적화 전략
 - ROI 측정 및 분석
 
-### 5-3: FinOps 에이전트 구축
+### 5-3: Fi
+
+[가이드 보기 →](/business-growth/5-3-finops-agent-construction/)nOps 에이전트 구축
 **클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기**
 
 - FinOps 에이전트 설계
@@ -102,7 +108,19 @@ order: 5
 ## 🛠️ 필요한 도구
 
 - **클라우드 플랫폼**: AWS, Azure, GCP
-- **모니터링**: Prometheus, Grafana, CloudWatch
+- **모니터링**: Prometheus, Grafa
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/busi
+
+[가이드 보기 →](/business-growth/5-9-autonomous-growth-hacking-master/)ness-growth/5-8-rl-agent-construction/)ness-growth/5-7-rl-ui-ux-optimization/)ness-growth/5-6-autonomous-growth-hacking/)ness-growth/5-5-spot-instance-mastery/)ness-growth/5-4-automated-resource-management/)na, CloudWatch
 - **ML/AI**: TensorFlow, PyTorch, Scikit-learn
 - **데이터베이스**: PostgreSQL, MongoDB, Redis
 - **분석 도구**: Jupyter, Pandas, NumPy

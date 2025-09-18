@@ -30,6 +30,10 @@ order: 1
 ### 1-1: 에이전틱 AI 시작하기
 **AI 어시스턴트에서 자율적 행위자로의 전환**
 
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-development/1-1-agentic-ai-start/)nt/agentic-ai-start/)
+
 - 에이전틱 AI의 핵심 개념
 - 전통적 AI 사용법과의 차이점
 - 자율적 행위자로서의 AI 활용법
@@ -59,7 +63,15 @@ order: 1
 - 명확성과 구체성 확보
 - 검증 가능한 명세서 작성
 
-### 1-5: /plan과 /tasks 활용법
+### 1-5: /pla
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-development/1-5-plan-tasks-utilization/)nt/1-4-spec-writing-techniques/)nt/1-3-principle-based-engineering/)nt/1-2-spec-driven-development/)n과 /tasks 활용법
 **명세를 실행 가능한 계획과 작업으로 변환하기**
 
 - 계획 생성 프로세스
@@ -84,7 +96,13 @@ order: 1
 - 지속적 개선 메커니즘
 
 ### 1-8: 오케스트레이션 프레임워크 선택
-**CrewAI vs AutoGen vs LangGraph 비교 분석**
+**CrewAI vs AutoGe
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-development/1-8-orchestration-framework/)nt/1-7-verification-loop/)nt/1-6-dual-llm-architecture/)n vs LangGraph 비교 분석**
 
 - 프레임워크 비교 분석
 - 프로젝트 요구사항에 맞는 선택
@@ -99,7 +117,11 @@ order: 1
 - 팀 구성 및 설정
 - 실제 프로젝트 적용
 
-### 1-10: constitution.md 작성
+### 1-10: co
+
+[가이드 보기 →](/ai-developme
+
+[가이드 보기 →](/ai-development/1-9-crewai-team-building/)nt/1-10-constitution-writing/)nstitution.md 작성
 **AI 에이전트 팀을 위한 핵심 원칙과 가드레일 설정하기**
 
 - 헌법의 중요성

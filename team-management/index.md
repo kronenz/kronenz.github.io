@@ -28,7 +28,9 @@ order: 3
 
 ## 📚 가이드 목록
 
-### 3-1: 생성형 개발 주도(GenDD) 모델
+### 3-1: 생성형 개발 주도(Ge
+
+[가이드 보기 →](/team-management/3-1-gendd-model/)nDD) 모델
 **새로운 AI 개발팀 철학 이해하기**
 
 - GenDD 모델의 핵심 개념과 원리
@@ -102,7 +104,23 @@ order: 3
 
 ## 🛠️ 필요한 도구
 
-- **AI 프레임워크**: CrewAI, AutoGen, LangGraph
+- **AI 프레임워크**: CrewAI, AutoGe
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-ma
+
+[가이드 보기 →](/team-management/3-9-digital-employee-onboarding/)nagement/3-8-strategic-validation/)nagement/3-7-future-core-skills/)nagement/3-6-coder-to-conductor/)nagement/3-5-conflict-resolution/)nagement/3-4-agent-collaboration-models/)nagement/3-3-agent-persona-creation/)nagement/3-2-ai-team-roles/)n, LangGraph
 - **LLM API**: OpenAI GPT, Anthropic Claude
 - **모니터링 도구**: Prometheus, Grafana
 - **협업 도구**: Slack, Discord, Microsoft Teams

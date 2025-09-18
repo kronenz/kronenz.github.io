@@ -25,7 +25,9 @@ order: 4
 
 ## 📚 가이드 목록
 
-### 4-1: Devin 아키텍처 해부
+### 4-1: Devi
+
+[가이드 보기 →](/advanced-architecture/4-1-devin-architecture-analysis/)n 아키텍처 해부
 **자율 개발을 위한 샌드박스 환경 구축하기**
 
 - Devin의 핵심 아키텍처 분석
@@ -33,7 +35,9 @@ order: 4
 - 도구 통합 및 생태계 구축
 - 실제 구현 방법
 
-### 4-2: Devin의 두뇌 재현
+### 4-2: Devi
+
+[가이드 보기 →](/advanced-architecture/4-2-devin-brain-replication/)n의 두뇌 재현
 **장기적 추론 및 계획 알고리즘 구현하기**
 
 - 장기적 추론 메커니즘 분석
@@ -49,7 +53,11 @@ order: 4
 - 학습 메커니즘 구현
 - 피드백 루프 구축
 
-### 4-4: MultiDevin 모델의 이해
+### 4-4: MultiDevi
+
+[가이드 보기 →](/adva
+
+[가이드 보기 →](/advanced-architecture/4-4-multidevin-model/)nced-architecture/4-3-self-correction-mechanisms/)n 모델의 이해
 **병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계**
 
 - MultiDevin 아키텍처 분석
@@ -57,7 +65,9 @@ order: 4
 - 작업 분배 알고리즘
 - 확장성 고려사항
 
-### 4-5: Devin 플레이북 적용
+### 4-5: Devi
+
+[가이드 보기 →](/advanced-architecture/4-5-devin-playbook-application/)n 플레이북 적용
 **레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기**
 
 - 실제 프로젝트 적용 사례
@@ -75,7 +85,9 @@ order: 4
 
 ## 🛠️ 필요한 도구
 
-- **개발 환경**: Docker, VS Code, Terminal
+- **개발 환경**: Docker, VS Code, Termi
+
+[가이드 보기 →](/advanced-architecture/4-6-known-limitations-reality/)nal
 - **AI 프레임워크**: CrewAI, AutoGen, LangGraph
 - **LLM API**: OpenAI GPT, Anthropic Claude
 - **모니터링**: Prometheus, Grafana

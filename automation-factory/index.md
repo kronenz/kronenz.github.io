@@ -27,7 +27,9 @@ order: 2
 
 ## 📚 가이드 목록
 
-### 2-1: GitHub Actions 101
+### 2-1: GitHub Actio
+
+[가이드 보기 →](/automation-factory/2-1-github-actions-101/)ns 101
 **첫 번째 CI/CD 워크플로우 자동화**
 
 - GitHub Actions 기본 개념
@@ -76,7 +78,19 @@ order: 2
 - 피드백 루프 구축
 
 ### 2-7: 자율적 QA 팀 구성
-**명세서로부터 Gherkin 테스트 케이스를 생성하는 QA 에이전트**
+**명세서로부터 Gherki
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automation-factory/2-7-autonomous-qa-team/)n-factory/2-6-quality-control-setup/)n-factory/2-5-autonomous-commits-prs/)n-factory/2-4-factory-floor-construction/)n-factory/2-3-front-office-setup/)n-factory/2-2-automation-triggers/)n 테스트 케이스를 생성하는 QA 에이전트**
 
 - QA 에이전트 설계
 - Gherkin 테스트 생성
@@ -84,7 +98,9 @@ order: 2
 - 품질 보증 프로세스
 
 ### 2-8: 테스트 자동화
-**Gherkin 시나리오를 Selenium/Playwright 스크립트로 변환하고 실행하기**
+**Gherki
+
+[가이드 보기 →](/automation-factory/2-8-test-automation/)n 시나리오를 Selenium/Playwright 스크립트로 변환하고 실행하기**
 
 - 테스트 스크립트 자동 생성
 - Selenium/Playwright 연동
@@ -117,7 +133,13 @@ order: 2
 
 ## 🛠️ 필요한 도구
 
-- **CI/CD**: GitHub Actions, Jenkins
+- **CI/CD**: GitHub Actio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automatio
+
+[가이드 보기 →](/automation-factory/2-9-self-healing-tests/)n-factory/2-11-end-to-end-project/)n-factory/2-10-shipping-dock-setup/)ns, Jenkins
 - **AI 프레임워크**: CrewAI, AutoGen
 - **테스트 도구**: Selenium, Playwright, Jest
 - **DevOps**: Docker, Kubernetes, AWS/Azure
