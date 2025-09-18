@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<article class="series-page">
+    <header class="series-header">
+        <h1 class="series-title">{{ page.title }}</h1>
+        {% if page.description %}
+        <p class="series-description">{{ page.description }}</p>
+        {% endif %}
+    </header>
+
+    <div class="series-content">
+        {{ content }}
+    </div>
+
+    <nav class="series-navigation">
+        <h3>가이드 목록</h3>
+        <ul class="guide-list">
+            {% assign series_guides = site.pages | where: "series", page.series | sort: "order" %}
+            {% for guide in series_guides %}
+            <li class="guide-item">
+                <a href="{{ guide.url | relative_url }}" class="guide-link">
+                    <span class="guide-number">{{ guide.order }}</span>
+                    <span class="guide-title">{{ guide.title }}</span>
+                </a>
+                {% if guide.description %}
+                <p class="guide-description">{{ guide.description }}</p>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</article>

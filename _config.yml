@@ -1,0 +1,81 @@
+# Site settings
+title: "에이전틱 SaaS 조직"
+subtitle: "100배 생산성과 고수익 성장을 위한 청사진"
+description: "AI 에이전트 기반의 자율적 소프트웨어 개발 조직 구축을 위한 포괄적인 가이드 시리즈"
+baseurl: ""
+url: "https://kronenz.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  series:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "series"
+    values:
+      layout: "series"
+
+# Navigation
+navigation:
+  - title: "홈"
+    url: "/"
+  - title: "시리즈 1"
+    url: "/series-1/"
+  - title: "시리즈 2"
+    url: "/series-2/"
+  - title: "시리즈 3"
+    url: "/series-3/"
+  - title: "시리즈 4"
+    url: "/series-4/"
+  - title: "시리즈 5"
+    url: "/series-5/"
+
+# SEO
+seo:
+  type: "WebSite"
+  locale: "ko_KR"
+  site_name: "에이전틱 SaaS 조직"
+  description: "AI 에이전트 기반의 자율적 소프트웨어 개발 조직 구축을 위한 포괄적인 가이드 시리즈"
+
+# Social
+social:
+  - name: "GitHub"
+    icon: "github"
+    url: "https://github.com/kronenz"
+  - name: "Email"
+    icon: "envelope"
+    url: "mailto:contact@kronenz.dev"
+
+# Exclude
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - LICENSE
+  - .gitignore
+  - .git
+  - tools/
+  - examples/
+  - templates/
+  - *.json
+  - continuity-report*.json
