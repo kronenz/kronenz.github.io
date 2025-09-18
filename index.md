@@ -91,8 +91,8 @@ AI 에이전트를 효과적으로 관리하고 운영하는 방법을 학습합
 - **5-5**: [스팟 인스턴스 마스터](/series-5/5-5-spot-instance-mastery/) - AI 에이전트를 활용한 비용 절감 극대화 전략
 - **5-6**: [자율적 성장 해킹 입문](/series-5/5-6-autonomous-growth-hacking/) - A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
 - **5-7**: [강화 학습(RL)을 이용한 UI/UX 최적화](/series-5/5-7-rl-ui-ux-optimization/) - 기본 개념과 작동 원리
-- **5-8**: [보상 함수 설계](/series-5/5-8-reward-function-design/) - UI 변경을 비즈니스 KPI와 연결하는 방법
-- **5-9**: [실시간 UX 최적화 에이전트 배포](/series-5/5-9-real-time-ux-optimization/) - 지속적으로 학습하고 개선하는 제품 만들기
+- **5-8**: [RL 에이전트 구축](/series-5/5-8-rl-agent-construction/) - 사용자 행동 학습 및 UI 실시간 최적화
+- **5-9**: [자율적 성장 해킹 마스터](/series-5/5-9-autonomous-growth-hacking-master/) - 지속적으로 학습하고 개선하는 제품 만들기
 
 ## 🛠️ Spec Driven Development 프레임워크
 
