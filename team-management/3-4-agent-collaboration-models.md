@@ -45,14 +45,21 @@ AI 에이전트들이 효과적으로 협업할 수 있는 모델을 설계하�
 ### 1. 협업 모델의 기본 원리
 
 #### 계층적 모델 (Hierarchical Model)
-```
-Manager Agent
-    ├── Product Strategy Agent
-    ├── Development Team
-    │   ├── Frontend Agent
-    │   ├── Backend Agent
-    │   └── QA Agent
-    └── DevOps Agent
+
+```mermaid
+graph TD
+    A[Manager Agent] --> B[Product Strategy Agent]
+    A --> C[Development Team]
+    A --> D[DevOps Agent]
+    
+    C --> E[Frontend Agent]
+    C --> F[Backend Agent]
+    C --> G[QA Agent]
+    
+    style A fill:#007AFF,stroke:#1D1D1F,color:#fff
+    style B fill:#F5F5F7,stroke:#8E8E93
+    style C fill:#F5F5F7,stroke:#8E8E93
+    style D fill:#F5F5F7,stroke:#8E8E93
 ```
 
 **특징:**
@@ -62,10 +69,21 @@ Manager Agent
 - 갈등 해결이 상대적으로 용이
 
 #### 협력적 모델 (Collaborative Model)
-```
-Product Strategy Agent ←→ Development Agent
-         ↕                        ↕
-   QA Agent ←→ DevOps Agent ←→ Frontend Agent
+
+```mermaid
+graph LR
+    A[Product Strategy Agent] <--> B[Development Agent]
+    A <--> C[QA Agent]
+    B <--> D[DevOps Agent]
+    B <--> E[Frontend Agent]
+    C <--> D
+    D <--> E
+    
+    style A fill:#30D158,stroke:#1D1D1F,color:#fff
+    style B fill:#30D158,stroke:#1D1D1F,color:#fff
+    style C fill:#30D158,stroke:#1D1D1F,color:#fff
+    style D fill:#30D158,stroke:#1D1D1F,color:#fff
+    style E fill:#30D158,stroke:#1D1D1F,color:#fff
 ```
 
 **특징:**
