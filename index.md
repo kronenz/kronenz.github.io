@@ -119,7 +119,7 @@ pip install -r requirements.txt
 ```
 
 ### 첫 번째 가이드 시작
-[에이전틱 AI 시작하기](/ai-development/1-1-agentic-ai-start-enhanced/)부터 시작하여 단계별로 학습하세요.
+[에이전틱 AI 시작하기](/ai-development/1-1-agentic-ai-start/)부터 시작하여 단계별로 학습하세요.
 
 ## 기여하기
 
