@@ -699,9 +699,9 @@ class TeamPersonaEffectiveness:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[3-4: 에이전트 협업 모델 설계](3-4-agent-collaboration-models.md)**: 계층적 모델과 협력적 모델의 구현
-2. **[3-5: AI 에이전트 간 갈등 해결](3-5-conflict-resolution.md)**: 갈등 해결 메커니즘 구축
-3. **[3-6: 코더에서 지휘자로](3-6-coder-to-conductor.md)**: 인간의 역할 전환과 새로운 역량 개발
+1. **[3-4: 에이전트 협업 모델 설계](3-4-agent-collaboration-models.html)**: 계층적 모델과 협력적 모델의 구현
+2. **[3-5: AI 에이전트 간 갈등 해결](3-5-conflict-resolution.html)**: 갈등 해결 메커니즘 구축
+3. **[3-6: 코더에서 지휘자로](3-6-coder-to-conductor.html)**: 인간의 역할 전환과 새로운 역량 개발
 
 ## 📚 추가 리소스
 

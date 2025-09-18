@@ -186,8 +186,8 @@ class TaskDistributor:
 
 이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-- [자율적 코드 커밋 및 PR 생성](2-5-autonomous-commits-prs.md)
-- [품질 관리 구축](2-6-quality-control-setup.md)
+- [자율적 코드 커밋 및 PR 생성](2-5-autonomous-commits-prs.html)
+- [품질 관리 구축](2-6-quality-control-setup.html)
 
 ## 📝 요약
 

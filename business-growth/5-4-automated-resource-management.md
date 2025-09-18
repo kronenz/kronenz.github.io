@@ -1046,9 +1046,9 @@ class ResourceManagementDashboard:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.md)**: AI 에이전트를 활용한 비용 절감 극대화 전략
-2. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.md)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
-3. **[5-7: 강화 학습(RL)을 이용한 UI/UX 최적화](5-7-rl-ui-ux-optimization.md)**: 기본 개념과 작동 원리
+1. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.html)**: AI 에이전트를 활용한 비용 절감 극대화 전략
+2. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.html)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
+3. **[5-7: 강화 학습(RL)을 이용한 UI/UX 최적화](5-7-rl-ui-ux-optimization.html)**: 기본 개념과 작동 원리
 
 ## 📚 추가 리소스
 

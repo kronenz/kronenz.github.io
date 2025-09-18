@@ -451,16 +451,16 @@ jobs:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[2-3: 프런트 오피스 구축](2-3-front-office-setup.md)**: 제품 전략가 에이전트 구축하기
-2. **[2-4: 공장 플로어 구축](2-4-factory-floor-construction.md)**: 개발자 팀 오케스트레이션하기
-3. **[시리즈 3: 디지털 인력 관리](../series-3/3-1-gendd-model.md)**: AI 팀 관리 방법 학습하기
+1. **[2-3: 프런트 오피스 구축](2-3-front-office-setup.html)**: 제품 전략가 에이전트 구축하기
+2. **[2-4: 공장 플로어 구축](2-4-factory-floor-construction.html)**: 개발자 팀 오케스트레이션하기
+3. **[시리즈 3: 디지털 인력 관리](../series-3/3-1-gendd-model.html)**: AI 팀 관리 방법 학습하기
 
 ## 추가 리소스
 
 - [GitHub Actions 이벤트 참조](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
 - [워크플로우 조건부 실행](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idif)
 - [에이전틱 프로젝트 예제](../examples/github-actions/)
-- [AI 에이전트 통합 가이드](../series-1/1-9-crewai-team-building.md)
+- [AI 에이전트 통합 가이드](../series-1/1-9-crewai-team-building.html)
 
 ---
 

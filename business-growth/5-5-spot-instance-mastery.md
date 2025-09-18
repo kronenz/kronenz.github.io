@@ -927,9 +927,9 @@ class SpotCostTracker:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.md)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
-2. **[5-7: 강화 학습(RL)을 이용한 UI/UX 최적화](5-7-rl-ui-ux-optimization.md)**: 기본 개념과 작동 원리
-3. **[5-8: RL 에이전트 구축](5-8-rl-agent-construction.md)**: 사용자 행동을 학습하고 UI를 실시간으로 최적화하는 에이전트 만들기
+1. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.html)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
+2. **[5-7: 강화 학습(RL)을 이용한 UI/UX 최적화](5-7-rl-ui-ux-optimization.html)**: 기본 개념과 작동 원리
+3. **[5-8: RL 에이전트 구축](5-8-rl-agent-construction.html)**: 사용자 행동을 학습하고 UI를 실시간으로 최적화하는 에이전트 만들기
 
 ## 📚 추가 리소스
 

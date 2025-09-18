@@ -650,8 +650,8 @@ class TaskMonitor:
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-6: 이중 LLM 인지 아키텍처 구축](1-6-dual-llm-architecture.md)**
-2. **[1-7: 검증 루프 구현](1-7-verification-loop.md)**
+1. **[1-6: 이중 LLM 인지 아키텍처 구축](1-6-dual-llm-architecture.html)**
+2. **[1-7: 검증 루프 구현](1-7-verification-loop.html)**
 
 ## 📚 추가 리소스
 

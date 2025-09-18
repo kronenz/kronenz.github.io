@@ -788,9 +788,9 @@ class StatisticalAnomalyDetector:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.md)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
-2. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.md)**: AI 에이전트를 활용한 비용 절감 극대화 전략
-3. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.md)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
+1. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.html)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
+2. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.html)**: AI 에이전트를 활용한 비용 절감 극대화 전략
+3. **[5-6: 자율적 성장 해킹 입문](5-6-autonomous-growth-hacking.html)**: A/B 테스트를 넘어선 새로운 UX 최적화 패러다임
 
 ## 📚 추가 리소스
 

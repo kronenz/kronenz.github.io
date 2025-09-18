@@ -1069,7 +1069,7 @@ class ProductionDeployment:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-9: 자율적 성장 해킹 마스터](5-9-autonomous-growth-hacking-master.md)**: 실제 서비스에 적용하고 성과 측정하기
+1. **[5-9: 자율적 성장 해킹 마스터](5-9-autonomous-growth-hacking-master.html)**: 실제 서비스에 적용하고 성과 측정하기
 2. **[5-10: 100배 생산성 달성](5-10-100x-productivity-achievement.md)**: 모든 지식을 통합하여 100배 생산성 달성하기
 
 ## 📚 추가 리소스

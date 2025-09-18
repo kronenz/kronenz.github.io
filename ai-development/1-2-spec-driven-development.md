@@ -479,8 +479,8 @@ spec analyze-dependencies tasks.md --fix
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-3: "감성 코딩"을 넘어서](1-3-principle-based-engineering.md)**
-2. **[1-4: `spec.md` 작성의 기술](1-4-spec-writing-techniques.md)**
+1. **[1-3: "감성 코딩"을 넘어서](1-3-principle-based-engineering.html)**
+2. **[1-4: `spec.md` 작성의 기술](1-4-spec-writing-techniques.html)**
 
 ## 📚 추가 리소스
 

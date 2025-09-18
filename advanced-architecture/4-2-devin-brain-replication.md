@@ -646,9 +646,9 @@ class AdaptiveLearningSystem:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[4-3: 자가 수정 메커니즘](4-3-self-correction-mechanisms.md)**: 오류 발생 시 스스로 디버깅하고 학습하는 에이전트 만들기
-2. **[4-4: MultiDevin 모델의 이해](4-4-multidevin-model.md)**: 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계
-3. **[4-5: Devin 플레이북 적용](4-5-devin-playbook-application.md)**: 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기
+1. **[4-3: 자가 수정 메커니즘](4-3-self-correction-mechanisms.html)**: 오류 발생 시 스스로 디버깅하고 학습하는 에이전트 만들기
+2. **[4-4: MultiDevin 모델의 이해](4-4-multidevin-model.html)**: 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계
+3. **[4-5: Devin 플레이북 적용](4-5-devin-playbook-application.html)**: 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기
 
 ## 📚 추가 리소스
 

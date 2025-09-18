@@ -621,9 +621,9 @@ class TeamPerformanceMonitor:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[3-3: 에이전트 페르소나 제작법](3-3-agent-persona-creation.md)**: 효과적인 에이전트 성격과 동기 부여 시스템 설계
-2. **[3-4: 에이전트 협업 모델 설계](3-4-agent-collaboration-models.md)**: 계층적 모델과 협력적 모델의 구현
-3. **[3-5: AI 에이전트 간 갈등 해결](3-5-conflict-resolution.md)**: 갈등 해결 메커니즘 구축
+1. **[3-3: 에이전트 페르소나 제작법](3-3-agent-persona-creation.html)**: 효과적인 에이전트 성격과 동기 부여 시스템 설계
+2. **[3-4: 에이전트 협업 모델 설계](3-4-agent-collaboration-models.html)**: 계층적 모델과 협력적 모델의 구현
+3. **[3-5: AI 에이전트 간 갈등 해결](3-5-conflict-resolution.html)**: 갈등 해결 메커니즘 구축
 
 ## 📚 추가 리소스
 

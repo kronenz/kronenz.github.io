@@ -655,9 +655,9 @@ class ContinuousImprovementProcess:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[3-7: 미래의 핵심 역량](3-7-future-core-skills.md)**: 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기
-2. **[3-8: 전략적 검증의 기술](3-8-strategic-validation.md)**: AI 결과물을 비즈니스 목표와 정렬하는 방법
-3. **[3-9: 첫 디지털 직원 온보딩](3-9-digital-employee-onboarding.md)**: AI 에이전트를 팀 워크플로우에 통합하는 단계별 가이드
+1. **[3-7: 미래의 핵심 역량](3-7-future-core-skills.html)**: 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기
+2. **[3-8: 전략적 검증의 기술](3-8-strategic-validation.html)**: AI 결과물을 비즈니스 목표와 정렬하는 방법
+3. **[3-9: 첫 디지털 직원 온보딩](3-9-digital-employee-onboarding.html)**: AI 에이전트를 팀 워크플로우에 통합하는 단계별 가이드
 
 ## 📚 추가 리소스
 

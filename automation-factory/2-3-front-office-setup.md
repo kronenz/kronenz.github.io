@@ -188,8 +188,8 @@ jobs:
 
 이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-- [공장 플로어 구축](2-4-factory-floor-construction.md)
-- [자율적 코드 커밋 및 PR 생성](2-5-autonomous-commits-prs.md)
+- [공장 플로어 구축](2-4-factory-floor-construction.html)
+- [자율적 코드 커밋 및 PR 생성](2-5-autonomous-commits-prs.html)
 
 ## 📝 요약
 

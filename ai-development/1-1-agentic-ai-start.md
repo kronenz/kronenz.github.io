@@ -493,8 +493,8 @@ class TestAgentIntegration(unittest.TestCase):
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-2: 명세 기반 개발(명세 기반 개발) 마스터하기](1-2-spec-driven-development.md)**: Spec Kit으로 첫 프로젝트 시작하기
-2. **[1-3: 원칙 기반 엔지니어링으로의 전환](1-3-principle-based-engineering.md)**: 감성 코딩을 넘어서 원칙 기반 엔지니어링으로
+1. **[1-2: 명세 기반 개발(명세 기반 개발) 마스터하기](1-2-spec-driven-development.html)**: Spec Kit으로 첫 프로젝트 시작하기
+2. **[1-3: 원칙 기반 엔지니어링으로의 전환](1-3-principle-based-engineering.html)**: 감성 코딩을 넘어서 원칙 기반 엔지니어링으로
 
 ## 📚 추가 리소스
 

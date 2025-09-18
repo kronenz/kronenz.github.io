@@ -830,9 +830,9 @@ class ProductivityRoadmap:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-2: AI 기반 FinOps 소개](5-2-ai-finops-introduction.md)**: 자율적인 클라우드 비용 관리의 필요성
-2. **[5-3: FinOps 에이전트 구축](5-3-finops-agent-construction.md)**: 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기
-3. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.md)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
+1. **[5-2: AI 기반 FinOps 소개](5-2-ai-finops-introduction.html)**: 자율적인 클라우드 비용 관리의 필요성
+2. **[5-3: FinOps 에이전트 구축](5-3-finops-agent-construction.html)**: 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기
+3. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.html)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
 
 ## 📚 추가 리소스
 

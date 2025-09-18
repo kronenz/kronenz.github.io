@@ -527,8 +527,8 @@ class MonitoringDashboard:
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-7: 검증 루프 구현](1-7-verification-loop.md)**
-2. **[1-8: 오케스트레이션 프레임워크 선택](1-8-orchestration-framework.md)**
+1. **[1-7: 검증 루프 구현](1-7-verification-loop.html)**
+2. **[1-8: 오케스트레이션 프레임워크 선택](1-8-orchestration-framework.html)**
 
 ## 📚 추가 리소스
 

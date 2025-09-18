@@ -591,8 +591,8 @@ class PrincipleComplianceMonitor:
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-4: `spec.md` 작성의 기술](1-4-spec-writing-techniques.md)**
-2. **[1-5: `/plan`과 `/tasks` 활용법](1-5-plan-tasks-utilization.md)**
+1. **[1-4: `spec.md` 작성의 기술](1-4-spec-writing-techniques.html)**
+2. **[1-5: `/plan`과 `/tasks` 활용법](1-5-plan-tasks-utilization.html)**
 
 ## 📚 추가 리소스
 

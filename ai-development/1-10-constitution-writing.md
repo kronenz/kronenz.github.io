@@ -614,8 +614,8 @@ class ConstitutionImprovement:
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[2-1: GitHub Actions 101](../series-2/2-1-github-actions-101.md)**
-2. **[2-2: 자동화의 시작](../series-2/2-2-automation-triggers.md)**
+1. **[2-1: GitHub Actions 101](../series-2/2-1-github-actions-101.html)**
+2. **[2-2: 자동화의 시작](../series-2/2-2-automation-triggers.html)**
 
 ## 📚 추가 리소스
 

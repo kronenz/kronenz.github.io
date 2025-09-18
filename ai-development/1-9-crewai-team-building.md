@@ -608,7 +608,7 @@ class CrewMonitor:
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
 1. **[1-10: `constitution.md` 작성](1-10-constitution-writing.md)**
-2. **[2-1: GitHub Actions 101](../series-2/2-1-github-actions-101.md)**
+2. **[2-1: GitHub Actions 101](../series-2/2-1-github-actions-101.html)**
 
 ## 📚 추가 리소스
 

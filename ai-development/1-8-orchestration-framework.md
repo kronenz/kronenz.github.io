@@ -532,7 +532,7 @@ class FrameworkMonitor:
 
 이 가이드를 완료한 후에는 다음 단계로 진행하세요:
 
-1. **[1-9: CrewAI로 첫 번째 팀 빌딩](1-9-crewai-team-building.md)**
+1. **[1-9: CrewAI로 첫 번째 팀 빌딩](1-9-crewai-team-building.html)**
 2. **[1-10: `constitution.md` 작성](1-10-constitution-writing.md)**
 
 ## 📚 추가 리소스

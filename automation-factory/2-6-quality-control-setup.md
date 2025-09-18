@@ -225,8 +225,8 @@ class SecurityScanner:
 
 이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-- [자율적 QA 팀 구성](2-7-autonomous-qa-team.md)
-- [테스트 자동화](2-8-test-automation.md)
+- [자율적 QA 팀 구성](2-7-autonomous-qa-team.html)
+- [테스트 자동화](2-8-test-automation.html)
 
 ## 📝 요약
 

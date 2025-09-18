@@ -214,8 +214,8 @@ class CommitMessageGenerator:
 
 이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-- [품질 관리 구축](2-6-quality-control-setup.md)
-- [자율적 QA 팀 구성](2-7-autonomous-qa-team.md)
+- [품질 관리 구축](2-6-quality-control-setup.html)
+- [자율적 QA 팀 구성](2-7-autonomous-qa-team.html)
 
 ## 📝 요약
 

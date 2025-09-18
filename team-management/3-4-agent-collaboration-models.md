@@ -629,9 +629,9 @@ class TeamPerformanceMonitor:
 
 이 가이드를 완료한 후 다음 가이드들을 학습해보세요:
 
-- [3-5: AI 에이전트 간의 갈등 해결](3-5-conflict-resolution.md) - 협상, 투표, 중재 프로토콜 구현하기
-- [3-6: 코더에서 지휘자로](3-6-coder-to-conductor.md) - 에이전틱 시대의 인간 개발자의 역할 재정의
-- [3-7: 미래의 핵심 역량](3-7-future-core-skills.md) - 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기
+- [3-5: AI 에이전트 간의 갈등 해결](3-5-conflict-resolution.html) - 협상, 투표, 중재 프로토콜 구현하기
+- [3-6: 코더에서 지휘자로](3-6-coder-to-conductor.html) - 에이전틱 시대의 인간 개발자의 역할 재정의
+- [3-7: 미래의 핵심 역량](3-7-future-core-skills.html) - 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기
 
 ## 📝 요약
 

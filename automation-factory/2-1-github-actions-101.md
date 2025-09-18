@@ -484,9 +484,9 @@ jobs:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[2-2: 자동화의 시작](2-2-automation-triggers.md)**: GitHub 이슈를 트리거로 AI 워크플로우 실행하기
-2. **[2-3: 프런트 오피스 구축](2-3-front-office-setup.md)**: 제품 전략가 에이전트 구축하기
-3. **[시리즈 3: 디지털 인력 관리](../series-3/3-1-gendd-model.md)**: AI 팀 관리 방법 학습하기
+1. **[2-2: 자동화의 시작](2-2-automation-triggers.html)**: GitHub 이슈를 트리거로 AI 워크플로우 실행하기
+2. **[2-3: 프런트 오피스 구축](2-3-front-office-setup.html)**: 제품 전략가 에이전트 구축하기
+3. **[시리즈 3: 디지털 인력 관리](../series-3/3-1-gendd-model.html)**: AI 팀 관리 방법 학습하기
 
 ## 추가 리소스
 

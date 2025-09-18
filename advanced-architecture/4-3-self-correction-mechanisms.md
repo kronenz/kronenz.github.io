@@ -868,9 +868,9 @@ class CorrectionPerformanceAnalyzer:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[4-4: MultiDevin 모델의 이해](4-4-multidevin-model.md)**: 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계
-2. **[4-5: Devin 플레이북 적용](4-5-devin-playbook-application.md)**: 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기
-3. **[4-6: 알려진 한계와 현실](4-6-known-limitations-reality.md)**: 현재 AI 에이전트의 한계를 이해하고 현실적인 기대치 설정하기
+1. **[4-4: MultiDevin 모델의 이해](4-4-multidevin-model.html)**: 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계
+2. **[4-5: Devin 플레이북 적용](4-5-devin-playbook-application.html)**: 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기
+3. **[4-6: 알려진 한계와 현실](4-6-known-limitations-reality.html)**: 현재 AI 에이전트의 한계를 이해하고 현실적인 기대치 설정하기
 
 ## 📚 추가 리소스
 

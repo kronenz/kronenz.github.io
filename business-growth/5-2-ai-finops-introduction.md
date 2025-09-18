@@ -934,9 +934,9 @@ class OptimizationRuleEngine:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-3: FinOps 에이전트 구축](5-3-finops-agent-construction.md)**: 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기
-2. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.md)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
-3. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.md)**: AI 에이전트를 활용한 비용 절감 극대화 전략
+1. **[5-3: FinOps 에이전트 구축](5-3-finops-agent-construction.html)**: 클라우드 비용을 예측하고 자동으로 최적화하는 에이전트 만들기
+2. **[5-4: 자동화된 리소스 관리](5-4-automated-resource-management.html)**: 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현
+3. **[5-5: 스팟 인스턴스 마스터](5-5-spot-instance-mastery.html)**: AI 에이전트를 활용한 비용 절감 극대화 전략
 
 ## 📚 추가 리소스
 

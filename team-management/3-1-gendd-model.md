@@ -460,8 +460,8 @@ class AdaptiveTeamStructure:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[3-2: AI 팀 역할 정의](3-2-ai-team-roles.md)**: 각 에이전트의 상세 역할과 책임 정의
-2. **[3-3: 에이전트 페르소나 제작법](3-3-agent-persona-creation.md)**: 효과적인 에이전트 성격 설계
+1. **[3-2: AI 팀 역할 정의](3-2-ai-team-roles.html)**: 각 에이전트의 상세 역할과 책임 정의
+2. **[3-3: 에이전트 페르소나 제작법](3-3-agent-persona-creation.html)**: 효과적인 에이전트 성격 설계
 3. **[시리즈 4: Devin 아키텍처 분석](../series-4/README.md)**: 고급 AI 에이전트 아키텍처 학습
 
 ## 📚 추가 리소스

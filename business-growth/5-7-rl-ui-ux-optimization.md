@@ -1002,8 +1002,8 @@ class ClickHeatmapCollector:
 
 이 가이드를 완료한 후 다음 단계를 진행하세요:
 
-1. **[5-8: RL 에이전트 구축](5-8-rl-agent-construction.md)**: 사용자 행동을 학습하고 UI를 실시간으로 최적화하는 에이전트 만들기
-2. **[5-9: 자율적 성장 해킹 마스터](5-9-autonomous-growth-hacking-master.md)**: 실제 서비스에 적용하고 성과 측정하기
+1. **[5-8: RL 에이전트 구축](5-8-rl-agent-construction.html)**: 사용자 행동을 학습하고 UI를 실시간으로 최적화하는 에이전트 만들기
+2. **[5-9: 자율적 성장 해킹 마스터](5-9-autonomous-growth-hacking-master.html)**: 실제 서비스에 적용하고 성과 측정하기
 3. **[5-10: 100배 생산성 달성](5-10-100x-productivity-achievement.md)**: 모든 지식을 통합하여 100배 생산성 달성하기
 
 ## 📚 추가 리소스
