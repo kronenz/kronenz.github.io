@@ -1,0 +1,340 @@
+name: AI Agent Workflow
+
+on:
+  issues:
+    types: [opened, labeled]
+  workflow_dispatch:
+    inputs:
+      project_type:
+        description: 'Project type'
+        required: true
+        default: 'web-app'
+        type: choice
+        options:
+        - web-app
+        - api
+        - mobile-app
+        - data-science
+
+jobs:
+  analyze-issue:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issues' && github.event.action == 'opened'
+    outputs:
+      project-type: ${{ steps.analyze.outputs.project-type }}
+      complexity: ${{ steps.analyze.outputs.complexity }}
+      estimated-time: ${{ steps.analyze.outputs.estimated-time }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Analyze issue
+        id: analyze
+        run: |
+          echo "Analyzing issue: ${{ github.event.issue.title }}"
+          echo "Issue body: ${{ github.event.issue.body }}"
+          
+          # AI-powered issue analysis
+          python3 -c "
+          import re
+          import json
+          
+          issue_title = '${{ github.event.issue.title }}'
+          issue_body = '${{ github.event.issue.body }}'
+          
+          # Simple analysis logic (replace with actual AI model)
+          if 'web' in issue_title.lower() or 'website' in issue_title.lower():
+              project_type = 'web-app'
+          elif 'api' in issue_title.lower() or 'backend' in issue_title.lower():
+              project_type = 'api'
+          elif 'mobile' in issue_title.lower() or 'app' in issue_title.lower():
+              project_type = 'mobile-app'
+          else:
+              project_type = 'web-app'
+          
+          # Estimate complexity based on keywords
+          complexity_keywords = ['complex', 'advanced', 'enterprise', 'scalable']
+          complexity = 'high' if any(keyword in issue_body.lower() for keyword in complexity_keywords) else 'medium'
+          
+          # Estimate time based on complexity
+          time_estimates = {'low': '1-2 days', 'medium': '1-2 weeks', 'high': '2-4 weeks'}
+          estimated_time = time_estimates.get(complexity, '1-2 weeks')
+          
+          print(f'project-type={project_type}')
+          print(f'complexity={complexity}')
+          print(f'estimated-time={estimated_time}')
+          " >> $GITHUB_OUTPUT
+
+  generate-spec:
+    runs-on: ubuntu-latest
+    needs: analyze-issue
+    if: always() && needs.analyze-issue.result == 'success'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install openai anthropic crewai
+
+      - name: Generate specification
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'EOF'
+          import openai
+          import json
+          import os
+          from datetime import datetime
+          
+          # Initialize OpenAI client
+          openai.api_key = os.getenv('OPENAI_API_KEY')
+          
+          # Get issue details
+          issue_title = "${{ github.event.issue.title }}"
+          issue_body = "${{ github.event.issue.body }}"
+          project_type = "${{ needs.analyze-issue.outputs.project-type }}"
+          complexity = "${{ needs.analyze-issue.outputs.complexity }}"
+          estimated_time = "${{ needs.analyze-issue.outputs.estimated-time }}"
+          
+          # Generate specification using AI
+          prompt = f"""
+          Create a detailed project specification based on the following GitHub issue:
+          
+          Title: {issue_title}
+          Description: {issue_body}
+          Project Type: {project_type}
+          Complexity: {complexity}
+          Estimated Time: {estimated_time}
+          
+          Please generate a comprehensive spec.md file following the template structure.
+          Include:
+          1. Project overview and objectives
+          2. Functional requirements
+          3. Technical requirements
+          4. User experience requirements
+          5. Data model
+          6. API design
+          7. Testing requirements
+          8. Deployment requirements
+          9. Timeline and milestones
+          10. Risk assessment
+          
+          Format the output as a markdown file.
+          """
+          
+          response = openai.ChatCompletion.create(
+              model="gpt-4",
+              messages=[
+                  {"role": "system", "content": "You are an expert product strategist AI agent. Generate detailed project specifications based on GitHub issues."},
+                  {"role": "user", "content": prompt}
+              ],
+              max_tokens=4000,
+              temperature=0.7
+          )
+          
+          spec_content = response.choices[0].message.content
+          
+          # Save specification to file
+          with open('spec.md', 'w', encoding='utf-8') as f:
+              f.write(spec_content)
+          
+          print("Specification generated successfully")
+          EOF
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: Add project specification for ${{ github.event.issue.title }}"
+          title: "Spec: ${{ github.event.issue.title }}"
+          body: |
+            This PR contains the generated project specification for issue #${{ github.event.issue.number }}.
+            
+            **Project Type**: ${{ needs.analyze-issue.outputs.project-type }}
+            **Complexity**: ${{ needs.analyze-issue.outputs.complexity }}
+            **Estimated Time**: ${{ needs.analyze-issue.outputs.estimated-time }}
+            
+            Please review the specification and provide feedback.
+          branch: spec/${{ github.event.issue.number }}-${{ github.event.issue.title }}
+          delete-branch: true
+
+  generate-plan:
+    runs-on: ubuntu-latest
+    needs: [analyze-issue, generate-spec]
+    if: always() && needs.generate-spec.result == 'success'
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: spec/${{ github.event.issue.number }}-${{ github.event.issue.title }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: |
+          pip install openai anthropic crewai
+
+      - name: Generate execution plan
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'EOF'
+          import openai
+          import json
+          import os
+          
+          # Initialize OpenAI client
+          openai.api_key = os.getenv('OPENAI_API_KEY')
+          
+          # Read the generated specification
+          with open('spec.md', 'r', encoding='utf-8') as f:
+              spec_content = f.read()
+          
+          # Generate execution plan using AI
+          prompt = f"""
+          Based on the following project specification, create a detailed execution plan:
+          
+          {spec_content}
+          
+          Please generate a comprehensive plan.md file that includes:
+          1. Project phases and milestones
+          2. Task breakdown structure (WBS)
+          3. Resource allocation
+          4. Timeline and dependencies
+          5. Risk assessment and mitigation
+          6. Quality assurance plan
+          7. Communication plan
+          8. Success criteria
+          
+          Format the output as a markdown file.
+          """
+          
+          response = openai.ChatCompletion.create(
+              model="gpt-4",
+              messages=[
+                  {"role": "system", "content": "You are an expert project manager AI agent. Create detailed execution plans based on project specifications."},
+                  {"role": "user", "content": prompt}
+              ],
+              max_tokens=4000,
+              temperature=0.7
+          )
+          
+          plan_content = response.choices[0].message.content
+          
+          # Save plan to file
+          with open('plan.md', 'w', encoding='utf-8') as f:
+              f.write(plan_content)
+          
+          print("Execution plan generated successfully")
+          EOF
+
+      - name: Generate task breakdown
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'EOF'
+          import openai
+          import json
+          import os
+          
+          # Initialize OpenAI client
+          openai.api_key = os.getenv('OPENAI_API_KEY')
+          
+          # Read the generated specification and plan
+          with open('spec.md', 'r', encoding='utf-8') as f:
+              spec_content = f.read()
+          
+          with open('plan.md', 'r', encoding='utf-8') as f:
+              plan_content = f.read()
+          
+          # Generate detailed task breakdown using AI
+          prompt = f"""
+          Based on the following project specification and execution plan, create a detailed task breakdown:
+          
+          Specification:
+          {spec_content}
+          
+          Execution Plan:
+          {plan_content}
+          
+          Please generate a comprehensive tasks.md file that includes:
+          1. Detailed task list with IDs
+          2. Task descriptions and acceptance criteria
+          3. Estimated time and effort
+          4. Dependencies between tasks
+          5. Resource assignments
+          6. Priority levels
+          7. Definition of done for each task
+          
+          Format the output as a markdown file with tables for easy tracking.
+          """
+          
+          response = openai.ChatCompletion.create(
+              model="gpt-4",
+              messages=[
+                  {"role": "system", "content": "You are an expert task decomposition AI agent. Create detailed task breakdowns based on project specifications and plans."},
+                  {"role": "user", "content": prompt}
+              ],
+              max_tokens=4000,
+              temperature=0.7
+          )
+          
+          tasks_content = response.choices[0].message.content
+          
+          # Save tasks to file
+          with open('tasks.md', 'w', encoding='utf-8') as f:
+              f.write(tasks_content)
+          
+          print("Task breakdown generated successfully")
+          EOF
+
+      - name: Update Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: Add execution plan and task breakdown"
+          title: "Spec: ${{ github.event.issue.title }}"
+          body: |
+            This PR now includes:
+            - ✅ Project specification (spec.md)
+            - ✅ Execution plan (plan.md)
+            - ✅ Detailed task breakdown (tasks.md)
+            
+            **Project Type**: ${{ needs.analyze-issue.outputs.project-type }}
+            **Complexity**: ${{ needs.analyze-issue.outputs.complexity }}
+            **Estimated Time**: ${{ needs.analyze-issue.outputs.estimated-time }}
+            
+            Ready for development team review and approval.
+          branch: spec/${{ github.event.issue.number }}-${{ github.event.issue.title }}
+
+  notify-completion:
+    runs-on: ubuntu-latest
+    needs: [analyze-issue, generate-spec, generate-plan]
+    if: always()
+    steps:
+      - name: Notify completion
+        run: |
+          echo "AI Agent Workflow completed for issue #${{ github.event.issue.number }}"
+          echo "Project Type: ${{ needs.analyze-issue.outputs.project-type }}"
+          echo "Complexity: ${{ needs.analyze-issue.outputs.complexity }}"
+          echo "Estimated Time: ${{ needs.analyze-issue.outputs.estimated-time }}"
+          
+          # Add comment to the original issue
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}/comments \
+            -d '{
+              "body": "🤖 **AI Agent Workflow Completed**\n\n✅ Project specification generated\n✅ Execution plan created\n✅ Task breakdown completed\n\n**Project Details:**\n- Type: ${{ needs.analyze-issue.outputs.project-type }}\n- Complexity: ${{ needs.analyze-issue.outputs.complexity }}\n- Estimated Time: ${{ needs.analyze-issue.outputs.estimated-time }}\n\n📋 **Next Steps:**\n1. Review the generated specification and plan\n2. Approve or request modifications\n3. Assign to development team\n4. Begin implementation\n\n🔗 **View Details:** Check the [specification PR](https://github.com/${{ github.repository }}/pull/$(gh pr list --head spec/${{ github.event.issue.number }}-${{ github.event.issue.title }} --json number -q '.[0].number'))"
