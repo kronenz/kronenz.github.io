@@ -24,7 +24,7 @@ description: "AI 에이전트 기반의 자율적 소프트웨어 개발 조직 
 
 AI 에이전트와 협업하는 기본 원리와 방법을 학습합니다.
 
-- **1-1**: [에이전틱 AI 시작하기](/ai-development/agentic-ai-start/) - AI 어시스턴트에서 자율적 행위자로의 전환
+- **1-1**: [에이전틱 AI 시작하기](/ai-development/1-1-agentic-ai-start/) - AI 어시스턴트에서 자율적 행위자로의 전환
 - **1-2**: [명세 기반 개발(SDD) 마스터하기](/ai-development/1-2-spec-driven-development/) - Spec Kit으로 첫 프로젝트 시작하기
 - **1-3**: [원칙 기반 엔지니어링으로의 전환](/ai-development/1-3-principle-based-engineering/) - 감성 코딩을 넘어서
 - **1-4**: [spec.md 작성의 기술](/ai-development/1-4-spec-writing-techniques/) - AI가 이해하는 명확한 명세서 작성법
