@@ -610,10 +610,10 @@ class ButtonModifier:
 class CSSGenerator:
     def __init__(self):
         self.css_templates = {
-            'element': &quot;#{element_id} {{ {properties} }}&quot;,
-            'class': &quot;.{class_name} {{ {properties} }}&quot;,
-            'layout': &quot;.layout-{layout_id} {{ {properties} }}&quot;,
-            'color': &quot;.color-{color_id} {{ {properties} }}&quot;
+            'element': &quot;#{element_id} { {properties} }&quot;,
+            'class': &quot;.{class_name} { {properties} }&quot;,
+            'layout': &quot;.layout-{layout_id} { {properties} }&quot;,
+            'color': &quot;.color-{color_id} { {properties} }&quot;
         }
         self.css_optimizer = CSSOptimizer()
 
