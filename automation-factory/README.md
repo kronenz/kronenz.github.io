@@ -2,8 +2,8 @@
 layout: default
 title: "README: README"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-2"
 order: 12
+permalink: /automation-factory/README/
 ---
 
 # 시리즈 2: 자동화된 SaaS 팩토리 - 조립 라인 구축 가이드

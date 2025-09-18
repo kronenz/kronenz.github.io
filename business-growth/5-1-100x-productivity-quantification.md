@@ -2,8 +2,8 @@
 layout: default
 title: "5-1: 100배 생산성 정량화 - 기능 처리량과 사이클 타임으로 성과 측정하기"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-5"
 order: 1
+permalink: /business-growth/5-1-100x-productivity-quantification/
 ---
 
 # 5-1: 100배 생산성 정량화 - 기능 처리량과 사이클 타임으로 성과 측정하기

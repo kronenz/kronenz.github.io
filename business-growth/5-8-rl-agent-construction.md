@@ -2,8 +2,8 @@
 layout: default
 title: "5-8: RL 에이전트 구축 - 사용자 행동 학습 및 UI 실시간 최적화"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-5"
 order: 9
+permalink: /business-growth/5-8-rl-agent-construction/
 ---
 
 # 5-8: RL 에이전트 구축 - 사용자 행동 학습 및 UI 실시간 최적화

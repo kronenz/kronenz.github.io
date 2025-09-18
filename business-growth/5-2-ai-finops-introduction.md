@@ -2,8 +2,8 @@
 layout: default
 title: "5-2: AI 기반 FinOps 소개 - 자율적인 클라우드 비용 관리의 필요성"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-5"
 order: 3
+permalink: /business-growth/5-2-ai-finops-introduction/
 ---
 
 # 5-2: AI 기반 FinOps 소개 - 자율적인 클라우드 비용 관리의 필요성

@@ -2,8 +2,8 @@
 layout: default
 title: "2-2-automation-triggers: 2 2 automation triggers"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-2"
 order: 4
+permalink: /automation-factory/2-2-automation-triggers/
 ---
 
 # 자동화의 시작: GitHub 이슈 생성을 트리거로 AI 워크플로우 실행하기

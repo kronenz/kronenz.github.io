@@ -2,8 +2,8 @@
 layout: default
 title: "2-6-quality-control-setup: 2 6 quality control setup"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-2"
 order: 8
+permalink: /automation-factory/2-6-quality-control-setup/
 ---
 
 # 품질 관리 구축

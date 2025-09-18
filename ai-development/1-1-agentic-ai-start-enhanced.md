@@ -2,8 +2,8 @@
 layout: default
 title: "1-1: 에이전틱 AI 시작하기"
 description: "AI 어시스턴트에서 자율적 행위자로의 전환"
-series: "series-1"
 order: 1
+permalink: /ai-development/1-1-agentic-ai-start-enhanced/
 ---
 
 # 1-1: 에이전틱 AI 시작하기 - AI 어시스턴트에서 자율적 행위자로의 전환

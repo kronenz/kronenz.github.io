@@ -2,8 +2,8 @@
 layout: default
 title: "3-7: 미래의 핵심 역량 - 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-3"
 order: 7
+permalink: /team-management/3-7-future-core-skills/
 ---
 
 # 3-7: 미래의 핵심 역량 - 프롬프트 유창성, 제약 조건 설계, 에이전틱 사고 훈련하기

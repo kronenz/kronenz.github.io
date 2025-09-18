@@ -2,8 +2,8 @@
 layout: default
 title: "5-7: 강화 학습(RL)을 이용한 UI/UX 최적화 - 기본 개념과 작동 원리"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-5"
 order: 8
+permalink: /business-growth/5-7-rl-ui-ux-optimization/
 ---
 
 # 5-7: 강화 학습(RL)을 이용한 UI/UX 최적화 - 기본 개념과 작동 원리

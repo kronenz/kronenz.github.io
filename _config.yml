@@ -18,11 +18,47 @@ collections:
   series:
     output: true
     permalink: /:collection/:name/
+  chapters:
+    output: true
+    permalink: /:collection/:name/
+  guides:
+    output: true
+    permalink: /:collection/:name/
 
 # Defaults
 defaults:
   - scope:
       path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "ai-development"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "automation-factory"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "team-management"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "advanced-architecture"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "business-growth"
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: "resources"
       type: "pages"
     values:
       layout: "default"

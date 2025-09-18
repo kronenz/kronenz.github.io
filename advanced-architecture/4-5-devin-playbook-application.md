@@ -2,8 +2,8 @@
 layout: default
 title: "4-5: Devin 플레이북 적용 - 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-4"
 order: 5
+permalink: /advanced-architecture/4-5-devin-playbook-application/
 ---
 
 # 4-5: Devin 플레이북 적용 - 레거시 시스템 리팩토링 프로젝트에 "Devin 군대" 활용하기

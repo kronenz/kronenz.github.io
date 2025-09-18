@@ -2,8 +2,8 @@
 layout: default
 title: "4-4: MultiDevin 모델의 이해 - 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-4"
 order: 4
+permalink: /advanced-architecture/4-4-multidevin-model/
 ---
 
 # 4-4: MultiDevin 모델의 이해 - 병렬 작업 실행을 위한 관리자-작업자 에이전트 구조 설계

@@ -2,8 +2,8 @@
 layout: default
 title: "3-3: 효과적인 에이전트 페르소나 제작법 - CrewAI의 역할, 목표, 배경 스토리 설정 가이드"
 description: "에이전틱 SaaS 조직 가이드"
-series: "series-3"
 order: 3
+permalink: /team-management/3-3-agent-persona-creation/
 ---
 
 # 3-3: 효과적인 에이전트 페르소나 제작법 - CrewAI의 역할, 목표, 배경 스토리 설정 가이드
