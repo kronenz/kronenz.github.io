@@ -26,11 +26,6 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-  - scope:
-      path: ""
-      type: "series"
-    values:
-      layout: "series"
 
 # Navigation
 navigation:
