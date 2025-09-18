@@ -3,7 +3,6 @@ layout: default
 title: "1-10: `constitution.md` 작성 - AI 에이전트 팀을 위한 핵심 원칙과 가드레일 설정하기"
 description: "에이전틱 SaaS 조직 가이드"
 order: 3
-permalink: /ai-development/1-10-constitution-writing/
 ---
 
 # 1-10: `constitution.md` 작성 - AI 에이전트 팀을 위한 핵심 원칙과 가드레일 설정하기

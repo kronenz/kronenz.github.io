@@ -3,7 +3,6 @@ layout: default
 title: "3-9: 첫 디지털 직원 온보딩 - AI 에이전트를 팀 워크플로우에 통합하는 단계별 가이드"
 description: "에이전틱 SaaS 조직 가이드"
 order: 9
-permalink: /team-management/3-9-digital-employee-onboarding/
 ---
 
 # 3-9: 첫 디지털 직원 온보딩 - AI 에이전트를 팀 워크플로우에 통합하는 단계별 가이드

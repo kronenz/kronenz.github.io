@@ -3,7 +3,6 @@ layout: default
 title: "4-3: 자가 수정 메커니즘 - 오류 발생 시 스스로 디버깅하고 학습하는 에이전트 만들기"
 description: "에이전틱 SaaS 조직 가이드"
 order: 3
-permalink: /advanced-architecture/4-3-self-correction-mechanisms/
 ---
 
 # 4-3: 자가 수정 메커니즘 - 오류 발생 시 스스로 디버깅하고 학습하는 에이전트 만들기

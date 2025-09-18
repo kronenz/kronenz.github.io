@@ -3,7 +3,6 @@ layout: default
 title: "5-4: 자동화된 리소스 관리 - 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현"
 description: "에이전틱 SaaS 조직 가이드"
 order: 5
-permalink: /business-growth/5-4-automated-resource-management/
 ---
 
 # 5-4: 자동화된 리소스 관리 - 유휴 리소스 자동 종료 및 인스턴스 스케일링 구현

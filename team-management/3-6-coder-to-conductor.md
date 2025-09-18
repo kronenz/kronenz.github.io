@@ -3,7 +3,6 @@ layout: default
 title: "3-6: 코더에서 지휘자로 - 에이전틱 시대의 인간 개발자 역할 재정의"
 description: "에이전틱 SaaS 조직 가이드"
 order: 6
-permalink: /team-management/3-6-coder-to-conductor/
 ---
 
 # 3-6: 코더에서 지휘자로 - 에이전틱 시대의 인간 개발자 역할 재정의

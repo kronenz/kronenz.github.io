@@ -3,7 +3,6 @@ layout: default
 title: "5-5: 스팟 인스턴스 마스터 - AI 에이전트를 활용한 비용 절감 극대화 전략"
 description: "에이전틱 SaaS 조직 가이드"
 order: 6
-permalink: /business-growth/5-5-spot-instance-mastery/
 ---
 
 # 5-5: 스팟 인스턴스 마스터 - AI 에이전트를 활용한 비용 절감 극대화 전략

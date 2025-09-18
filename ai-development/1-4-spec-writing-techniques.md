@@ -3,7 +3,6 @@ layout: default
 title: "1-4: `spec.md` 작성의 기술 - AI가 이해하는 명확한 명세서 작성법"
 description: "에이전틱 SaaS 조직 가이드"
 order: 6
-permalink: /ai-development/1-4-spec-writing-techniques/
 ---
 
 # 1-4: `spec.md` 작성의 기술 - AI가 이해하는 명확한 명세서 작성법

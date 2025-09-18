@@ -3,7 +3,6 @@ layout: default
 title: "3-5: AI 에이전트 간의 갈등 해결 - 협상, 투표, 중재 프로토콜 구현하기"
 description: "에이전틱 SaaS 조직 가이드"
 order: 5
-permalink: /team-management/3-5-conflict-resolution/
 ---
 
 # 3-5: AI 에이전트 간의 갈등 해결 - 협상, 투표, 중재 프로토콜 구현하기

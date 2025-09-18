@@ -3,7 +3,6 @@ layout: default
 title: "1-8: 오케스트레이션 프레임워크 선택 - CrewAI vs AutoGen vs LangGraph 비교 분석"
 description: "에이전틱 SaaS 조직 가이드"
 order: 10
-permalink: /ai-development/1-8-orchestration-framework/
 ---
 
 # 1-8: 오케스트레이션 프레임워크 선택 - CrewAI vs AutoGen vs LangGraph 비교 분석

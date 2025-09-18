@@ -3,7 +3,6 @@ layout: default
 title: "2-9-self-healing-tests: 2 9 self healing tests"
 description: "에이전틱 SaaS 조직 가이드"
 order: 11
-permalink: /automation-factory/2-9-self-healing-tests/
 ---
 
 # 자가 치유 테스트의 구현

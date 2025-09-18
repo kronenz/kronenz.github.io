@@ -3,7 +3,6 @@ layout: default
 title: "5-9: 자율적 성장 해킹 마스터 - 실제 서비스 적용 및 성과 측정"
 description: "에이전틱 SaaS 조직 가이드"
 order: 10
-permalink: /business-growth/5-9-autonomous-growth-hacking-master/
 ---
 
 # 5-9: 자율적 성장 해킹 마스터 - 실제 서비스 적용 및 성과 측정

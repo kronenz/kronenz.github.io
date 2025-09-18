@@ -3,7 +3,6 @@ layout: default
 title: "2-4-factory-floor-construction: 2 4 factory floor construction"
 description: "에이전틱 SaaS 조직 가이드"
 order: 6
-permalink: /automation-factory/2-4-factory-floor-construction/
 ---
 
 # 공장 플로어 구축

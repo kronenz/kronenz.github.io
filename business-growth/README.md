@@ -3,7 +3,6 @@ layout: default
 title: "README: README"
 description: "에이전틱 SaaS 조직 가이드"
 order: 11
-permalink: /business-growth/README/
 ---
 
 # 시리즈 5: 자율성의 경제학 - 100배 생산성 달성

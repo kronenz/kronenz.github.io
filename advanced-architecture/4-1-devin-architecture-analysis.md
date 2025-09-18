@@ -3,7 +3,6 @@ layout: default
 title: "4-1: Devin 아키텍처 해부 - 자율 개발을 위한 샌드박스 환경 구축하기"
 description: "에이전틱 SaaS 조직 가이드"
 order: 1
-permalink: /advanced-architecture/4-1-devin-architecture-analysis/
 ---
 
 # 4-1: Devin 아키텍처 해부 - 자율 개발을 위한 샌드박스 환경 구축하기

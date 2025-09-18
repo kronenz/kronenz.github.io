@@ -3,7 +3,6 @@ layout: default
 title: "1-3: "감성 코딩"을 넘어서 - 원칙 기반 엔지니어링으로의 전환 가이드"
 description: "에이전틱 SaaS 조직 가이드"
 order: 5
-permalink: /ai-development/1-3-principle-based-engineering/
 ---
 
 # 1-3: "감성 코딩"을 넘어서 - 원칙 기반 엔지니어링으로의 전환 가이드

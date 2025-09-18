@@ -3,7 +3,6 @@ layout: default
 title: "2-11-end-to-end-project: 2 11 end to end project"
 description: "에이전틱 SaaS 조직 가이드"
 order: 3
-permalink: /automation-factory/2-11-end-to-end-project/
 ---
 
 # 엔드-투-엔드 프로젝트

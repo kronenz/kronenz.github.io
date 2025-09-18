@@ -3,7 +3,6 @@ layout: default
 title: "README: README"
 description: "에이전틱 SaaS 조직 가이드"
 order: 12
-permalink: /ai-development/README/
 ---
 
 # 시리즈 1: 에이전틱 조직의 기초 - 아키텍처 설계 및 구축 가이드

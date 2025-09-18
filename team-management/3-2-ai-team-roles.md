@@ -3,7 +3,6 @@ layout: default
 title: "3-2: AI 팀 역할 정의 - 제품 전략가부터 QA 엔지니어까지 상세 역할 가이드"
 description: "에이전틱 SaaS 조직 가이드"
 order: 2
-permalink: /team-management/3-2-ai-team-roles/
 ---
 
 # 3-2: AI 팀 역할 정의 - 제품 전략가부터 QA 엔지니어까지 상세 역할 가이드

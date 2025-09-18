@@ -3,7 +3,6 @@ layout: default
 title: "README: README"
 description: "에이전틱 SaaS 조직 가이드"
 order: 7
-permalink: /advanced-architecture/README/
 ---
 
 # 시리즈 4: Devin 아키텍처 분석 - 고급 AI 에이전트 아키텍처 학습

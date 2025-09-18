@@ -3,7 +3,6 @@ layout: default
 title: "2-8-test-automation: 2 8 test automation"
 description: "에이전틱 SaaS 조직 가이드"
 order: 10
-permalink: /automation-factory/2-8-test-automation/
 ---
 
 # 테스트 자동화
